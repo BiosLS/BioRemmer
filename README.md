@@ -1,42 +1,62 @@
-# BioRemmer v1.0
+<div align="center">
 
-**Pipeline for the identification of a functional profile for plastic microbial biodegradation**
+<img src="assets/Biorem_logo.png" alt="BioRemmer Logo" width="300"/>
 
-BioRemmer is a command-line bioinformatics pipeline that takes raw paired-end metagenomic sequencing data and produces a complete functional profile of plastic-degrading potential, including taxonomic classification, functional annotation, phylogenomics, and identification of putative plastic-degrading enzyme homologs.
+# BioRemmer
+
+**A bioinformatics pipeline for the identification of functional profiles in plastic microbial biodegradation**
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/BiosLS/BioRemmer/releases/tag/v1.0)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20WSL2-lightgrey.svg)]()
+[![Conda](https://img.shields.io/badge/conda-supported-brightgreen.svg)]()
+
+</div>
 
 ---
 
-## Repository structure
+## Overview
+
+**BioRemmer** is an automated, end-to-end metagenomic pipeline designed to characterize the plastic-degrading potential of microbial communities. Starting from raw paired-end FASTQ reads, BioRemmer performs quality control, assembly, functional annotation, phylogenomic classification, taxonomic profiling, COG classification, and targeted enzyme homology searches — producing an interactive HTML report with publication-ready figures.
+
+### Key features
+
+- **Automated resume** — each step is skipped if its output already exists
+- **Plastic-degrading enzyme search** — HMMER3 profiles for 9 plastic types (PET, PE, PUR, PS, IP, PA, PBAT, PHB, PLA)
+- **Phylogenomics** — VAMPhyRE fingerprint-based NJ tree integrating MAGs and reference genomes
+- **COG functional context** — highlights metabolic categories linked to plastic degradation
+- **Heatmap analysis** — cross-references HMMER hits, taxonomy, and COG annotations
+- **HTML report** — fully automated R Markdown report with interactive tables and figures
+
+---
+
+## Pipeline overview
 
 ```
-BioRemmer/
-├── biorem_pipeline_v2.sh   # Main pipeline script
-├── config.sh               # Tool and database paths (auto-configured)
-├── environment.yml         # Conda environment specification
-├── install_bioremmer.sh    # Full installation script
-├── scripts/
-│   ├── report.R            # Report generator (called by pipeline)
-│   ├── Biorem_report.Rmd   # R Markdown report template
-│   └── COGcounter_v2.pl    # COG frequency counter
-├── databases/              # Created by install_bioremmer.sh
-│   ├── COG_LE/             # NCBI COG database (little endian)
-│   ├── pfam/               # Pfam-A + per-plastic HMM profiles
-│   └── vamphyre/           # VAMPhyRE reference genomes and VGF database
-├── bin/
-│   └── vamphyre/           # VAMPhyRE binaries (manual install)
-└── assets/
-    └── logo_carta.png      # Logo for HTML report
+Raw FASTQ reads
+     │
+     ▼
+Step 1 ── Input validation
+Step 2 ── Quality control          fastp
+Step 3 ── Metagenome assembly      metaSPAdes
+Step 4 ── Functional annotation    Prokka
+Step 5 ── MAG binning              MetaBat2
+Step 6 ── Phylogenomics            VAMPhyRE + build_tree.R
+Step 7 ── Enzyme search            HMMER3 (9 plastic HMM profiles)
+Step 8 ── COG classification       RPS-BLAST + cog_counter.py
+Step 9 ── Taxonomic assignment     Metaxa2
+Step 10 ── HTML report             R Markdown
+Step 11 ── Plastic heatmap         plastic_heatmap.py
 ```
 
 ---
 
 ## Requirements
 
-- **OS**: Ubuntu 22.04 LTS (recommended) or Ubuntu 24.04
-- **RAM**: ≥ 16 GB (32 GB recommended for large metagenomes)
-- **Storage**: ≥ 50 GB free (databases + results)
-- **CPU**: ≥ 4 threads
-- **Conda/Mamba**: installed by `install_bioremmer.sh` if not present
+- Linux or WSL2 (Ubuntu 20.04/22.04)
+- [Miniconda3](https://docs.conda.io/en/latest/miniconda.html)
+- ~20 GB disk space (databases + results)
+- ≥8 GB RAM recommended
 
 ---
 
@@ -45,33 +65,47 @@ BioRemmer/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/BioRemmer/BioRemmer.git
+git clone https://github.com/BiosLS/BioRemmer.git
 cd BioRemmer
 ```
 
-### 2. Run the installer
+### 2. Download large files (Google Drive)
 
+The following resources are hosted on Google Drive due to their size.
+Download and place them in the indicated directories:
+
+| Resource | Size | Destination |
+|---|---|---|
+| Reference genomes (genome_DB) | ~2 GB | `bin/vamphyre/genomes/genome_DB/` |
+| COG database (COG_LE) | ~500 MB | `databases/COG_LE/` |
+| Test FASTQ files | ~300 MB | `test/` |
+
+> 📁 **All large files are available in a single Google Drive folder:**
+> **[BioRemmer Data — Google Drive](https://drive.google.com/drive/folders/1hnfoMZ4AN5FJ7vRIaI1gNZiLd27h45Vc?usp=sharing)**
+>
+> Download the folder and place each subfolder in its corresponding destination above.
+
+After downloading, verify the structure:
 ```bash
-chmod +x install_bioremmer.sh
-./install_bioremmer.sh
+ls bin/vamphyre/genomes/genome_DB/*.fna | wc -l   # should show 40
+ls databases/COG_LE/Cog.*                          # should show 9 files
+ls test/*.fastq.gz                                 # should show 6 files
 ```
 
-The installer will:
-- Install Miniconda (if not already present)
-- Install mamba (fast conda solver)
-- Create the `bioremmer` conda environment with all dependencies
-- Install MEGA 11 (`.deb`, system-wide)
-- Install VAMPhyRE binaries
-- Download the NCBI COG database
-- Download and build Pfam HMM profiles for each plastic type
-
-> **MEGA 11 and VAMPhyRE** cannot be distributed through conda.  
-> If automatic download fails, see the [manual installation](#manual-installation) section below.
-
-### 3. Activate the environment
+### 3. Create conda environments
 
 ```bash
-conda activate bioremmer
+# Core bioinformatics tools
+mamba env create -f install/environment_bioremmer_core_v3.yml
+
+# R report environment
+bash install/install_bioremmer_r_v3.sh
+```
+
+### 4. Install v3 dependencies (fastp + Python packages)
+
+```bash
+bash install/install_bioremmer_v3.sh
 ```
 
 ---
@@ -79,108 +113,100 @@ conda activate bioremmer
 ## Usage
 
 ```bash
-conda activate bioremmer
-
-./biorem_pipeline_v2.sh <R1.fastq.gz> <R2.fastq.gz> <sample_name> <threads>
+bash biorem_pipeline_v3.sh <R1.fastq.gz> <R2.fastq.gz> <sample_name> <threads>
 ```
 
-### Example with demo data
+### Example with test data
 
 ```bash
-./biorem_pipeline_v2.sh \
-    demo/demo_R1.fastq.gz \
-    demo/demo_R2.fastq.gz \
-    demo_sample \
-    4
+bash biorem_pipeline_v3.sh \
+    test/Test_short_1.fastq.gz \
+    test/Test_short_2.fastq.gz \
+    test_short 4
 ```
 
-### Output
+### Resume a stopped run
 
-All results are written to `Results/` in the working directory:
+The pipeline automatically skips completed steps. To rerun a specific step, delete its output:
+
+```bash
+rm -rf Results/SPAdes_results    # reruns step 3
+rm -rf Results/Prokka_results    # reruns step 4
+rm -rf Results/VAMPhyRE          # reruns step 6
+rm -rf Results/HMMER             # reruns step 7
+rm -rf Results/COG               # reruns step 8
+rm -rf Results/Metaxa2_results   # reruns step 9
+rm -f  Results/Biorem_report.html # reruns step 10
+rm -f  Results/Plots/plastic_degrading_heatmap.png  # reruns step 11
+```
+
+---
+
+## Output
+
+All results are written to `Results/`:
 
 ```
 Results/
-├── Trimmomatic/
-│   ├── trimmomatic_summary.txt
-│   └── *.fastq.gz               # Trimmed reads
-├── QC/
-│   └── *_fastqc.html            # FastQC reports
-├── SPAdes_results/
-│   └── contigs.fasta
-├── Prokka_results/
-│   ├── prokka_results.faa       # Predicted proteins
-│   └── prokka_results.fna       # Genomic sequences
-├── MetaBat2/
-│   └── Metabat2_results.*.fa    # MAG bins
-├── VAMPhyRE/
-│   └── VGF_tree.nwk             # Phylogenomic tree
-├── Metaxa2_results/
-│   └── rarefaction_out.*        # Taxonomic profiles
-├── COG/
-│   └── cog_frequencies.csv      # COG category frequencies
-├── HMMER/
-│   └── *_search.txt             # Enzyme homolog hits per plastic
-└── Biorem_report.html           # Complete HTML report
+├── Biorem_report.html          ← Main HTML report
+├── Plots/                      ← Publication-ready figures
+│   ├── plastic_degrading_heatmap.png
+│   ├── cog_plastic_highlighted.png
+│   ├── plastic_degrading_enzymes.png
+│   ├── taxonomic_abundance.png
+│   └── Phylogenomic_classification.png
+├── Trimmomatic/                ← fastp QC outputs
+├── SPAdes_results/             ← Assembly
+├── Prokka_results/             ← Annotation
+├── MetaBat2/                   ← MAG bins
+├── VAMPhyRE/                   ← Phylogenomic tree
+├── HMMER/                      ← Enzyme homology search
+├── COG/                        ← COG classification
+├── Metaxa2_results/            ← Taxonomic assignment
+├── QC/                         ← fastp HTML report
+└── logs/                       ← Run logs
 ```
 
 ---
 
-## Pipeline stages
+## Repository structure
 
-| Step | Tool | Version | Function |
-|------|------|---------|----------|
-| 1 | Input validation | — | Checks that R1/R2 files exist |
-| 2 | Trimmomatic + FastQC | 0.39 / 0.11.9 | Quality filtering and QC |
-| 3 | metaSPAdes | 3.15.4 | Metagenome assembly |
-| 4 | Prokka | 1.14.6 | Functional annotation |
-| 5 | MetaBat2 | 2.15 | MAG binning |
-| 6 | VAMPhyRE + MEGA 11 | 1.0 / 11.0.11 | Phylogenomic tree |
-| 7 | HMMER3 | 3.3.2 | HMM-based enzyme search |
-| 8 | RPS-BLAST + COGcounter | 2.12 | COG functional classification |
-| 9 | Metaxa2 | 2.2.3 | 16S rRNA taxonomic assignment |
-| 10 | R Markdown | — | HTML report generation |
+```
+BioRemmer/
+├── biorem_pipeline_v3.sh       ← Main pipeline script
+├── config.sh                   ← Path configuration
+├── scripts/                    ← Analysis and report scripts
+│   ├── Biorem_report.Rmd       ← R Markdown report template
+│   ├── report.R                ← Report renderer
+│   ├── build_tree.R            ← NJ tree builder
+│   ├── cog_counter.py          ← COG frequency counter
+│   ├── plastic_heatmap.py      ← Heatmap generator
+│   ├── fix_meg.py              ← VAMPhyRE output formatter
+│   └── parse_cog_rpsblast.py   ← COG blast parser
+├── install/                    ← Installation scripts and YMLs
+├── databases/
+│   ├── pfam/                   ← HMM profiles (9 plastic types)
+│   └── BioRemDB.csv            ← Plastic degradation reference DB
+├── bin/vamphyre/               ← VAMPhyRE binaries and probes
+├── assets/                     ← Logo and report assets
+└── test/                       ← Test FASTQ files (via Google Drive)
+```
 
 ---
 
-## BRMR Database
+## Supported plastic types
 
-BioRemmer includes the **BRMR (BioRemmer Reference) database**, a curated collection of plastic-degrading enzymes compiled from:
-
-- [PMBD](https://doi.org/10.1093/database/baz119) — Plastics Microbial Biodegradation Database
-- [PlasticDB](https://doi.org/10.1093/database/baac008) — Plastic-degrading organisms and proteins
-- [PAZy](https://doi.org/10.1002/prot.26325) — Plastics-Active Enzymes Database
-- Recent primary literature
-
-Each enzyme record includes: plastic type, synonyms, molecular formula, SMILES, reaction, enzyme name, source organism, gene, UniProt accession, EC number, Pfam family, KEGG/GO annotations, and amino acid sequence.
-
-**Plastic types covered:** PET, PLA, PHB, PUR, PE, PA, PBAT, PS, IP
-
-> **Important note on PS and PE:** The enzyme homologs identified for polystyrene (PS)
-> and polyethylene (PE) are based on proteins with reported activity on monomers or
-> structurally related substrates *in vitro*. No functionally verified enzymes capable
-> of depolymerizing PS or PE polymers under environmental conditions are currently known.
-> Results for these plastic types should be interpreted as putative homologs only.
-
----
-
-## Manual installation
-
-### MEGA 11
-
-```bash
-# Download from https://www.megasoftware.net/
-wget https://www.megasoftware.net/do_force_download/megacc_11.0.13-1_amd64.deb
-sudo dpkg -i megacc_11.0.13-1_amd64.deb
-```
-
-### VAMPhyRE
-
-```bash
-# Download from the VAMPhyRE project page and extract to bin/vamphyre/
-mkdir -p bin/vamphyre
-tar -xzf VAMPhyRE_linux_x86_64.tar.gz -C bin/vamphyre --strip-components=1
-chmod +x bin/vamphyre/VH5cmdl bin/vamphyre/MergeVGF bin/vamphyre/VFAT
-```
+| Code | Plastic |
+|---|---|
+| PET | Polyethylene terephthalate |
+| PE | Polyethylene |
+| PUR | Polyurethane |
+| PS | Polystyrene |
+| IP | Isoprene |
+| PA | Polyamide |
+| PBAT | Polybutylene adipate terephthalate |
+| PHB | Polyhydroxybutyrate |
+| PLA | Polylactic acid |
 
 ---
 
@@ -188,21 +214,22 @@ chmod +x bin/vamphyre/VH5cmdl bin/vamphyre/MergeVGF bin/vamphyre/VFAT
 
 If you use BioRemmer in your research, please cite:
 
-> Cano-Sánchez J, Maldonado-Rodríguez R, Méndez-Tenorio A, Díaz-Ocampo E,
-> Larios-Serrato V. (2025). BioRemmer: pipeline for the identification of a
-> functional profile for plastic microbial biodegradation.
-> *Journal of Bioengineering and Biomedicine Research.*
+> Cano-Sánchez J, Méndez-Tenorio A, Maldonado-Rodríguez R, Díaz-Ocampo E, Larios-Serrato V.
+> **BioRemmer: a pipeline for the identification of functional profiles for plastic microbial biodegradation.**
+> *(manuscript in preparation)*
+
+---
+
+## Authors
+
+- José Cano-Sánchez
+- Alfonso Méndez-Tenorio
+- Rogelio Maldonado-Rodríguez
+- Enrique Díaz-Ocampo
+- Violeta Larios-Serrato ✉ viosdatafactory@gmail.com
 
 ---
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-## Contact
-
-Violeta Larios-Serrato — viosdatafactory@gmail.com  
-Laboratorio de Biotecnología y Bioinformática Genómica  
-Escuela Nacional de Ciencias Biológicas, IPN — Ciudad de México, México
+This project is licensed under the GNU General Public License v3.0 — see the [LICENSE](LICENSE) file for details.
