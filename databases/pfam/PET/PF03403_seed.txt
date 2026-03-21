@@ -1,0 +1,75 @@
+# STOCKHOLM 1.0
+#=GS PAFA_CAVPO/48-414  AC P70683.1
+#=GS PAFA_HUMAN/48-416  AC Q13093.1
+#=GS PAFA_HUMAN/48-416  DR PDB; 5LYY A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3F97 B; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5YE8 B; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3D59 B; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAU A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3F98 C; 49-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3F97 A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 6M08 A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAD A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAS A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5YE8 A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 6M07 B; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 6M06 B; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3F98 B; 49-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3D59 A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5LZ9 A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3F96 A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3F96 B; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAT A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3D5E B; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5LZ2 A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5I9I B; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 6M07 A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3D5E A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5I8P B; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5LP1 A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5YE9 A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5YE7 B; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 6M08 B; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5YEA A; 53-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5LZ4 A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAP A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3F9C A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAR A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3F9C B; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAL A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5YE9 B; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 6M06 A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5YE7 A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5I9I A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5YEA B; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5LZ5 A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAH A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5LZ8 A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAO A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 3F98 A; 49-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5I8P A; 54-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5JAN A; 55-416;
+#=GS PAFA_HUMAN/48-416  DR PDB; 5LZ7 A; 55-416;
+#=GS PAFA_MOUSE/47-415  AC Q60963.2
+#=GS PAFA_CHICK/31-410  AC Q90678.1
+#=GS PAFA2_HUMAN/1-381  AC Q99487.1
+#=GS PLG7_SCHPO/3-430   AC Q9URV1.1
+#=GS PAFA_CAEEL/4-372   AC Q22943.2
+PAFA_CAVPO/48-414             ITSFGHTTIPKGNGPYSVG.............CTDLMSGYT.N..QSSFLRLYYPS...Q.DNDFPDALWIPNEEYFQGLTETLGASSFLGKLL.KLLYGSVKVPAKWNSPLKTG..EK.YPLIIFSHGLGAFRSIYSAIGIELASHGFIVAAVEHRDESAAATYYFQDAPAAESG.......NRSWIYYKVG...NLETEERKRQLRQRGEECSQALSWLLSID.EGEPVKNV.....LDLNFD...IQQLKGSLDRSK..VAIIGHSFGGATVI.......QTLSED....QRFRCGIALDPWMFPVGEDVH.SKIPQPLFFINSEYFQSANDTKKIEK......................FYQPQKERKMIAVKGSVHHNFVDFTFATGKIIGQMLSL..KGKIDSEVAMDLINKASLAFLQKYLGLDKNFDQWNSLMEGDDENL
+#=GR PAFA_CAVPO/48-414  pAS   ............................................................................................................................................................................................................................................................................*.................................*.............................................................................*...................................................................
+PAFA_HUMAN/48-416             AASFGQTKIPRGNGPYSVG.............CTDLMFDHT.N..KGTFLRLYYPS...Q.DNDRLDTLWIPNKEYFWGLSKFLGTHWLMGNIL.RLLFGSMTTPANWNSPLRPG..EK.YPLVVFSHGLGAFRTLYSAIGIDLASHGFIVAAVEHRDRSASATYYFKDQSAAEIG.......DKSWLYLRTLKQ.EEETHIRNEQVRQRAKECSQALSLILDID.HGKPVKNA.....LDLKFD...MEQLKDSIDREK..IAVIGHSFGGATVI.......QTLSED....QRFRCGIALDAWMFPLGDEVY.SRIPQPLFFINSEYFQYPANIIKMKK......................CYSPDKERKMITIRGSVHQNFADFTFATGKIIGHMLKL..KGDIDSNVAIDLSNKASLAFLQKHLGLHKDFDQWDCLIEGDDENL
+#=GR PAFA_HUMAN/48-416  SS    XXXXXXSSS---SSSSEEE.............EEEEEESSS.T..TSEEEEEEEEB...S.SSSS-EEESS-SHHHHHHHHHHHTS-HHHHHHH.HHHHTT-EESSEET--B--S..S-.EEEEEEE--TT--TTTTHHHHHHHHHTT-EEEEE---SS-SSEEEE-SSHHHHHHT.......--EEEE-----G.GGHHHHHHHHHHHHHHHHHHHHHHHHHHH.TT-----S.....S--SS-...GGGGTT-EEEEE..EEEEEETHHHHHHH.......HHHHH-....TTS-EEEEES---TTS-GGGG.GG--S-EEEEEETTT--HHHHHHHHT......................T-BTTS-EEEEEETT--GGGGSGGGGSS-HHHHHHTTS..S-SS-HHHHHHHHHHHHHHHHHHHHT--SSGGGGHHHHTT-STTE
+#=GR PAFA_HUMAN/48-416  AS    ............................................................................................................................................................................................................................................................................*.................................*.............................................................................*...................................................................
+PAFA_MOUSE/47-415             AAGSGHSKIPKGNGSYPVG.............CTDLMFGYG.N..ESVFVRLYYPA...Q.DQGRLDTVWIPNKEYFLGLSIFLGTPSIVGNIL.HLLYGSLTTPASWNSPLRTG..EK.YPLIVFSHGLGAFRTIYSAIGIGLASNGFIVATVEHRDRSASATYFFEDQVAAKVE.......NRSWLYLRKVKQ.EESESVRKEQVQQRAIECSRALSAILDIE.HGDPKENV.....LGSAFD...MKQLKDAIDETK..IALMGHSFGGATVL.......QALSED....QRFRCGVALDPWMYPVNEELY.SRTLQPLLFINSAKFQTPKDIAKMKK......................FYQPDKERKMITIKGSVHQNFDDFTFVTGKIIGNKLTL..KGEIDSRVAIDLTNKASMAFLQKHLGLQKDFDQWDPLVEGDDENL
+#=GR PAFA_MOUSE/47-415  pAS   ............................................................................................................................................................................................................................................................................*.................................*.............................................................................*...................................................................
+PAFA_CHICK/31-410             GGAEKGYRIPAGKGPHAVG.............CTDLMTGDA.A..EGSFLRLYYLSC..D.DTDTEETPWIPDKEYYQGLSDFLNVYRALGERLFQYYVGSVTCPAKSNAAFKPG..EK.YPLLVFSHGLGAFRTIYSAICIEMASQGFLVAAVEHRDESASATYFCKKKADSEPEEDQTSGVEKEWIYYRKLRAGEEERCLRHKQVQQRAQECIKALNLILKIS.SGEEVMNV.....LNSDFD...WNHLKDSVDTSR..IAVMGHSFGGATVI.......ESLSKE....IRFRCGIALDAWMLPVGDDTYQSSVQQPLLFINSEKFQWAANILKMKK......................LSSNDTNKKMITIKGSVHQSFPDFTFVSGEIIGKFFKL..KGEIDPNEAIDICNHASLAFLQKHLSLKRDFDKWDSLVDGIGPNV
+#=GR PAFA_CHICK/31-410  pAS   ............................................................................................................................................................................................................................................................................*.................................*.............................................................................*...................................................................
+PAFA2_HUMAN/1-381             MGVNQSVGFPPVTGPHLVG.............CGDVMEGQN.L..QGSFFRLFYPCQ..KAEETMEQPLWIPRYEYCTGLAEYLQFNKRCGGLLFNLAVGSCRLPVSWNGPFKTK..DSGYPLIIFSHGLGAFRTLYSAFCMELASRGFVVAVPEHRDRSAATTYFCKQAP..EENQPTNESLQEEWIPFRRVEEGEKEFHVRNPQVHQRVSECLRVLKILQEVT.AGQTVFNI.....LPGGLD...LMTLKGNIDMSR..VAVMGHSFGGATAI.......LALAKE....TQFRCAVALDAWMFPLERDFY.PKARGPVFFINTEKFQTMESVNLMKK......................ICAQHEQSRIITVLGSVHRSQTDFAFVTGNLIGKFFSTETRGSLDPYEGQEVMVRAMLAFLQKHLDLKEDYNQWNNLIEGIGPSL
+#=GR PAFA2_HUMAN/1-381  pAS   ............................................................................................................................................................................................................................................................................*.................................*.............................................................................*...................................................................
+PLG7_SCHPO/3-430              LGFSSKKQLPAYCGPLPVGSLVLELSVPEEFRCEYKTIEHK.L..RTVKVRIFYPLDPTKDVEPRTDELWLPFHE...GIPEVAKGFRWWLLRAFASGLTNLALPVYKGELFHPPNNGK.LPVFIFSHGLVGSRNVYSSLCGTIASYGIVVLAMEHRDNSAIISTV.RDPLHPEEPPYVVQYRE.....ISDFYA.DATVVLQNERLLFRQQEIQIALQMIRNINDLGTPDENLPFLCSVDSSFYNSVFQSMKGNLNTAQGELIVAGHSFGAATCAFISGSSTKSLYNDYMFHTEFKCSILYDIWMLPVRQLHL.STMRYPTLMIISYEFRRFVDNFQALESWLVNKDSENQNAGESADEKMSVVPLKKYSHVFVYDGTVHANQSDLPILLPRMVLRVLKG..KFEADPYEALRINTRSSVQFLREN...HVENVQGDNDPSSLQTNI
+#=GR PLG7_SCHPO/3-430   pAS   ............................................................................................................................................................................................................................................................................*.................................*.............................................................................*...................................................................
+PAFA_CAEEL/4-372              YISSPQVLTRQVSGQFQVG.............CKDLMIDGTVLGDRGLFMRLYFPTD.SQAADISSYPLWLPKPQYAHGLGEYLGQSSQKMNVITSTVVGEKREDCIENAQMSTK.CDK.WPIVVFSHGLGGSRTFYSTYCTSLASHGYVVAAVEHKDHSACWTYQLTEKNGELVE.......QPIKIKLIEKNE.KNEFKIRNQQVGKRVTECVKALNVLEQLN.LGTVPEKV....LIGNDYN...WAQFKNKLVMSS..ASVIGHSFGGATSL.......ASSAYT....TDFQKAIVFDGWMYPLDSTQQ.EQAKQPTLFLNVGDWQWNENLDVMKK......................IISHNDGNLALTLNGAVHQCFSDFPFIFPSWLAKKFGV..QGRTEPSLCMQAAIELSLAFLENGKD.........GAQKLKDEKF
+#=GR PAFA_CAEEL/4-372   pAS   ............................................................................................................................................................................................................................................................................*.................................*.............................................................................*...................................................................
+#=GC SS_cons                  XXXXXXSSS---SSSSEEE.............EEEEEESSS.T..TSEEEEEEEEB...S.SSSS-EEESS-SHHHHHHHHHHHTS-HHHHHHH.HHHHTT-EESSEET--B--S..S-.EEEEEEE--TT--TTTTHHHHHHHHHTT-EEEEE---SS-SSEEEE-SSHHHHHHT.......--EEEE-----G.GGHHHHHHHHHHHHHHHHHHHHHHHHHHH.TT-----S.....S--SS-...GGGGTT-EEEEE..EEEEEETHHHHHHH.......HHHHH-....TTS-EEEEES---TTS-GGGG.GG--S-EEEEEETTT--HHHHHHHHT......................T-BTTS-EEEEEETT--GGGGSGGGGSS-HHHHHHTTS..S-SS-HHHHHHHHHHHHHHHHHHHHT--SSGGGGHHHHTT-STTE
+#=GC seq_cons                 huupspsplPtssGPasVG.............CsDLMhsts....cusFlRLYYPs...p.-psp.-sLWIPpcEYh.GLu-aLss.phhGplL.phhhGShphPsphNush+ss..-K.YPLllFSHGLGAFRTlYSAlshpLASpGFlVAAVEHRDcSAusTYahc-tsssE.t.......pcpWlhh+chpt.-pEhplRpcQVpQRspEC.pALshlhpIs.tGpsscNl.....LsssFD...hppLKsslDpo+..lAVhGHSFGGATsl.......poLuc-....pcFRCuIALDsWMaPlsc-ha.Sph.QPlhFINStcFQhstslhpMKK......................hhs.ccpp+hITlcGSVHpsFsDFsFloGclIG+hhpl..KGclDsp.Ah-lss+ASLAFLQKaLsLcc-asQWssLh-G.spNl
+//

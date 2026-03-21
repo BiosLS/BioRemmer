@@ -1,0 +1,64 @@
+# ── Pipeline outputs ─────────────────────────────────────────
+Results/
+Plots/
+*.log
+*.html
+
+# ── Sequencing files (outside test/) ─────────────────────────
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.sam
+*.sra
+# Allow test/ FASTQs (tracked via Git LFS)
+!test/*.fastq.gz
+!test/*.fq.gz
+
+# ── Intermediate files ───────────────────────────────────────
+*.fasta
+*.fna
+*.faa
+*.fa
+*.gff
+*.gbk
+# Allow database files
+!databases/**
+!bin/vamphyre/genomes/**
+
+# ── Trimmomatic temp ─────────────────────────────────────────
+*.t_R1.fastq.gz
+*.t_R2.fastq.gz
+*.u_R1.fastq.gz
+*.u_R2.fastq.gz
+trimmomatic_summary.txt
+
+# ── R ────────────────────────────────────────────────────────
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+
+# ── conda ────────────────────────────────────────────────────
+.conda/
+
+# ── OS / editor ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+.vscode/
+.idea/
+*.swp
+*~
+
+# ── Junk install artifacts ───────────────────────────────────
+install.log
+*_fixed.sh
+*_fixed.yml
+*_split.sh
+*_core.yml

@@ -1,0 +1,23 @@
+name: bioremmer_r
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+
+dependencies:
+  - r-base=4.3.3
+  - r-rmarkdown
+  - r-ggplot2
+  - r-data.table
+  - r-dplyr
+  - r-tidyr
+  - r-viridis
+  - r-huxtable
+  - r-knitr
+  - r-ape
+  - r-phangorn
+  - bioconductor-ggtree
+  - bioconductor-treeio
+  - r-jsonlite
+  - r-kableextra
+  - r-rcolorbrewer

@@ -1,0 +1,5 @@
+! Initialization and symmetry values Unified Model
+data INIvalues
+> GC	0.10	-2.80	0.97
+> AT	2.30	4.10	1.03
+> SM	0.00	-1.40	0.43

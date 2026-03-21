@@ -1,0 +1,1210 @@
+Plastic compounds,Synonyms,Formula ,SMILES,Reaction 1,Enzymes,Microorganisms,Gene,Accession,EC ,pfam,KEGG record,GO,Pathway,PubChem,BioCyc,Publications ,Title,Lineage,Sequence
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,poly(ethylene terephthalate) hydrolase,Ideonella sakaiensis 201-F6,ISF6_4831,A0A0K8P6T7,EC:3.1.1.101,PF01738,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.101,GO:0071310,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.science.org/doi/10.1126/science.aad6359,A bacterium that degrades and assimilates poly(ethylene terephthalate),Bacteria › Proteobacteria › Betaproteobacteria › Burkholderiales › Ideonella ,">sp|A0A0K8P6T7|PETH_IDESA Poly(ethylene terephthalate) hydrolase OS=Ideonella sakaiensis (strain NBRC 110686 / TISTR 2288 / 201-F6) OX=1547922 GN=ISF6_4831 PE=1 SV=1
+MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRP
+SGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQP
+SSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAA
+PQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCA
+NSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Lipase,Oleispira antarctica RB-8,lipA,R4YKL9,EC 3.1.1.1,PF01738?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.102,GO:0016787,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5881046/
+https://journals.asm.org/doi/10.1128/AEM.01842-21?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed","New Insights into the Function and Global Distribution of Polyethylene Terephthalate (PET)-Degrading Bacteria and Enzymes in Marine and Terrestrial Metagenomes
+Antarctic Polyester Hydrolases Degrade Aliphatic and Aromatic Polyesters at Moderate Temperatures",Bacteria › Proteobacteria › Gammaproteobacteria › Oceanospirillales › Oceanospirillaceae › Oleispira › ,">tr|R4YKL9|R4YKL9_OLEAN Lipase OS=Oleispira antarctica RB-8 OX=698738 GN=lipA PE=4 SV=1
+MNKSILKKLSFGTSVLLVSMNALSWTPSPTPNPDPIPDPTPCQDDCDFTRGPNPTPSSLE
+ASTGPYSVATRSVASSVSGFGGGTLHYPTNTTGTMGAIAVVPGFLLQESSIDFWGPKLAS
+HGFVVITISANSGFDQPASRATQLGRALDYVINQSNGSNSPISGMVDTTRLGVVGWSMGG
+GGALQLASGDRLSAAIPIAPWNQGGNRFDQIETPTLVIACENDVVASVNSHASPFYNRIP
+STTDKAYLEINGGSHFCANDGGSIGGLLGKYGVSWMKRFIDNDLRYDAFLCGPDHAANRS
+VSEYRDTCNY"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Uncharacterized protein,Vibrio gazogenes,BSQ33_03270,A0A1Z2SIQ1,EC 3.1.1.1,N/A,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.103,,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5881046/,New Insights into the Function and Global Distribution of Polyethylene Terephthalate (PET)-Degrading Bacteria and Enzymes in Marine and Terrestrial Metagenomes,Bacteria › Proteobacteria › Gammaproteobacteria › Vibrionales › Vibrionaceae › Vibrio ,">tr|A0A1Z2SIQ1|A0A1Z2SIQ1_VIBGA Uncharacterized protein OS=Vibrio gazogenes OX=687 GN=BSQ33_03270 PE=4 SV=1
+MMNVLTKCKLALGIIAIFFSLPSFAVPCSDCSNGFERGQVPRVDQLESSRGPYSVKTINV
+SRLARGFGGGTIHYSTESGGQQGIIAVVPGYVSLEGSIKWWGPRLASWGFTVITIDTNTI
+YDQPDSRASQLSAAIDYVIDKGNDRSSPIYGLVDPNRVGVIGWSMGGGGSLKLATDRKID
+AVIPQAPWYLGLSRFSSITSPTMIIACQADVVAPVSVHASRFYNQIPGTTPKAYFEIALG
+SHFCANTGYPSEDILGRNGVAWMKRFIDKDERYTQFLCGQNFDSSLRVSEYRDNCSYY"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Triacylglycerol lipase,Polyangium brachysporum,AAW51_2473,A0A0G3BI90,EC 3.1.1.1,PF01738?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.104,GO:0016787,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5881046/,New Insights into the Function and Global Distribution of Polyethylene Terephthalate (PET)-Degrading Bacteria and Enzymes in Marine and Terrestrial Metagenomes,Bacteria › Proteobacteria › Betaproteobacteria › Burkholderiales › ,">tr|A0A0G3BI90|A0A0G3BI90_9BURK Triacylglycerol lipase OS=[Polyangium] brachysporum OX=413882 GN=AAW51_2473 PE=4 SV=1
+MPPDCVLPRRLAAAALLASATLVPLSAAAQTNPYQRGPDPTTRDLEDSRGPFRYASTNVR
+SPSGYGAGTIYYPTDVSGSVGAVAVVPGYLARQSSIRWWGPRLASHGFVVITLDTRSTSD
+QPASRSAQQMAALRQVVALSETRSSPIYGKVDPNRLAVMGWSMGGGGTLISARDNPSLKA
+AVPFAPWHNTANFSGVQVPTLVIACENDTVAPISRHASSFYNSFSSSLAKAYLEINNGSH
+TCANTGNSNQALIGKYGVAWIKRFVDNDTRYSPFLCGAPHQADLRSSRLSEYRESCPY"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,cutinase,Pseudomonas oleovorans,PpCutA,ANP21911.1,EC 3.1.1.74,PF01738?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.105,GO:0016787,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://pubs.acs.org/doi/10.1021/acs.est.7b00062,Hydrolysis of Ionic Phthalic Acid Based Polyesters by Wastewater Microorganisms and Their Enzymes,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas; Pseudomonas oleovorans/pseudoalcaligenes group.,">ANP21911.1 cutinase A precursor [Pseudomonas oleovorans]
+MINRTLPNSLLSMLAAGALLLSTSVMATNPPVDEPTDPGDSYARGPDPTVAFLEASSGPYSTRTSRVSGL
+VSGFGGGTIHYPTGTTGTMAAIVVIPGFVSAESSIDWWGPKLASHGFVVMTIDTNTGFDQPPSRARQINN
+ALDYLVDQNSRRTSPVNGMIDTDRLGVIGWSMGGGGTLRVASQGRIKAAIPLAPWDTTNARSVQAPTLIF
+ACQADIIAPVGVHASPFYNQLPNDIEKAYVEISGGSHYCANGGGLNNDVLSRLGVSWMKRFLDNDTRYSQ
+FLCGPNHTSDRRVSEYRGNCPY"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,lipase,Halopseudomonas pelagia CL-AP6,PpelaLip,ANP21910.1,EC 3.1.1.74,PF01738,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.106,GO:0016787,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://pubs.acs.org/doi/10.1021/acs.est.7b00062,Hydrolysis of Ionic Phthalic Acid Based Polyesters by Wastewater Microorganisms and Their Enzymes,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Halopseudomonas.,">ANP21910.1 lipase [Halopseudomonas pelagia]
+MKNTLIPKSLSTLFAASALMLSATVMAANPAPPQDPVEPGGFARGPDPSVSFLEADRGPYSVNTSRVSGL
+VSGFGGGTIHYPSGTTGTMAAIVVIPGYVSAESSIEWWGPKLASHGFVVMTIDTNTSFDQPPSRARQINS
+ALDYLIDQNTATRSAVRGMIDTNRLGVVGWSMGGGGTLRVATEGRISAAIPLAPWDTSSLQFRNVQAPTL
+IFACESDIIAPVGSHASPFYNRLPGDLNKAFVEIDGGNHYCANGAASFGRYDSVLSRMGVSWMKLHLDQD
+ERYKQFLCGPNHTADNRISEYRGNCPY"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,DLH domain-containing protein,Pseudomonas aestusnigri,B7O88_11480,A0A1H6AD45,EC 3.1.1.1,PF01738?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.107,GO:0016787,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://pubmed.ncbi.nlm.nih.gov/32117139/,A Novel Polyester Hydrolase From the Marine Bacterium Pseudomonas aestusnigri - Structural and Functional Insights,Bacteria › Proteobacteria › Gammaproteobacteria › Pseudomonadales › Pseudomonadaceae › Pseudomonas › ,">tr|A0A1H6AD45|A0A1H6AD45_9PSED DLH domain-containing protein OS=Pseudomonas aestusnigri OX=857252 GN=B7O88_11480 PE=1 SV=1
+MPFNKKSVLALCGAGALLFSMSALANNPAPTDPGDSGGGSAYQRGPDPSVSFLEADRGQY
+SVRSSRVSSLVSGFGGGTIYYPTGTTGTMGAVVVIPGFVSAESSIDWWGPKLASYGFVVM
+TIDTNTGFDQPPSRARQINNALDYLVSQNSRSSSPVRGMIDTNRLGVIGWSMGGGGTLRV
+ASEGRIKAAIPLAPWDTTSYYASRSQAPTLIFACESDVIAPVLQHASPFYNSLPSSIDKA
+FVEINGGSHYCGNGGSIYNDVLSRFGVSWMKLHLDEDSRYKQFLCGPNHTSDSQISDYRG
+NCPY"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,lipase,Pseudomonas mendocina ATCC 53552,N/A,2FX5_A,EC 3.1.1.3,N/A,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.108,,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://pubs.acs.org/doi/abs/10.1021/ma9005318,Cutinase-Catalyzed Hydrolysis of Poly(ethylene terephthalate),Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas,">pdb|2FX5|A Chain A, lipase
+APLPDTPGAPFPAVANFDRSGPYTVSSQSEGPSCRIYRPRDLGQGGVRHPVILWGNGTGAGPSTYAGLLS
+HWASHGFVVAAAETSNAGTGREMLACLDYLVRENDTPYGTYSGKLNTGRVGTSGHSQGGGGSIMAGQDTR
+VRTTAPIQPYTLGLGHDSASQRRQQGPMFLMSGGGDTIAFPYLNAQPVYRRANVPVFWGERRYVSHFEPV
+GSGGAYRGPSTAWFRFQLMDDQDARATFYGAQCSLCTSLLWSVERRGL"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Lipase 1,Moraxella sp. (strain TA144),lip1,P19833,EC 3.1.1.3,PF12695,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.109,"GO:0016042
+GO:0006629",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://journals.asm.org/doi/abs/10.1128/AEM.01842-21,Antarctic Polyester Hydrolases Degrade Aliphatic and Aromatic Polyesters at Moderate Temperatures,Bacteria › Proteobacteria › Gammaproteobacteria › Moraxellales › Moraxellaceae › Moraxella › unclassified Moraxella ,">sp|P19833|LIP1_MORS1 Lipase 1 OS=Moraxella sp. (strain TA144) OX=77152 GN=lip1 PE=1 SV=1
+MFIMIKKSELAKAIIVTGALVFSIPTLAEVTLSETTVSSIKSEATVSSTKKALPATPSDC
+IADSKITAVALSDTRDNGPFSIRTKRISRQSAKGFGGGTIHYPTNASGCGLLGAIAVVPG
+YVSYENSIKWWGPRLASWGFVVITINTNSIYDDPDSRAAQLNAALDNMIADDTVGSMIDP
+KRLGAIGWSMGGGGALKLATERSTVRAIMPLAPYHDKSYGEVKTPTLVIACEDDRIAETK
+KYANAFYKNAIGPKMKVEVNNGSHFCPSYRFNEILLSKPGIAWMQRYINNDTRFDKFLCA
+NENYSKSPRISAYDYKDCP"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Arylesterase,Pseudomonas pseudoalcaligenes (strain CECT 5344),tesA,W6R2Y2,EC 3.1.1.2,PF13472,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.110,"GO:0016787
+GO:0016788",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://link.springer.com/article/10.1007/s00253-016-7992-8
+https://www.sciencedirect.com/science/article/abs/pii/S0168165617300299?via%3Dihub","PpEst is a novel PBAT degrading polyesterase identified by proteomic screening of Pseudomonas pseudoalcaligenes
+A new arylesterase from Pseudomonas pseudoalcaligenes can hydrolyze ionic phthalic polyesters",Bacteria › Proteobacteria › Gammaproteobacteria › Pseudomonadales › Pseudomonadaceae › Pseudomonas › Pseudomonas oleovorans/pseudoalcaligenes group,">tr|W6R2Y2|W6R2Y2_PSEP5 Arylesterase OS=Pseudomonas pseudoalcaligenes (strain CECT 5344) OX=1182590 GN=tesA PE=4 SV=1
+MRAWWLSGALALMFWAQGAVAGTLLVVGDSISAAFGLDSRQGWVALLEKRLSEEGFEHSV
+VNASISGDTSAGGAARLSALLAEHKPELVIIELGGNDGLRGQPPAQLQQNLASMVEQSQQ
+AGAKVLLLGMKLPPNYGVRYTTAFAQVFTDLAEQKQVSLVPFFLEGVGGVPGMMQADGIH
+PAEAAQEILLDNVWPTLKPML"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Leaf-branch compost cutinase,Unknown prokaryotic organism,N/A,G9BY57,EC 3.1.1.74,PF12695?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.111,"GO:0016787
+GO:0008126
+GO:0050525",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://pubs.acs.org/doi/10.1021/acs.biochem.7b01189
+https://hal.archives-ouvertes.fr/hal-02545880
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3294458/","Stabilizing Leaf and Branch Compost Cutinase (LCC) with Glycosylation: Mechanism and Effect on PET Hydrolysis
+An engineered PET depolymerase to break down and recycle plastic bottles
+Isolation of a Novel Cutinase Homolog with Polyethylene Terephthalate-Degrading Activity from Leaf-Branch Compost by Using a Metagenomic Approach",Bacteria › environmental samples ,">sp|G9BY57|PETH_UNKP Leaf-branch compost cutinase OS=Unknown prokaryotic organism OX=2725 PE=1 SV=1
+MDGVLWRVRTAALMAALLALAAWALVWASPSVEAQSNPYQRGPNPTRSALTADGPFSVAT
+YTVSRLSVSGFGGGVIYYPTGTSLTFGGIAMSPGYTADASSLAWLGRRLASHGFVVLVIN
+TNSRFDYPDSRASQLSAALNYLRTSSPSAVRARLDANRLAVAGHSMGGGGTLRIAEQNPS
+LKAAVPLTPWHTDKTFNTSVPVLIVGAEADTVAPVSQHAIPFYQNLPSTTPKVYVELDNA
+SHFAPNSNNAAISVYTISWMKLWVDNDTRYRQFLCNVNDPALSDFRTNNRHCQ"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Poly(ethylene terephthalate) hydrolase,bacterium HR29,HRbin29_00073,GBD22443.1,EC 3.1.1.74,PF12695,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.112,GO:0016787,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.sciencedirect.com/science/article/abs/pii/S0141022920302088?via%3Dihub,Secretory expression in Bacillus subtilis and biochemical characterization of a highly thermostable polyethylene terephthalate hydrolase from bacterium HR29,bacterium HR29,">GBD22443.1 Poly(ethylene terephthalate) hydrolase [bacterium HR29]
+MQVVLGRVRSAGLLAALLALAAWALVWASPSAEAQSNPYQRGPNPTRSALTTDGPFSVATYSVSRLSVSG
+FGGGVIYYPTGTTLTFGGIAMSPGYTADASSLAWLGRRLASHGFVVIVINTNSRLDFPDSRASQLSAALN
+YLRTSSPSAVRARLDANRLAVAGHSMGGGATLRISEQIPTLKAGVPLTPWHTDKTFNTPVPQLIVGAEAD
+TVAPVSQHAIPFYQNLPSTTPKVYVELDNATHFAPNSPNAAISVYTISWMKLWVDNDTRYRQFLCNVNDP
+ALSDFRSNNRHCQ"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,BTA-hydrolase 1,Thermobifida fusca (Thermomonospora fusca),bta1,Q6A0I4,EC 3.1.1.74,PF12740?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.113,"GO:0016787
+GO:0050525
+GO:0052689
+",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1705536/
+https://onlinelibrary.wiley.com/doi/abs/10.1002/marc.200500410
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC106223/
+https://pubs.acs.org/doi/10.1021/bm049582t","Production of a recombinant polyester-cleaving hydrolase from Thermobifida fusca in Escherichia coli
+Enzymatic Degradation of Poly(ethylene terephthalate): Rapid Hydrolyse using a Hydrolase from T. fusca
+Biodegradation of aliphatic-aromatic copolyesters by Thermomonospora fusca and other thermophilic compost isolates
+Characterization of a new extracellular hydrolase from Thermobifida fusca degrading aliphatic-aromatic copolyesters",Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida ,">tr|Q6A0I4|Q6A0I4_THEFU BTA-hydrolase 1 OS=Thermobifida fusca OX=2021 GN=bta1 PE=1 SV=1
+MAVMTPRRERSSLLSRALQVTAAAATALVTAVSLAAPAHAANPYERGPNPTDALLEASSG
+PFSVSEENVSRLSASGFGGGTIYYPRENNTYGAVAISPGYTGTEASIAWLGERIASHGFV
+VITIDTITTLDQPDSRAEQLNAALNHMINRASSTVRSRIDSSRLAVMGHSMGGGGTLRLA
+SQRPDLKAAIPLTPWHLNKNWSSVTVPTLIIGADLDTIAPVATHAKPFYNSLPSSISKAY
+LELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQFLCPGPRDGLFGEVEEYRSTCP
+F"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,BTA-hydrolase 2,Thermobifida fusca (Thermomonospora fusca),bta2,Q6A0I3,EC 3.1.1.74,PF12740?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.114,,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1705536/
+https://onlinelibrary.wiley.com/doi/abs/10.1002/marc.200500410
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC106223/
+https://pubs.acs.org/doi/10.1021/bm049582t","Production of a recombinant polyester-cleaving hydrolase from Thermobifida fusca in Escherichia coli
+Enzymatic Degradation of Poly(ethylene terephthalate): Rapid Hydrolyse using a Hydrolase from T. fusca
+Biodegradation of aliphatic-aromatic copolyesters by Thermomonospora fusca and other thermophilic compost isolates
+Characterization of a new extracellular hydrolase from Thermobifida fusca degrading aliphatic-aromatic copolyesters",Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida ,">tr|Q6A0I3|Q6A0I3_THEFU BTA-hydrolase 2 OS=Thermobifida fusca OX=2021 GN=bta2 PE=4 SV=1
+MAVMTPRRERSSLLSRALRFTAAAATALVTAVSLAAPAHAANPYERGPNPTDALLEARSG
+PFSVSEERASRFGADGFGGGTIYYPRENNTYGAVAISPGYTGTQASVAWLGKRIASHGFV
+VITIDTNTTLDQPDSRARQLNAALDYMINDASSAVRSRIDSSRLAVMGHSMGGGGSLRLA
+SQRPDLKAAIPLTPWHLNKNWSSVRVPTLIIGADLDTIAPVLTHARPFYNSLPTSISKAY
+LELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQFLCPGPRDGLFGEVEEYRSTCP
+F"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Cutinase 1,Thermobifida fusca (Thermomonospora fusca),cut1,E9LVI0,EC 3.1.1.74,PF12740,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.115,,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://pubs.acs.org/doi/abs/10.1021/ma200949p,Enzymatic Surface Hydrolysis of PET: Effect of Structural Diversity on Kinetic Properties of Cutinases from Thermobifida,Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida ,">tr|E9LVI0|E9LVI0_THEFU Cutinase 1 (Fragment) OS=Thermobifida fusca OX=2021 GN=cut1 PE=4 SV=1
+MANPYERGPNPTDALLEARSGPFSVSEENVSRLSASGFGGGTIYYPRENNTYGAVAISPG
+YTGTEASIAWLGERIASHGFVVITIDTITTLDQPDSRAEQLNAALNHMINRASSTVRSRI
+DSSRLAVMGHSMGGGGSLRLASQRPDLKAAIPLTPWHLNKNWSSVRVPTLIIGADLDTIA
+PVLTHARPFYNSLPTSISKAYLELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQF
+LCPGPRDGLFGEVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Triacylglycerol lipase,Thermobifida fusca (strain YX),Tfu_0883,Q47RJ6,EC 3.1.1.74,PF12740,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.116,"GO:0016787
+GO:0004806
+GO:0050525
+GO:0052689",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3258855/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3697513/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1899369/","Identification and characterization of bacterial cutinase
+Extracellular location of Thermobifida fusca cutinase expressed in Escherichia coli BL21(DE3) without mediation of a signal peptide
+Genome sequence and analysis of the soil cellulolytic actinomycete Thermobifida fusca YX",Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida,">tr|Q47RJ6|Q47RJ6_THEFY Triacylglycerol lipase OS=Thermobifida fusca (strain YX) OX=269800 GN=Tfu_0883 PE=4 SV=1
+MAVMTPRRERSSLLSRALQVTAAAATALVTAVSLAAPAHAANPYERGPNPTDALLEASSG
+PFSVSEENVSRLSASGFGGGTIYYPRENNTYGAVAISPGYTGTEASIAWLGERIASHGFV
+VITIDTITTLDQPDSRAEQLNAALNHMINRASSTVRSRIDSSRLAVMGHSMGGGGTLRLA
+SQRPDLKAAIPLTPWHLNKNWSSVTVPTLIIGADLDTIAPVATHAKPFYNSLPSSISKAY
+LELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQFLCPGPRDGLFGEVEEYRSTCP
+F"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Triacylglycerol lipase,Thermobifida fusca (strain YX),Tfu_0882,Q47RJ7,EC 3.1.1.74,PF12740,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.117,"GO:0016787
+GO:0004806
+GO:0050525
+GO:0052689",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3258855/,Identification and Characterization of Bacterial Cutinase,Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida,">tr|Q47RJ7|Q47RJ7_THEFY Triacylglycerol lipase OS=Thermobifida fusca (strain YX) OX=269800 GN=Tfu_0882 PE=4 SV=1
+MPPHAARPGPAQNRRGRAMAVITPRRERSSLLSRALRFTAAAATALVTAVSLAAPAHAAN
+PYERGPNPTDALLEARSGPFSVSEERASRFGADGFGGGTIYYPRENNTYGAVAISPGYTG
+TQASVAWLGERIASHGFVVITIDTNTTLDQPDSRARQLNAALDYMINDASSAVRSRIDSS
+RLAVMGHSMGGGGTLRLASQRPDLKAAIPLTPWHLNKNWSSVRVPTLIIGADLDTIAPVL
+THARPFYNSLPTSISKAYLELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQFLCP
+GPRDGLFGEVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Cutinase,Thermobifida fusca (Thermomonospora fusca),cut-1.KW3,E5BBQ2,3.1.1.101,PF12740?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.118,"GO:0016787
+GO:0050525",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://pubs.acs.org/doi/abs/10.1021/ma200949p,Enzymatic Surface Hydrolysis of PET: Effect of Structural Diversity on Kinetic Properties of Cutinases from Thermobifida,Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida ,">tr|E5BBQ2|E5BBQ2_THEFU Cutinase OS=Thermobifida fusca OX=2021 GN=cut-1.KW3 PE=4 SV=1
+MPPHAARPGPAQNRRGCAMAVMTPRRERSSLLSRALQVTAAAATALVTAVSLAAPAHAAN
+PYERGPNPTDALLEARSGPFSVSEENVSRLGASGFGGGTIYYPRENNTYGAVAISPGYTG
+TQASVAWLGKRIASHGFVVITIDTITTLDQPDSRARQLNAALDYMINDASSAVRSRIDSS
+RLAVMGHSMGGGGSLRLASQRPDLKAAIPLTPWHLNKNWSSVRVPTLIIGADLDTIAPVL
+THARPFYNSLPTSISKAYLELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQFLCP
+GPRDGLFGEVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Cutinase,Thermobifida fusca (Thermomonospora fusca),cut-2.KW3,E5BBQ3,EC 3.1.1.74,PF12740,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.119,"GO:0016787
+GO:0050525",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6831586/
+https://link.springer.com/article/10.1007/s00253-014-5672-0
+https://onlinelibrary.wiley.com/doi/10.1002/bit.25941","Efficient Degradation of Poly(ethylene terephthalate) with Thermobifida fusca Cutinase Exhibiting Improved Catalytic Activity Generated using Mutagenesis and Additive-based Approaches
+Structural and functional studies on a thermostable polyethylene terephthalate degrading hydrolase from Thermobifida fusca
+Engineered bacterial polyester hydrolases efficiently degrade polyethylene terephthalate due to relieved product inhibition",Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida ,">tr|E5BBQ3|E5BBQ3_THEFU Cutinase (Fragment) OS=Thermobifida fusca OX=2021 GN=cut-2.KW3 PE=1 SV=1
+ANPYERGPNPTDALLEARSGPFSVSEENVSRLSASGFGGGTIYYPRENNTYGAVAISPGY
+TGTEASIAWLGERIASHGFVVITIDTITTLDQPDSRAEQLNAALNHMINRASSTVRSRID
+SSRLAVMGHSMGGGGSLRLASQRPDLKAAIPLTPWHLNKNWSSVTVPTLIIGADLDTIAP
+VATHAKPFYNSLPSSISKAYLELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQFL
+CPGPRDGLFGEVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,cutinase,Thermobifida fusca NRRL B-8184,cut1,AET05798.1,EC 3.1.1.74,PF12740?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.120,"GO:0016787
+GO:0052689
+GO:0004806
+GO:0050525",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://link.springer.com/article/10.1007/s12010-013-0219-x,Production optimization and characterization of recombinant cutinases from Thermobifida fusca sp. NRRL B-8184,Bacteria; Actinobacteria; Streptosporangiales; Nocardiopsaceae; Thermobifida.,">AET05798.1 cutinase [Thermobifida fusca]
+MPPHAARPGPAQNRRGRAMAVITPRRERSSLLSRALRFTAAAATALVTAVSLAAPAHAANPYERGPNPTD
+ALLEARSGPFSVSEERASRFGADGFGGGTIYYPRENNTYGAVAISPGYTGTQASVAWLGERIASHGFVVI
+TIDTNTTLDQPDSRARQLNAALDYMINDASSAVRSRIDSSRLAVMGHSMGGGGTLRLASQRPDLKAAIPL
+TPWHLNKNWSSVRVPTLIIGADLDTIAPVLTHARPFYNSLPTSISKAYLELDGATHFAPNIPNKIIGKYS
+VAWLKRFVDNDTRYTQFLCPGPRDGLFGEVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,cutinase,Thermobifida fusca NRRL B-8184,cut2,AET05799.1,EC 3.1.1.74,PF12740?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.121,"GO:0016787
+GO:0052689
+GO:0004806
+GO:0050525",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://link.springer.com/article/10.1007/s12010-013-0219-x,Production optimization and characterization of recombinant cutinases from Thermobifida fusca sp. NRRL B-8184,Bacteria; Actinobacteria; Streptosporangiales; Nocardiopsaceae; Thermobifida.,">AET05799.1 cutinase [Thermobifida fusca]
+MAVMTPRRERSSLLSRALQVTAAAATALVTAVSLAAPAHAANPYERGPNPTDALLEASSGPFSVSEENVS
+RLSASGFGGGTIYYPRENNTYGAVAISPGYTGTEASIAWLGERIASHGFVVITIDTITTLDQPDSRAEQL
+NAALNHMINRASSTVRSRIDSSRLAVMGHSMGGGGTLRLASQRPDLKAAIPLTPWHLNKNWSSVTVPTLI
+IGADLDTIAPVATHAKPFYNSLPSSISKAYLELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQFL
+CPGPRDGLFGEVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,cutinase 1,Thermobifida cellulosilytica,cut1,ADV92526.1,EC 3.1.1.74,PF12740?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.122,"GO:0016787
+GO:0052689
+GO:0004806
+GO:0050525",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://pubs.acs.org/doi/abs/10.1021/ma200949p
+https://onlinelibrary.wiley.com/doi/10.1002/bit.26372","Enzymatic Surface Hydrolysis of PET: Effect of Structural Diversity on Kinetic Properties of Cutinases from Thermobifida
+Small cause, large effect: Structural characterization of cutinases from Thermobifida cellulosilytica",Bacteria; Actinobacteria; Streptosporangiales; Nocardiopsaceae; Thermobifida.,">ADV92526.1 cutinase 1, partial [Thermobifida cellulosilytica]
+MANPYERGPNPTDALLEASSGPFSVSEENVSRLSASGFGGGTIYYPRENNTYGAVAISPGYTGTEASIAW
+LGERIASHGFVVITIDTITTLDQPDSRAEQLNAALNHMINRASSTVRSRIDSSRLAVMGHSMGGGGTLRL
+ASQRPDLKAAIPLTPWHLNKNWSSVTVPTLIIGADLDTIAPVATHAKPFYNSLPSSISKAYLELDGATHF
+APNIPNKIIGKYSVAWLKRFVDNDTRYTQFLCPGPRDGLFGEVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,cutinase 2,Thermobifida cellulosilytica,cut2,ADV92527.1,EC 3.1.1.74,PF12740?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.123,"GO:0016787
+GO:0052689
+GO:0004806
+GO:0050525",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://pubs.acs.org/doi/abs/10.1021/ma200949p
+https://onlinelibrary.wiley.com/doi/10.1002/bit.26372","Enzymatic Surface Hydrolysis of PET: Effect of Structural Diversity on Kinetic Properties of Cutinases from Thermobifida
+Small cause, large effect: Structural characterization of cutinases from Thermobifida cellulosilytica",Bacteria; Actinobacteria; Streptosporangiales; Nocardiopsaceae; Thermobifida.,">ADV92527.1 cutinase 2, partial [Thermobifida cellulosilytica]
+MANPYERGPNPTDALLEARSGPFSVSEERASRFGADGFGGGTIYYPRENNTYGAVAISPGYTGTQASVAW
+LGERIASHGFVVITIDTNTTLDQPDSRARQLNAALDYMINDASSAVRSRIDSSRLAVMGHSMGGGGTLRL
+ASQRPDLKAAIPLTPWHLNKNWSSVRVPTLIIGADLDTIAPVLTHARPFYNSLPTSISKAYLELDGATHF
+APNIPNKIIGKYSVAWLKRFVDNDTRYTQFLCPGPRDGLFGEVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Triacylglycerol lipase,Thermomonospora curvata,Tcur_1278,D1A9G5,EC 3.1.1.74,PF03403,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.124,"GO:0003847
+GO:0016787
+GO:0004806",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4231364/,Functional characterization and structural modeling of synthetic polyester-degrading hydrolases from Thermomonospora curvata,Bacteria › Actinobacteria › Streptosporangiales › Thermomonosporaceae › Thermomonospora ,">tr|D1A9G5|D1A9G5_THECD Triacylglycerol lipase OS=Thermomonospora curvata (strain ATCC 19995 / DSM 43183 / JCM 3096 / KCTC 9072 / NBRC 15933 / NCIMB 10081 / Henssen B9) OX=471852 GN=Tcur_1278 PE=4 SV=1
+MSLRKSFGLLSATAALVAGLVAAPPAQAAANPYQRGPDPTESLLRAARGPFAVSEQSVSR
+LSVSGFGGGRIYYPTTTSQGTFGAIAISPGFTASWSSLAWLGPRLASHGFVVIGIETNTR
+LDQPDSRGRQLLAALDYLTQRSSVRNRVDASRLAVAGHSMGGGGTLEAAKSRTSLKAAIP
+IAPWNLDKTWPEVRTPTLIIGGELDSIAPVATHSIPFYNSLTNAREKAYLELNNASHFFP
+QFSNDTMAKFMISWMKRFIDDDTRYDQFLCPPPRAIGDISDYRDTCPHT"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Triacylglycerol lipase,Thermomonospora curvata DSM 43183,Tcur_0390,D1A2H1,EC 3.1.1.74,PF03403,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.125,"GO:0003847
+GO:0016787
+GO:0004806",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4231364/,Functional characterization and structural modeling of synthetic polyester-degrading hydrolases from Thermomonospora curvata,Bacteria › Actinobacteria › Streptosporangiales › Thermomonosporaceae › Thermomonospora ,">tr|D1A2H1|D1A2H1_THECD Triacylglycerol lipase OS=Thermomonospora curvata (strain ATCC 19995 / DSM 43183 / JCM 3096 / KCTC 9072 / NBRC 15933 / NCIMB 10081 / Henssen B9) OX=471852 GN=Tcur_0390 PE=4 SV=1
+MKRTLKRALSLLPAAALAASALVAASPAQAAANPYQRGPNPTEASITAARGPFNTAEITV
+SRLSVSGFGGGKIYYPTTTSEGTFGAIAISPGFTAYWSSLEWLGHRLASQGFVVIGIETN
+TTLDQPDQRGQQLLAALDYLTQRSAVRDRVDASRLAVAGHSMGGGGSLEAAKARTSLKAA
+IPLAPWNLDKTWPEVRTPTLIIGGELDAVAPVATHSIPFYNSLSNAPEKAYLELDNASHF
+FPNITNTQMAKYMIAWMKRFIDDDTRYTQFLCPPPSTGLLSDFSDARFTCPM"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Serine hydrolase,Thermobifida halotolerans,N/A,H6WX58,EC 3.1.1.1,PF12146?,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.126,GO:0016787,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.mdpi.com/2073-4360/4/1/617,A New Esterase from Thermobifida halotolerans Hydrolyses Polyethylene Terephthalate (PET) and Polylactic Acid (PLA),Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida ,">tr|H6WX58|H6WX58_9ACTN Serine hydrolase OS=Thermobifida halotolerans OX=483545 PE=4 SV=1
+MANPYERGPNPTNSSIEALRGPFRVDEERVSRLQARGFGGGTIYYPTDNNTFGAVAISPG
+YTGTQSSISWLGERLASHGFVVMTIDTNTTLDQPDSRASQLDAALDYMVEDSSYSVRNRI
+DSSRLAAMGHSMGGGGTLRLAERRPDLQAAIPLTPWHTDKTWGSVRVPTLIIGAENDTIA
+SVRSHSEPFYNSLPGSLDKAYLELDGASHFAPNLSNTTIAKYSISWLKRFVDDDTRYTQF
+LCPGPSTGWGSDVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,esterase,Thermobifida alba,est1,BAI99230.2,EC 3.1.1.1,PF12740,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.127,,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://link.springer.com/article/10.1007/s00253-010-2555-x,Diversity of polyester-degrading bacteria in compost and molecular analysis of a thermoactive esterase from Thermobifida alba AHK119,Bacteria; Actinobacteria; Streptosporangiales; Nocardiopsaceae; Thermobifida.,">BAI99230.2 esterase [Thermobifida alba]
+MSVTTPRREASLLSRAVAVAAAAAATVALAAPAQAANPYERGPNPTESMLEARSGPFSVSEERASRLGAD
+GFGGGTIYYPRENNTYGAIAISPGYTGTQSSIAWLGERIASHGFVVIAIDTNTTLDQPDSRARQLNAALD
+YMLTDASSSVRNRIDASRLAVMGHSMGGGGTLRLASQRPDLKAAIPLTPWHLNKSWRDITVPTLIIGADL
+DTIAPVSSHSEPFYNSIPSSTDKAYLELNNATHFAPNITNKTIGMYSVAWLKRFVDEDTRYTQFLCPGPR
+TGLLSDVDEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,cutinase 1,Thermobifida alba,cut1,E9LVH7,EC 3.1.1.74,PF12740,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.128,,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.tandfonline.com/doi/full/10.3109/10242422.2012.644435,Characterization of a new cutinase from Thermobifida alba for PET-surface hydrolysis,Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida ,">tr|E9LVH7|E9LVH7_9ACTN Cutinase 1 (Fragment) OS=Thermobifida alba OX=53522 GN=cut1 PE=4 SV=1
+MANPYERGPNPTDALLEASSGPFSVSEENVSRLSASGFGGGTIYYPRENNTYGAVAISPG
+YTGTEASIAWLGGRIASHGFVVITIDTITTLDQPDSRAEQLNAALNHMINRASSTVRSRI
+DSSRLAVMGHSMGGGGTPRLASQRPDLKAAIPLTPWHLNKNRSSVTVPTLIIGADLDTIA
+PVATHAKPFYNSLPSSISKAYLELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQF
+LCPGPRDGLFGEVEEYCSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Esterase,Thermobifida alba,est2,F7IX06,EC 3.1.1.1,PF12740,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.129,"GO:0016787
+GO:0046872
+GO:0052689",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://febs.onlinelibrary.wiley.com/doi/10.1111/febs.14781,Structural insights into the unique polylactate-degrading mechanism of Thermobifida alba cutinase,Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida,">tr|F7IX06|F7IX06_9ACTN Esterase OS=Thermobifida alba OX=53522 GN=est2 PE=1 SV=1
+MSVTTPRRETSLLSRALRATAAAATAVVATVALAAPAQAANPYERGPNPTESMLEARSGP
+FSVSEERASRFGADGFGGGTIYYPRENNTYGAIAISPGYTGTQSSIAWLGERIASHGFVV
+IAIDTNTTLDQPDSRARQLNAALDYMLTDASSAVRNRIDASRLAVMGHSMGGGGTLRLAS
+QRPDLKAAIPLTPWHLNKSWRDITVPTLIIGAEYDTIASVTLHSKPFYNSIPSPTDKAYL
+ELDGASHFAPNITNKTIGMYSVAWLKRFVDEDTRYTQFLCPGPRTGLLSDVEEYRSTCPF"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Cutinase,Saccharomonospora viridis,Cut190,W0TJ64,EC 3.1.1.74,PF03403,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.130,"GO:0003847
+GO:0016787
+GO:0046872",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://link.springer.com/article/10.1007/s00253-014-6272-8
+https://link.springer.com/article/10.1007/s00253-014-5860-y
+https://link.springer.com/article/10.1007/s00253-018-9374-x","Structural basis for the Ca(2+)-enhanced thermostability and activity of PET-degrading cutinase-like enzyme from Saccharomonospora viridis AHK190
+A novel Ca²?-activated, thermostabilized polyesterase capable of hydrolyzing polyethylene terephthalate from Saccharomonospora viridis AHK190
+Enzymatic hydrolysis of PET: functional roles of three Ca 2+ ions bound to a cutinase-like enzyme, Cut190*, and its engineering for improved activity",Bacteria › Actinobacteria › Pseudonocardiales › Pseudonocardiaceae › Saccharomonospora ,">tr|W0TJ64|W0TJ64_9PSEU Cutinase OS=Saccharomonospora viridis OX=1852 GN=Cut190 PE=1 SV=1
+MRIRRQAGTGARASMARAIGVMTTALAVLVGAVGGVAGAEVSTAQDNPYERGPDPTEDSI
+EAIRGPFSVATERVSSFASGFGGGTIYYPRETDEGTFGAVAVAPGFTASQGSMSWYGERV
+ASQGFIVFTIDTNTRLDQPGQRGRQLLAALDYLVERSDRKVRERLDPNRLAVMGHSMGGG
+GSLEATVMRPSLKASIPLTPWNLDKTWGQVQVPTFIIGAELDTIASVRTHAKPFYESLPS
+SLPKAYMELDGATHFAPNIPNTTIAKYVISWLKRFVDEDTRYSQFLCPNPTDRAIEEYRS
+TCPY"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,para-nitrobenzylesterase,Bacillus subtilis,pnbA,ADH43200,EC 3.1.1.1,PF00135,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.131,"GO:0004104
+GO:0016787
+GO:0052689",https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://aiche.onlinelibrary.wiley.com/doi/10.1002/btpr.610,Hydrolysis of polyethyleneterephthalate by p-nitrobenzylesterase from Bacillus subtilis,Bacteria; Firmicutes; Bacilli; Bacillales; Bacillaceae; Bacillus,">ADH43200.1 para-nitrobenzylesterase [Bacillus subtilis]
+MTHQIVTTQYGKVKGTTENGVHKWKGIPYAKPPVGQWRFKAPEPPEVWEDVLDATAYGPICPQPSDLLSL
+SYTELPRQSEDCLYVNVFAPDTPSQNLPVMVWIHGGAFYLGAGSEPLYDGSKLAAQGEVIVVTLNYRLGP
+FGFLHLSSFNEAYSDNLGLLDQAAALKWVRENISAFGGDPDNVTVFGESAGGMSIAALLAMPAAKGLFQK
+AIMESGASRTMTKEQAASTSAAFLQVLGINEGQLDKLHTVSAEDSLKAADQLRIAEKENIFQLFFQPALD
+PKTLPEEPEKAIAEGAASGIPLLIGTTRDEGYLFFTPDSDVHSQETLDAALEYLLGKPLAEKAADLYPRS
+LESQIHMMTDLLFWRPAVAYASAQSHYAPVWMYRFDWHPKKPPYNKAFHALELPFVFGNLDGLERMAKAE
+ITDEVKQLSHTIQSAWITFAKTGNPSTEAVNWPAYHEETRETLILDSEITIENDPESEKRQKLFPSKGE>ADH43200.1 para-nitrobenzylesterase [Bacillus subtilis]
+MTHQIVTTQYGKVKGTTENGVHKWKGIPYAKPPVGQWRFKAPEPPEVWEDVLDATAYGPICPQPSDLLSL
+SYTELPRQSEDCLYVNVFAPDTPSQNLPVMVWIHGGAFYLGAGSEPLYDGSKLAAQGEVIVVTLNYRLGP
+FGFLHLSSFNEAYSDNLGLLDQAAALKWVRENISAFGGDPDNVTVFGESAGGMSIAALLAMPAAKGLFQK
+AIMESGASRTMTKEQAASTSAAFLQVLGINEGQLDKLHTVSAEDSLKAADQLRIAEKENIFQLFFQPALD
+PKTLPEEPEKAIAEGAASGIPLLIGTTRDEGYLFFTPDSDVHSQETLDAALEYLLGKPLAEKAADLYPRS
+LESQIHMMTDLLFWRPAVAYASAQSHYAPVWMYRFDWHPKKPPYNKAFHALELPFVFGNLDGLERMAKAE
+ITDEVKQLSHTIQSAWITFAKTGNPSTEAVNWPAYHEETRETLILDSEITIENDPESEKRQKLFPSKGE"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Polyester Hydrolase Leipzig 7,Metagenome-derived,N/A,7NEI_B,EC 3.1.1.74,PF12695,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.132,,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://chemistry-europe.onlinelibrary.wiley.com/doi/epdf/10.1002/cssc.202101062,Low CarbonFootprintRecyclingof Post-ConsumerPETPlasticwitha MetagenomicPolyesterHydrolase,N/A,">pdb|7NEI|B Chain B, Polyester Hydrolase Leipzig 7 (PHL-7)
+MANPYERGPDPTESSIEAVRGPFAVAQTTVSRLQADGFGGGTIYYPTDTSQGTFGAVAISPGFTAGQESI
+AWLGPRIASQGFVVITIDTITRLDQPDSRGRQLQAALDHLRTNSVVRNRIDPNRMAVMGHSMGGGGALSA
+AANNTSLEAAIPLQGWHTRKNWSSVRTPTLVVGAQLDTIAPVSSHSEAFYNSLPSDLDKAYMELRGASHL
+VSNTPDTTTAKYSIAWLKRFVDDDLRYEQFLCPAPDDFAISEYRSTCPFLEHHHHHH"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,Lipase,Kaistella jeonii,OA86_11720,7PZJ,EC 3.1.1.1,PF18962,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.133,,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,https://www.frontiersin.org/articles/10.3389/fmicb.2021.803896/full,The Bacteroidetes Aequorivita sp. and Kaistella jeonii Produce Promiscuous Esterases With PET-Hydrolyzing Activity,Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales; Flavobacteriaceae; Aequorivita,">7PZJ_1|Chain A|Lipase|Chryseobacterium jeonii (266749)
+MRKLYLFLFLTLISPISISIFHAQCTGATVESLTNPGPYTVATLSEADGVRNGPKYAGSTIYYPTNATPPYASIAIVPGFTAAPSSVQEWGPFYASHGIVAIIIGTNSLYDQPEARALALLDALETIKQENGRATSPLIGKLDVTKLAVSGWSMGGGGAQRAAVLDNTISAVVALCPYLTSPQLNHTVPVLIFSGQSDPTAPPSQHANVHYNTTPGTTNKLLFEVKNGNHSVANSPTGGGGAVGKLALSWLKIYLEKNDCYCSVLATAIVNSTTVSSKISQSYQCNNALGVVDSKTRFNLYPNPTKDFVQVNVREMASYQLSSSTGQIVLKGIVTSSKNQIDLSKLPAGVYYLQINGETIKVIKKQ"
+Polyethylene terephthalate,"1,4-Benzenedicarboxylic acid, mono(2-hydroxyethyl) ester
+4-(2-Hydroxyethoxycarbonyl)benzoate
+4-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(ethylene terephthalate)
+MHET
+poly(ethylene terephthalate)(1-)
+p-[(2-hydroxyethoxy)carbonyl]benzoate
+mono(2-hydroxyethyl) terephthalate(1-)",C10H9O5-,C1=CC(=CC=C1C(=O)[O-])C(=O)OCCO,ethylene terephthalate(n) + H2O ? ethylene terephthalate(n-1) + 4-[(2-hydroxyethoxy)carbonyl] benzoate,LipIAF5-2,uncultured bacterium,lipIAF5-2,C3RYL0,EC 3.1.1.1,PF01738,https://www.genome.jp/kegg-bin/show_pathway?map00624+3.1.1.134,GO:0016787,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7794,https://pubchem.ncbi.nlm.nih.gov/compound/22062452 ,https://biocyc.org/compound?orgid=META&id=CPD-19188#tab=RXNS,"https://pubs.acs.org/doi/10.1021/acscatal.1c01204
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5881046/","Positive Charge Introduction on the Surface of Thermostabilized PET Hydrolase Facilitates PET Binding and Degradation
+New Insights into the Function and Global Distribution of Polyethylene Terephthalate (PET)-Degrading Bacteria and Enzymes in Marine and Terrestrial Metagenomes",Bacteria,">tr|C3RYL0|C3RYL0_9BACT LipIAF5-2 OS=uncultured bacterium OX=77133 GN=lipIAF5-2 PE=1 SV=1
+MPITARNTLASLLLASSALLLSGTAFAANPPGGDPDPGCQTDCNYQRGPDPTDAYLEAAS
+GPYTVSTIRVSSLVPGFGGGTIHYPTNAGGGKMAGIVVIPGYLSFESSIEWWGPRLASHG
+FVVMTIDTNTIYDQPSQRRDQIEAALQYLVNQSNSSSSPISGMVDSSRLAAVGWSMGGGG
+TLQLAADGGIKAAIALAPWNSSINDFNRIQVPTLIFACQLDAIAPVALHASPFYNRIPNT
+TPKAFFEMTGGDHWCANGGNIYSALLGKYGVSWMKLHLDQDTRYAPFLCGPNHAAQTLIS
+EYRGNCPY"
+Polyethylene ,"Ethene, ETHYLENE, Acetene, olefiant gas, elayl",C2H4 or CH2=CH2 or (C2H4)n,C=C,ethene + NADH + oxygen + H+ ? ethylene oxide + NAD+ + H2O,Alkane 1-monooxygenase,Rhodococcus opacus R7,EP51_30050,A0A076ETS4,N/A,PF00487,https://www.genome.jp/pathway/rn00625+R05444,"GO:0016491
+GO:0004497",ethene and chloroethene degradation,https://pubchem.ncbi.nlm.nih.gov/compound/6325,https://biocyc.org/compound?orgid=META&id=ETHYLENE-CMPD,https://www.nature.com/articles/s41598-021-00525-x,Transcriptomic analysis of Rhodococcus opacus R7 grown on polyethylene by RNA-seq,Bacteria › Actinobacteria › Corynebacteriales › Nocardiaceae › Rhodococcus opacus,">tr|A0A076ETS4|A0A076ETS4_RHOOP Alkane 1-monooxygenase OS=Rhodococcus opacus OX=37919 GN=EP51_30050 PE=3 SV=1
+MTTSDIGRTTEEAPPEAWRDRKRYLWLMGLIPPTALFLAAGLVWAFNRLGWSAVAPVWWW
+IGALLLFIALPILDRFFGPDGQNPPEEVMEQLENDRYYRYCTYVFIPFQLASLVFACYLW
+SADNLSWLGIDGGLGLVSKVGVAFSVAVMGGIGINTAHEMGHKKTELERWLAKITLAQTF
+YGHFYIEHNRGHHVRVATPEDPASSRFGESFWTFLPRSVWGSLKSSWELEKTRMQRLGKS
+TWSIHNDVLNAWLMSVVLFGALIAIFGPVVIPFLIIQAIYGFSLLETVNYLEHYGLMRQK
+TASGRYERCAPSHSWNSDHIVTNIFLYHLQRHSDHHANPTRRYQTLRSMDGAPNLPSGYA
+SMITLAYFPPLWRKVMDHRVLDHYEGDITRVNIQPGKREKVLAKYSGGVR"
+Polyethylene ,"Ethene, ETHYLENE, Acetene, olefiant gas, elayl",C2H4 or CH2=CH2 or (C2H4)n,C=C,ethene + NADH + oxygen + H+ ? ethylene oxide + NAD+ + H2O,copper oxidase,Rhodococcus opacus R7,LMCO1,AII08809.1,N/A,"PF07732
+PF07731
+PF00394",https://www.genome.jp/pathway/rn00625+R05444,,ethene and chloroethene degradation,https://pubchem.ncbi.nlm.nih.gov/compound/6325,https://biocyc.org/compound?orgid=META&id=ETHYLENE-CMPD,https://www.nature.com/articles/s41598-021-00525-x,Transcriptomic analysis of Rhodococcus opacus R7 grown on polyethylene by RNA-seq,Bacteria › Actinobacteria › Corynebacteriales › Nocardiaceae › Rhodococcus opacus,">AII08809.1 copper oxidase [Rhodococcus opacus]
+MPGNRPLDVPLSRRRVLQWGAGAALLGLTGACSRTDDAEAAIGPDSPDVRAYAEAEERRFPGGRPVAYEL
+SAAQSDVDIAGTRTAAWLYNTQLPGPILRANVGDRVQVRFRNQLSDSTTVHWHGLAIRNDMDGVPDVTQA
+PIPAGTEFVYDFIPPDPGTYWYHTHGDLQRGRGLYGALIIDDPGTPANYDTEFVVVLSDWLTDRTPSQVF
+DALRGGRMASMPEMTSPVLGGDSGDVRYAVYLLNGKPPGDPTVFTARPGQRARIRLINAGDDTAFRVALG
+GHRLTVTDTDGFPVEPVDTDSVLIGMGERYDAVVTLQDGVFPLVAVAEGKGAQGFAVVRTAGGAAPDPTV
+APRELGPPPLTVADLRATDAVRLPVVDPGVTLEASLGGDMKQYTWTVNGQAYPDHTPLTVHRDQRVRLVY
+TNSTMMFHPMHLHGHTFAVARPDGSGPRKDTVIVLPGQTVAADIDATNPGQWITHCHNDYHLAAGMATIF
+SYVS"
+Polyethylene ,"Ethene, ETHYLENE, Acetene, olefiant gas, elayl",C2H4 or CH2=CH2 or (C2H4)n,C=C,ethene + NADH + oxygen + H+ ? ethylene oxide + NAD+ + H2O,copper oxidase (plasmid),Rhodococcus opacus R7,LMCO2,AII11185,N/A,"PF07732
+PF07731
+PF00394",https://www.genome.jp/pathway/rn00625+R05444,,ethene and chloroethene degradation,https://pubchem.ncbi.nlm.nih.gov/compound/6325,https://biocyc.org/compound?orgid=META&id=ETHYLENE-CMPD,https://www.nature.com/articles/s41598-021-00525-x,Transcriptomic analysis of Rhodococcus opacus R7 grown on polyethylene by RNA-seq,Bacteria › Actinobacteria › Corynebacteriales › Nocardiaceae › Rhodococcus opacus,">AII11185.1 copper oxidase (plasmid) [Rhodococcus opacus]
+MIEQFPTAGARLSRRNFLVLAGLGAAATVAGCGNTGDTGPATTVIGPDSAAVKAAEQTRRANIGTGKTVT
+SSLQARPTRIDLGGVQVDTWAYNDRVPGREVRLRRGDLLRAELTNDLPAESTIHWHGIALRNDMDGVPGL
+TQSAIAPNTPFTYEFLAPDAGTHWLHPHVGMQFDRGLYAPVIVEDPAEGGDYDLEAVLVLDDWLDGVTGR
+TPDQQLDTLRQGGMPMSGMGMDHGGMSGMGMGAVTDPANPLGADTGDVEYPYYLINGTLAADPFSVRARP
+GQRIRLRIINAGADTAFRIAVGGHELTVTHTDGYPVEPVTGSSLLIGMGERFDAVVTLGDGVFPIVASAE
+GKQGQGFALIRTGAGRTPEPTIRPTELDAPPITGLGLRAREEVRLGSRDPDRVHELMLGMDMSGYRWTIN
+GATYDQHTPLDVAEGQRVRLRFVNQTMMFHPMHLHGHTFQLVDGQGAGPRKDTTLVLPNQTVEVDLDADN
+PGQWLVHCHNLYHGEAGMMTTLSYTE"
+Polyethylene ,"Ethene, ETHYLENE, Acetene, olefiant gas, elayl",C2H4 or CH2=CH2 or (C2H4)n,C=C,ethene + NADH + oxygen + H+ ? ethylene oxide + NAD+ + H2O,copper oxidase (plasmid),Rhodococcus opacus R7,LMCO3,AII11221,N/A,"PF07732
+PF07731",https://www.genome.jp/pathway/rn00625+R05444,,ethene and chloroethene degradation,https://pubchem.ncbi.nlm.nih.gov/compound/6325,https://biocyc.org/compound?orgid=META&id=ETHYLENE-CMPD,https://www.nature.com/articles/s41598-021-00525-x,Transcriptomic analysis of Rhodococcus opacus R7 grown on polyethylene by RNA-seq,Bacteria › Actinobacteria › Corynebacteriales › Nocardiaceae › Rhodococcus opacus,">AII11221.1 copper oxidase (plasmid) [Rhodococcus opacus]
+MAESRRQFLLGSALLGTAGAAALGARAASAAPSAAPPATETGGVHSGGHGGGVAGPTFRKGAVVDHAANG
+FDPTALLRDFDYGRVSQLPDGRVLREWVVAAADLDLEIAPGVRYPAWTFNGRIPGPTLRCQEGDLLRVQF
+VNTSAHPHTMHFHGIHPAEMDGIPDTGPGVIPSGGSFVYEFDAQPFGVHLYHCHVGPLAEHIARGLYGTF
+IVDPPEPRPPADEMVMVMHGYNTTFDGEGNQLYAVNGIPFHYMHEPVRVKRGELVRIYLVNALEYDPINT
+FHLHGNFFDYYPTGTRLEPSEYTDTIMQAQGQRGICEVRFPYPGRYMFHAHKTEFAELGWMGFFEVTD"
+Polyethylene ,"Ethene, ETHYLENE, Acetene, olefiant gas, elayl",C2H4 or CH2=CH2 or (C2H4)n,C=C,ethene + NADH + oxygen + H+ ? ethylene oxide + NAD+ + H2O,alkane monooxygenase AlkB,Paenibacillus sp.,alkB,AYO90679,N/A,PF00487,https://www.genome.jp/pathway/rn00625+R05444,,ethene and chloroethene degradation,https://pubchem.ncbi.nlm.nih.gov/compound/6325,https://biocyc.org/compound?orgid=META&id=ETHYLENE-CMPD,https://link.springer.com/article/10.1007/s00203-019-01637-9,Isolation of a polyethylene degrading Paenibacillus sp. from a landfill in Brazil,Bacteria; Firmicutes; Bacilli; Bacillales; Paenibacillaceae; Paenibacillus,">AYO90679.1 alkane monooxygenase AlkB, partial [Paenibacillus sp.]
+YGHFYTEHNRGHHVRVATPEDPASSRLGESFWAFLPRSVWFSAVSAWNLERERLRKLGLPALHWKNAVLG
+AWMYSVVLWGAMIAWLGAAVIPFLIIQGIYGFSLLEVVNYVEHYGLKRQKLPNGRY"
+Polystyrene,"STYRENE, Ethenylbenzene, Phenylethylene, Styrol, Vinylbenzene",C8H8,C=CC1=CC=CC=C1,styrene + FADH2 + oxygen ? (S)-2-phenyloxirane + FAD + H+ + H2O,alpha-ketoglutarate-dependent dioxygenase AlkB,Acinetobacter johnsonii,N/A,WP_126038516,N/A,PF13532,https://www.genome.jp/pathway/map00643,GO:0051213,https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-6941,,https://biocyc.org/compound?orgid=META&id=CPD-1092,https://www.sciencedirect.com/science/article/abs/pii/S0304389421012036,"Biodegradation of polystyrene by bacteria from the soil in
+common environments",Bacteria; Proteobacteria; Gammaproteobacteria; Moraxellales; Moraxellaceae; Acinetobacter.,">WP_126038516.1 alpha-ketoglutarate-dependent dioxygenase AlkB [Acinetobacter johnsonii]
+MTLDLFSPEPQANLLPFDGQVQDLGLILTAKQSAKYLDYFLAHLAWQPDEVVLYGKRYVTERKVVWYGDA
+EYEYHYSGSAKQARLWNPALFRLKQHIEQLVGHPFNSCLANLYENGSQAVGWHSDDEPSLRSPQQENVVI
+ASLSFGATRKFCFKHKFKQEKVGLMLHSGQLIVMRGQTQRYWKHALMKSSKITEPRLNLTFRYFYPAPQS"
+Polyurethane,"urethane, ETHYL CARBAMATE, Urethan, Ethylurethane, Carbamic acid, ethyl ester",C3H7NO2,CCOC(=O)N,Urethane + H2O <=> Ethanol + CO2 + Ammonia,Leaf-branch compost cutinase,Unknown prokaryotic organism,N/A,G9BY57,EC 3.1.1.74,PF12695?,https://www.genome.jp/dbget-bin/www_bget?rn:R02359,"GO:0016787
+GO:0008126
+GO:0050525",https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=URETHANASE-RXN,https://pubchem.ncbi.nlm.nih.gov/compound/Urethane,https://biocyc.org/compound?orgid=META&id=URETHAN,https://www.mdpi.com/2073-4360/9/2/65,Degradation of Polyester Polyurethane by Bacterial Polyester Hydrolases,Bacteria › environmental samples ,">sp|G9BY57|PETH_UNKP Leaf-branch compost cutinase OS=Unknown prokaryotic organism OX=2725 PE=1 SV=1
+MDGVLWRVRTAALMAALLALAAWALVWASPSVEAQSNPYQRGPNPTRSALTADGPFSVAT
+YTVSRLSVSGFGGGVIYYPTGTSLTFGGIAMSPGYTADASSLAWLGRRLASHGFVVLVIN
+TNSRFDYPDSRASQLSAALNYLRTSSPSAVRARLDANRLAVAGHSMGGGGTLRIAEQNPS
+LKAAVPLTPWHTDKTFNTSVPVLIVGAEADTVAPVSQHAIPFYQNLPSTTPKVYVELDNA
+SHFAPNSNNAAISVYTISWMKLWVDNDTRYRQFLCNVNDPALSDFRTNNRHCQ"
+Polyurethane,"urethane, ETHYL CARBAMATE, Urethan, Ethylurethane, Carbamic acid, ethyl ester",C3H7NO2,CCOC(=O)N,Urethane + H2O <=> Ethanol + CO2 + Ammonia,Cutinase,Thermobifida fusca (Thermomonospora fusca),cut-2.KW3,E5BBQ3,EC 3.1.1.74,PF12740,https://www.genome.jp/dbget-bin/www_bget?rn:R02359,"GO:0016787
+GO:0050525",https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=URETHANASE-RXN,https://pubchem.ncbi.nlm.nih.gov/compound/Urethane,https://biocyc.org/compound?orgid=META&id=URETHAN,https://www.mdpi.com/2073-4360/9/2/65,Degradation of Polyester Polyurethane by Bacterial Polyester Hydrolases,Bacteria › Actinobacteria › Streptosporangiales › Nocardiopsaceae › Thermobifida ,">tr|E5BBQ3|E5BBQ3_THEFU Cutinase (Fragment) OS=Thermobifida fusca OX=2021 GN=cut-2.KW3 PE=1 SV=1
+ANPYERGPNPTDALLEARSGPFSVSEENVSRLSASGFGGGTIYYPRENNTYGAVAISPGY
+TGTEASIAWLGERIASHGFVVITIDTITTLDQPDSRAEQLNAALNHMINRASSTVRSRID
+SSRLAVMGHSMGGGGSLRLASQRPDLKAAIPLTPWHLNKNWSSVTVPTLIIGADLDTIAP
+VATHAKPFYNSLPSSISKAYLELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQFL
+CPGPRDGLFGEVEEYRSTCPF"
+Polyurethane,"urethane, ETHYL CARBAMATE, Urethan, Ethylurethane, Carbamic acid, ethyl ester",C3H7NO2,CCOC(=O)N,Urethane + H2O <=> Ethanol + CO2 + Ammonia,polyurethane esterase,Delftia acidovorans,pudA,BAA76305,N/A,PF00135,https://www.genome.jp/dbget-bin/www_bget?rn:R02359,GO:0016787,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=URETHANASE-RXN,https://pubchem.ncbi.nlm.nih.gov/compound/Urethane,https://biocyc.org/compound?orgid=META&id=URETHAN,https://www.sciencedirect.com/science/article/abs/pii/S138917230087663X?via%3Dihub,Purification and properties of culture-broth-secreted esterase from the polyurethane degrader Comamonas acidovorans TB-35,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Delftia,">BAA76305.1 polyurethane esterase [Delftia acidovorans]
+MNSRSLTKAIRFPTILALAGFSVLGACGGSDNDSSSNNQGAPAVAITVAGQVQAVDRLGMRRYFGIPFAA
+PPVGNLRWMPPAPPQSWAAPLAKTQSNAPCMQTGATDPLRLPNGTEDCLYLDVHAPATGEGPFPVMVWIH
+GGAFSIGGTITYADPSPLVSKGVIVVNIAYRMGAMGFLGHPSLRAADGTVGNYGIMDQQAALRWVQDNIA
+AFGGDKSNVTIFGESAGGFSVMTHLASPLSKGLFAKAIVQSGGYGFDRQLTQAQLEAQSTSIVNSALAAA
+GVSCPTVDAACLRGLSAELVNNQLATAFTTANWSPVPSVDGKVLPKSIKATFVAGENNKVPLVNGSNQDE
+WSYFVASRELVAGPLTAAQYPSYLQTSLGLPPSLATVYPLTDYGTNTAQQPSLAATAAGTDMHFSCPALN
+LSKRVLSQATPIFMYEFRDRTAIPSIGRNTISFNQGAGHTYELQYLFNLRDLETAEHRDLQASMARYWTN
+FARTSNPNNGDPVATSWPAFTGPTKVLGLDVASAGGIRELATFETDHKCNTAWTSLTF"
+Polyurethane,"urethane, ETHYL CARBAMATE, Urethan, Ethylurethane, Carbamic acid, ethyl ester",C3H7NO2,CCOC(=O)N,Urethane + H2O <=> Ethanol + CO2 + Ammonia,polyurethanase esterase A,Pseudomonas chlororaphis,pueA,AAD22743,N/A,PF00353,https://www.genome.jp/dbget-bin/www_bget?rn:R02359,"GO:0005509
+GO:0016787",https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=URETHANASE-RXN,https://pubchem.ncbi.nlm.nih.gov/compound/Urethane,https://biocyc.org/compound?orgid=META&id=URETHAN,"https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2672.2007.03447.x
+https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1574-6968.2000.tb09056.x?sid=nlm%3Apubmed","Effect of insertional mutations in the pueA and pueB genes encoding two polyurethanases in Pseudomonas chlororaphis contained within a gene cluster
+The polyester polyurethanase gene (pueA) from Pseudomonas chlororaphis encodes a lipase",Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas,">AAD22743.1 polyurethanase esterase A [Pseudomonas chlororaphis]
+MGVFDYKNFTASDSKALFSDALAITLYSYHNIDNGFAEGYQHNGFGLGLPATLVTALIGSGNSQGVIPGI
+PWNPDSEKAALDALHQAGWSTISAQQLGYDGKVDGRGTFFGEKAGYGTAQVEILGKYDAQGHLESIGIAF
+RGTSGPRESVISDTIGDVINDLLAALGPKDYAKNYAGEAFGKLLGDVAAFAQANGLSGKDVLVSGHSLGG
+LGVNSLADLSSERWSGFYKDSNYIAYASPTQSASDKVLNIGYENDPVFRALDGSTFNLSSLGVHDAHQDS
+ATNNIVNFNDHYASTLWNVLPSSILNIPTWLSHLPTGYGDGLSRVLESKFYDFTSKDSTIVVANLSDPAR
+ASTWVQDLNRNAETHKGSTFIIGSDGNDLIQGGSGNDYLEGRAGNDTFRDSGGYNIILGGQGSNTLDLQQ
+SVKNYSFASDGAGTLYLRDANGGISMTRDIGAIQSKEPGFLWGLFKDDVIHQVTDQGLKAGGQLTQYASS
+VRGDAGDNVLKAHAGGDWLFGLDGNDHLIGGQGNDVFVGGAGNDLMEAGGGNNTFLFTGHFGQDRILGYQ
+GGDKLVFMGVSGVLPDQDYRAHASSSGNDTVLTFGQDSVTLVGVSLEHLNGSGIVLA"
+Polyurethane,"urethane, ETHYL CARBAMATE, Urethan, Ethylurethane, Carbamic acid, ethyl ester",C3H7NO2,CCOC(=O)N,Urethane + H2O <=> Ethanol + CO2 + Ammonia,polyurethanase esterase B,Pseudomonas chlororaphis,pueB,AAF01331,N/A,PF00353,https://www.genome.jp/dbget-bin/www_bget?rn:R02359,"GO:0005509
+GO:0016787",https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=URETHANASE-RXN,https://pubchem.ncbi.nlm.nih.gov/compound/Urethane,https://biocyc.org/compound?orgid=META&id=URETHAN,"https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2672.2007.03447.x
+https://www.sciencedirect.com/science/article/abs/pii/S0964830501000427?via=ihub","Effect of insertional mutations in the pueA and pueB genes encoding two polyurethanases in Pseudomonas chlororaphis contained within a gene cluster
+Cloning, nucleotide sequencing and characterization of a polyurethanase gene (pueB) from Pseudomonas chlororaphis",Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas,">AAF01331.1 polyurethanase esterase B [Pseudomonas chlororaphis]
+MSMSIFDYKTALGGDGKALYSEAITLALYASTPTGEALPGTAWRPISVSQLGYQGNVSAQGTISGEQAIV
+SDAQSRCWANTTRPGSCCPSASSFRGTRQPQGRYQRLAGGLRVGLLPTTTSRLAFDNLLGKVAAFAAAQG
+LSGSDVLVTGHSLGGLGGQPRGGHEQRSLGRLLPGRQLLGFASPTQSANSSQVLNIGYETTRCSAPWTAL
+ISTALSLGTHWQAPGVATNNIVSFTDHYSSFLGEVDSPEHPQSAVLVGPQCGGLRRGLNRLINSDFYDLT
+SRDSTVVISNLSEGKRDQVWVKDLNLYAEKHTGSTFIIGTQSNDLLHGGKGNDYLDGGAGDDRFRDDGGY
+NIIHGGQGHNVLELQQPLKNFSIANDGDGTLYIRDAYGGISMTRDVGALVSHETGSWWQLFGKDVSHSVT
+ADGLQNGNQWTAYNHSLNGDAYGNALVASVDGDWLFGHGGDDLLSSDKANVTFVGGTGNDVMHSSGGGGN
+TFLFSGNFGFDLIHGYQNTDKLVFMGVPGVDAHYDYSQHLSQNGNDTLVQVFGEFLRVNPWWGSAWTSLS
+GSGLVFA"
+Polyurethane,"urethane, ETHYL CARBAMATE, Urethan, Ethylurethane, Carbamic acid, ethyl ester",C3H7NO2,CCOC(=O)N,Urethane + H2O <=> Ethanol + CO2 + Ammonia,polyurethanase lipase A,Pseudomonas fluorescens,pulA,AAF66684,N/A,PF00353,https://www.genome.jp/dbget-bin/www_bget?rn:R02359,"GO:0005509
+GO:0016787",https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=URETHANASE-RXN,https://pubchem.ncbi.nlm.nih.gov/compound/Urethane,https://biocyc.org/compound?orgid=META&id=URETHAN,"https://www.sciencedirect.com/science/article/abs/pii/S0964830598000511?via=ihub
+https://www.sciencedirect.com/science/article/abs/pii/S0964830598000687","Growth of Pseudomonas fluorescens on a polyester–polyurethane and the purification and characterization of a polyurethanase–protease enzyme
+Cloning and expression in Escherichia coli of apolyurethane-degrading enzyme from Pseudomonasfluorescens",Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas,">AAF66684.1 polyurethanase lipase A [Pseudomonas fluorescens]
+MAITLYSYHNLDNGFAVGYQNNGLGLGLPATLVSALIGGSNAQGVIPGIPWNPDSEKPALEAVQAAGWTP
+ISASTLGYTARSMHAAPTLAKNSATARRRPRCWASTMTLATAGNRHQFPRHFRASGKCDHRLHRRCDQRP
+ARRLRAQGLCQELRGGGFWRVAQRLADTPLPGLGGNDVVVSGHSLGGMAVNSMADLSDSTWSGFYKDANY
+LAYASPTQSAGDKVLNVGYENDPVFRALDGSSFNLSSLGVHDKAHESSTDNIVSLNDHYASSLWNVLPFS
+ILNLPTWVSHLPTGYGDGMTRILDSGFYEQMTRDSTVIVANLSDPARATTWVQDLNRNAEAHKGNTFIIG
+SDGDDFIKGGRGADFIEGGKGNDTIRDSSGHNTFLFSGQFGNDRVIGYQATDKLVFNDVAGSTDYRDHVK
+VVGGDTVIGFGTDSVTLVGVSSLSGEGIVIS"
+Polyurethane,"urethane, ETHYL CARBAMATE, Urethan, Ethylurethane, Carbamic acid, ethyl ester",C3H7NO2,CCOC(=O)N,Urethane + H2O <=> Ethanol + CO2 + Ammonia,polyurethanase A,Pseudomonas protegens Pf-5,pueA,AAY92471,N/A,PF00353,https://www.genome.jp/dbget-bin/www_bget?rn:R02359,"GO:0005509
+GO:0016787",https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=URETHANASE-RXN,https://pubchem.ncbi.nlm.nih.gov/compound/Urethane,https://biocyc.org/compound?orgid=META&id=URETHAN,https://journals.asm.org/doi/10.1128/AEM.01448-16?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed#B4,Carbon Catabolite Repression and Impranil Polyurethane Degradation in Pseudomonas protegens Strain Pf-5,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas,">AAY92471.1 polyurethanase A [Pseudomonas protegens Pf-5]
+MGVFDYKNFTASDSKALFSDALAITLYSYHNIDNGFAEGYQHNGFGLGLPATLVTALIGSGNSQGVIPGI
+PWNPDSEKAALDALHQAGWSTISAQQLGYDGKVDGRGTFFGEKAGYGTAQVEILGKYDAQGHLESIGIAF
+RGTSGPRESVISDTIGDVINDLLAALGPKDYAKNYAGEAFGKLLGDVAAFAQANGLSGKDVLVSGHSLGG
+LGVNSLADLSSERWSGFYKDSNYIAYASPTQSASDKVLNIGYENDPVFRVLDGSTFKLSSLGVHDAHQDS
+ATNNIVNFNDHYASTLWNVLPFSILNIPTWLSHLPTGYGDGLTRVLESKFYDFTSKDSTIVVANLSDPAR
+ASTWVQDLNRNAETHKGSTFIIGSDGNDLIQGGSGNDYLEGRAGNDTFRDSGGYNIILGGQGSNTLDLQQ
+SVKNYSFASDGAGTLYLRDANGGISMTRDIGAIQSKEPGFLWGLFKDDVIHQVTDQGLKAGGQLTQYASS
+VRGDAGDNVLKAHAGGDWLFGLDGNDHLIGGQGNDVFVGGAGNDLMEAGGGNNTFLFTGHFGQDRILGYQ
+GGDKLVFMGVSGVLPDQDYRAHASSSGNDTVLTFGQDSVTLVGVSLEHLNGSGIVLA"
+Polyurethane,"urethane, ETHYL CARBAMATE, Urethan, Ethylurethane, Carbamic acid, ethyl ester",C3H7NO2,CCOC(=O)N,Urethane + H2O <=> Ethanol + CO2 + Ammonia,polyurethanase B,Pseudomonas protegens Pf-5,pueB,AAY92474,N/A,PF00353,https://www.genome.jp/dbget-bin/www_bget?rn:R02359,"GO:0005509
+GO:0016787",https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=URETHANASE-RXN,https://pubchem.ncbi.nlm.nih.gov/compound/Urethane,https://biocyc.org/compound?orgid=META&id=URETHAN,https://journals.asm.org/doi/10.1128/AEM.01448-16?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed#B4,Carbon Catabolite Repression and Impranil Polyurethane Degradation in Pseudomonas protegens Strain Pf-5,Bacteria; Proteobacteria; Gammaproteobacteria; Pseudomonadales; Pseudomonadaceae; Pseudomonas,">AAY92474.2 polyurethanase B [Pseudomonas protegens Pf-5]
+MSIFDYKTALGGDGKALYSEAITLALYASTPTGEALPGTAWRPISASQLGYQGNVSAQGTISGEQAIVSD
+AQVEVLGKYDASGQLLSIGISFRGTDSLKDGINDLQAAFVSGFADNYSRLAFDNLLGKVAAFAAAQGLSG
+SDVLVTGHSLGGLGVNSLAAMSSDHWGGFYQDASYVAFASPTQSANSSQVLNIGYENDPVFRALDGTHFN
+ASSLGTHDKPQESATNNIVSFTDHYSSFLGKLIPQSILNPQSWSAHSAVDYAGGLNRLINSDFYDLTSRD
+STVVISNLSEGKRDQVWVKDLNLYAEKHTGSTFIIGTQSNDLLHGGKGNDYLDGGAGDDRFRDDGGYNII
+HGGQGHNVLELQQPLKNFSIANDGDGTLYIRDAYGGISMTRDVGALVSHETGSWWQLFGKDVSHSVTADG
+LQNGNQWTAYNHSLNGDAYGNALVASVDGDWLFGHGGDDLLSSDKANVTFVGGTGNDVMHSSGGGGNTFL
+FSGNFGFDLIHGYQNTDKLVFMGVPGVDAHYDYSQHLSQNGNDTLLSVGEFSVTLVGVGMDSLSGSGLVF
+A"
+Isoprene,"ISOPRENE
+2-Methyl-1,3-butadiene
+2-Methylbuta-1,3-diene
+Isopentadiene
+Rubber, natural",C5H8,CC(=C)C=C,"isoprene + NADH + dioxygen + H+ ? (3R)-3,4-epoxy-3-methylbut-1-ene + NAD+ + H2O",Rubber oxygenase,Streptomyces sp. (strain K30),lcp,Q3L8N0,N/A,PF09995,https://www.genome.jp/dbget-bin/www_bget?cpd:C16521,"GO:0020037
+GO:0016701
+GO:0016491
+GO:0046872",https://metacyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7777,https://pubchem.ncbi.nlm.nih.gov/compound/6557,https://metacyc.org/compound?orgid=META&id=CPD-9436,"https://pubs.acs.org/doi/10.1021/bm0496110
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2546624/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426405/","Identification and Characterization of Genes from Streptomyces sp. Strain K30 Responsible for Clear Zone Formation on Natural Rubber Latex and Poly(cis-1,4-isoprene) Rubber Degradation
+Secretion and Transcriptional Regulation of the Latex-Clearing Protein, Lcp, by the Rubber-Degrading Bacterium Streptomyces sp. Strain K30
+Importance of the latex-clearing protein (Lcp) for poly(cis-1,4-isoprene) rubber cleavage in Streptomyces sp. K30",Bacteria › Actinobacteria › Streptomycetales › Streptomycetaceae › Streptomyces,">sp|Q3L8N0|LCP_STRK3 Rubber oxygenase OS=Streptomyces sp. (strain K30) OX=256642 GN=lcp PE=1 SV=2
+MDGFSRRRMLMTGGALGAVGALGAATRALARPLWTWSPSASVAGTGVGVDPEYVWDEEAD
+PVLAAVIDRGEVPAVNALLKQWTRNDQALPGGLPGDLREFMEHARRMPSWADKAALDRGA
+QFSKTKGIYVGALYGLGSGLMSTAIPRESRAVYYSKGGADMKDRIAKTARLGYDIGDLDA
+YLPHGSMIVTAVKTRMVHAAVRHLLPQSPAWSQTSGGQKIPISQADIMVTWHSLATFVMR
+KMKQWGVRVNTADAEAYLHVWQVSAHMLGVSDEYIPATWDAANAQSKQVLDPILAHTPEG
+EALTEVLLGIVAELDAGLTRPLIGAFSRYTLGGEVGDMIGLAKQPVLERLIATAWPLLVA
+FREGLIPLPAVPAVLWTLEEALRKFVLLFLSEGRRIAIDIPDVNRPS"
+Isoprene,"ISOPRENE
+2-Methyl-1,3-butadiene
+2-Methylbuta-1,3-diene
+Isopentadiene
+Rubber, natural",C5H8,CC(=C)C=C,"isoprene + NADH + dioxygen + H+ ? (3R)-3,4-epoxy-3-methylbut-1-ene + NAD+ + H2O",70 kDa protein,Xanthomonas sp. 35Y,roxA,Q7X0P3,N/A,N/A,https://www.genome.jp/dbget-bin/www_bget?cpd:C16522,"GO:0009055
+GO:0020037
+GO:0046872",https://metacyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7777,https://pubchem.ncbi.nlm.nih.gov/compound/6557,https://metacyc.org/compound?orgid=META&id=CPD-9436,http://europepmc.org/article/PMC/183308,Rubber-degrading enzyme from a bacterial culture,Bacteria › Proteobacteria › Gammaproteobacteria › Xanthomonadales › Xanthomonadaceae › Xanthomonas › unclassified Xanthomonas ,">tr|Q7X0P3|Q7X0P3_9XANT 70 kDa protein OS=Xanthomonas sp. 35Y OX=230757 GN=roxA PE=1 SV=1
+MIARRLGLRRAWAALALTPILFIGQGAGGQALPLLDQASIRSPLMVGCNGKPDSTPLPVD
+PRSLVKQGVNSNPNAALQFNAYFVDLHNPPPPFVNRLPPRPTTCGQFRASATRGRVNLEE
+RQFFQPMALATSYHFIFLQWGYLIRPPDFEEQVSKRYGLYPAPFRNPYPLPGEDPNQTNG
+GSGQLPLGLIQGKDDNGRWTGLIGASCSACHDSRLGTASEASFKWGLPNSANDAGLLASD
+MFRTTPITALGNLLPLPWSTGRGSSDAIGLISLLPALFDMETLTLAPSLLEYVADAPHAG
+MTKAPAWWARAFKTRQFWDGSLSSDNVHSEMAFGVANIFRDANARRGLEDEFEDINNFLI
+SLSPATYPKTINTALAEQGAVIYHERDLWASGANGAIPKPAGNGSCASCHGVYSPRHAAD
+PNYLPDPRLKGVAAVVTPIETIRTDPRRMRLMADERQRRAWNSGWWAYNNLSPSWTGYPS
+DNIVASELRRVPRAIYNNGGPIYSPLGPNIWEEPTGYIAPPLYGAWATAPYFHNGSVPNL
+WGVLKPSDRPKLWKRPYTAAGIGGKNAGYDYSFASYDWQKLGWKYTAVACNNSIFTSPFL
+PCTHNMATIDILYSMWDNVAAQYLNLAYQSPPPITDQQIKSRMVYNSYLYGNDNGGHDFT
+QSLTDSERWALIEYIKTL"
+Isoprene,"ISOPRENE
+2-Methyl-1,3-butadiene
+2-Methylbuta-1,3-diene
+Isopentadiene
+Rubber, natural",C5H8,CC(=C)C=C,"isoprene + NADH + dioxygen + H+ ? (3R)-3,4-epoxy-3-methylbut-1-ene + NAD+ + H2O",Rubber oxygenase B,Xanthomonas sp. 35Y,roxB,A0A1S6Q8F9,N/A,N/A,https://www.genome.jp/dbget-bin/www_bget?cpd:C16523,"GO:0009055
+GO:0020037
+GO:0046872",https://metacyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7777,https://pubchem.ncbi.nlm.nih.gov/compound/6557,https://metacyc.org/compound?orgid=META&id=CPD-9436,http://europepmc.org/article/PMC/183308,Rubber-degrading enzyme from a bacterial culture,Bacteria › Proteobacteria › Gammaproteobacteria › Xanthomonadales › Xanthomonadaceae › Xanthomonas › unclassified Xanthomonas ,">tr|A0A1S6Q8F9|A0A1S6Q8F9_9XANT Rubber oxygenase B OS=Xanthomonas sp. 35Y OX=230757 GN=roxB PE=4 SV=1
+MSSKQHRARAKVQRASIFVVLGLVAGHSSSTDAATDLIKSSRGGSQLWDYCEGKGDATLL
+PADPRSLVQPGIGTGRAVAFNAFWKDCHTDPAAVQEAGHPKTCGELRQRFYRGDGLLDTG
+SRTVAALFTGDNPTTIESVFGAATLTAAQYNSLWVSWGGFLLRPDNFDELVAERYGSVFG
+AGRNPYPKPLEDPNRTNGGTGRLPEMFTQLRNPDGSWSGRIGITCHACHSGAANGAHTPG
+SGSSLQDLHLLLRDAVPLGYLPSLASLANLTRTRGTNNASDINLAFLFPDQGLISISTAL
+GVLASGSTASMDTPAWWNMGHRPVKFVDGVFPMDAPRVDMVFYTPAFGLFGSLGGPLSEA
+GQNWMRAHGPDANTWIESLKAPAYPGTIDTALAEQGAVLFHTLNLWASNRNNPVPKPSAG
+NGSCASCHGAYAPRYVNDPAFLASPALEGMAAYITPQRIIQTDPVRQQTNNEAVQIAGAS
+NFFGYPSTAGTANDCGPQNRADLRGNRELGYLAPPLYGIWATAPYMHNGSVPNIWEVLKP
+SDRTPLWKRKSKTPRWDQTGRAIMGYDTSMQAYDTAKLGWKYDAIQCRRPSLLDPLPSPY
+LRCDPNDDLLLSWYDALLTNLYGNVILAWNVLFPPTITNTDIENRKIYNSYMFGQGNGGH
+TFNAVLTDNERKAIIEYLKTL"
+Isoprene,"ISOPRENE
+2-Methyl-1,3-butadiene
+2-Methylbuta-1,3-diene
+Isopentadiene
+Rubber, natural",C5H8,CC(=C)C=C,"isoprene + NADH + dioxygen + H+ ? (3R)-3,4-epoxy-3-methylbut-1-ene + NAD+ + H2O",rubber oxygenase,Rhizobacter gummiphilus,latA,BAS44780,N/A,N/A,https://www.genome.jp/dbget-bin/www_bget?cpd:C16524,"GO:0009055
+GO:0020037
+GO:0046872",https://metacyc.org/META/NEW-IMAGE?type=PATHWAY&object=PWY-7777,https://pubchem.ncbi.nlm.nih.gov/compound/6557,https://metacyc.org/compound?orgid=META&id=CPD-9436,http://europepmc.org/article/MED/28110615,Identification of natural rubber degradation gene in Rhizobacter gummiphilus NS21,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Rhizobacter,">BAS44780.1 rubber oxygenase [Rhizobacter gummiphilus]
+MSSQHPWAPARRLSMVLLLGLSAGLAASAQAATDLIQSSRGGSPLWDYCEGKPAATVLPADPRSLVQPGI
+STGKAVAFNAYWKDCHTDPAAVQEAGHPKTCGDLRDRFYRGGGLLETGSPTVAALFTGDNTRTLESVFGA
+STLTATQYNALWTTWGGFVVRPDNFDQLVAERYGSVFGTGRNPYPKPFEDPNRTNGGTGRLPEMFTQLRN
+PDGTWSGRIGVTCHACHSGAANGVPAPGGGSSLQDLHLFLRDALPLGYLASLASIANLTRTRGTNNASDI
+NLAFVFPDQGLLPLDTFLGVLASGSTASMDTPAWWNMGHRPVKFVDGVFPMDAPRVDMVFYTPLLGLFGS
+VGGPLSEAGQTWMRAHGPDANTWIESLKSPPYPGTIDTALAEQGAVLFHTLNLWATSRNNPVPKPNEGNG
+SCASCHGAYAPRYVNDPAFLATPALEGMASYITPQRIIQTDIVRQKTNNEAVQVAGASNFFGYPTTKGTV
+NDCGPQNRADLRGNRELGYLAPPLYGVWATAPYLHNGSVPNVWEVLKPSDRKPLWRRVSNPPRWDQVGRT
+IMGYDTRMSAYDTQKMGWKYDTLQCRKPTLFDPIPSPYWRCDPKDEQLQAWYNELVRGLYSNVALTWNVL
+FPPTITNSDIEDRKIYNTYMFGQGNGGHTFNSVLTDAERKALIEYLKTL"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,PLAase2,Amycolatopsis orientalis (Nocardia orientalis),N/A,B0FLR6,EC 3.4.,PF00089,N/A,"GO:0004252
+GO:0006508",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://academic.oup.com/femsle/article/282/1/52/488056?login=false,Purification and characterization of poly(L-lactic acid)-degrading enzymes from Amycolatopsis orientalis ssp. Orientalis,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Pseudonocardiales > Pseudonocardiaceae > Amycolatopsis,">tr|B0FLR6|B0FLR6_AMYOR PLAase2 OS=Amycolatopsis orientalis OX=31958 PE=4 SV=1
+MGLAIAAAAVFSLPGVATATEPTGGVQPNIVGGGNATQVYSFMVSQQSSSGGHQCGGSLI
+SSTWVVTAKHCGTPYQVRVGTTNRTSGGTVARVAQRIAHPSADLALLRLSTAVPQAPVTI
+ADASGAVGTATRIIGWGQTCAPQGGCGAPITLQELNTSIVSDSRCLGISGASEICTNNPN
+GNSGACYGDSGGPQIKQVNGVWQLIGATSRAGNNSSTCATGPSIYVDVPYFRSWIRTNTG
+V"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,PLAase3,Amycolatopsis orientalis (Nocardia orientalis),N/A,B0FY08,EC 3.4.,N/A,N/A,"GO:0004252
+GO:0006508",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://academic.oup.com/femsle/article/282/1/52/488056?login=false,Purification and characterization of poly(L-lactic acid)-degrading enzymes from Amycolatopsis orientalis ssp. Orientalis,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Pseudonocardiales > Pseudonocardiaceae > Amycolatopsis,">tr|B0FY08|B0FY08_AMYOR PLAase3 (Fragment) OS=Amycolatopsis orientalis OX=31958 PE=3 SV=1
+YDVRGGDAYYINNSPRCSIGFSVNGGFLTAGHCGPGTVTGSNRVAMGSFARASFPGNDYG
+HVRVNSNWVPRGIINNGTRVSGSSEASTGASICKSGSTTGWTCGTVGAKNQTVRYAEGTV
+YGMTATNARSQAGDSGGSFIAGNQAQGMLSGGNSTVTYFFPVRPALSATGTSLVLG"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,PLA depolymerase,Paenibacillus amylolyticus,PlaA,Q83VD0,EC 3.1.1.1,PF01674,N/A,"GO:0016787
+GO:0016042",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC154548/
+",Cloning and Sequencing of a Poly(dl-Lactic Acid) Depolymerase Gene from Paenibacillus amylolyticus Strain TB-13 and Its Functional Expression in Escherichia coli,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Firmicutes > Bacilli > Bacillales > Paenibacillaceae > Paenibacillus,">tr|Q83VD0|Q83VD0_PAEAM PLA depolymerase OS=Paenibacillus amylolyticus OX=1451 GN=PlaA PE=4 SV=1
+MRKLKLLLMVCMSMVFIFTLPGMGQSLKASAATERTPIVFVHGLTGSDSNFALIERYLRG
+EGWSSDELFAIDLPSKAGNQLLNSAAISRFVDDVLRQTGHSKVHIVAHSMGGANSLYYIL
+NRGGIDKVDKLITLGGANRLTTSRAPDGIRVTSIYSTSDTIVSPALSRLDGANNISVNLV
+THIGLLYNSRVNALIKAALIE"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,Poly(L-lactic acid) depolymerase,Amycolatopsis sp. K104-1,N/A,Q75UA4,EC 3.4,PF00089,N/A,"GO:0004252
+GO:0006508",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC92582/,"Purification and characterization of an extracellular poly(L-lactic acid) depolymerase from a soil isolate, Amycolatopsis sp. strain K104-1",cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Pseudonocardiales > Pseudonocardiaceae > Amycolatopsis > unclassified Amycolatopsis,">tr|Q75UA4|Q75UA4_9PSEU Poly(L-lactic acid) depolymerase OS=Amycolatopsis sp. K104-1 OX=255246 PE=4 SV=1
+MKFGKFVLLAASTALAVVGLGGPAAADSTPQAQPSIIGGSNATSGPWAARLFVNGRQNCT
+ATIIAPQYILTAKHCVSSSGTYTFRIGSLDQTSGGTMATGSTITRYPGSADLAIVRLTTS
+VNATYSPLGSVGDVSVGQNVSVYGWGATSQCGSEINCQSRYLKVATVRVNSISCSDYTGG
+VAVCANRVNGITAGGDSGGPMFASGRQVGVASTSDRVNNTAYTNITRYRSWISQVAGV"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,polyurethane esterase,Delftia acidovorans,pudA,BAA76305,EC 3.1.1.1,PF00135,N/A,GO:0016787,N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC124672/,Purification and Properties of a Polyester Polyurethane-Degrading Enzyme from Comamonas acidovorans TB-35,Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales; Comamonadaceae; Delftia.,">BAA76305.1 polyurethane esterase [Delftia acidovorans]
+MNSRSLTKAIRFPTILALAGFSVLGACGGSDNDSSSNNQGAPAVAITVAGQVQAVDRLGMRRYFGIPFAA
+PPVGNLRWMPPAPPQSWAAPLAKTQSNAPCMQTGATDPLRLPNGTEDCLYLDVHAPATGEGPFPVMVWIH
+GGAFSIGGTITYADPSPLVSKGVIVVNIAYRMGAMGFLGHPSLRAADGTVGNYGIMDQQAALRWVQDNIA
+AFGGDKSNVTIFGESAGGFSVMTHLASPLSKGLFAKAIVQSGGYGFDRQLTQAQLEAQSTSIVNSALAAA
+GVSCPTVDAACLRGLSAELVNNQLATAFTTANWSPVPSVDGKVLPKSIKATFVAGENNKVPLVNGSNQDE
+WSYFVASRELVAGPLTAAQYPSYLQTSLGLPPSLATVYPLTDYGTNTAQQPSLAATAAGTDMHFSCPALN
+LSKRVLSQATPIFMYEFRDRTAIPSIGRNTISFNQGAGHTYELQYLFNLRDLETAEHRDLQASMARYWTN
+FARTSNPNNGDPVATSWPAFTGPTKVLGLDVASAGGIRELATFETDHKCNTAWTSLTF"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,"Hydrolase, alpha/beta fold family",Alcanivorax borkumensis (strain ATCC 700651 / DSM 11573 / NCIMB 13689 / SK2),ABO_2449,Q0VLQ1,EC 3.1.1.1,PF00561,N/A,GO:0016787,N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6886529/,Biochemical and Structural Insights into Enzymatic Depolymerization of Polylactic Acid and Other Polyesters by Microbial Carboxylesterases,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Gammaproteobacteria > Oceanospirillales > Alcanivoracaceae > Alcanivorax > Alcanivorax borkumensis,">tr|Q0VLQ1|Q0VLQ1_ALCBS Hydrolase, alpha/beta fold family OS=Alcanivorax borkumensis (strain ATCC 700651 / DSM 11573 / NCIMB 13689 / SK2) OX=393595 GN=ABO_2449 PE=4 SV=1
+MQSGTVASNGIELFYESRGPENGEPMVFVMGLSAQMVFWPDTLLDALAAKGYRVIRFDNR
+DVGKSTQIRKPIKQGPVSAILRRIIGLPVESPYTLHDMVADTVGLLDALNIERAHFVGAS
+MGGMISQLMAGTHPERVLSLTSIMSSNNSSLLPPPKPSALRVLIAPRVKVETEEQFVTFG
+LEMMSKLAGTLPQGKEELAAMYRAAWARGINPRGIRNQFLAITATGSLSKTLKQIQCPTT
+VIHGGADPLIRPAGGKASARAIRGAKLVIIPGMGHDFPPSVIDRIGELIAETAGRANSVV
+PPAVG"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,Alpha/beta hydrolase fold,Rhodopseudomonas palustris (strain ATCC BAA-98 / CGA009),RPA1511,Q6N9M9,EC 3.1.1.1,PF12697,N/A,GO:0016787,N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6886529/,Biochemical and Structural Insights into Enzymatic Depolymerization of Polylactic Acid and Other Polyesters by Microbial Carboxylesterases,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Alphaproteobacteria > Hyphomicrobiales > Nitrobacteraceae > Rhodopseudomonas > Rhodopseudomonas palustris,">tr|Q6N9M9|Q6N9M9_RHOPA Alpha/beta hydrolase fold OS=Rhodopseudomonas palustris (strain ATCC BAA-98 / CGA009) OX=258594 GN=RPA1511 PE=1 SV=1
+MSDLVWSRDGLDWPHREASRFIEAGGFRWHVQRMGSPAAPAILLIHGTGAASHSWRGLAP
+LLSRHYHVVAPDLPGHGFTQTPRGHRMSLPGMASDLAALLRVLQVAPQLVVGHSAGAAIL
+ARMCLDGSIDPKILFSLNGAFLPYGGPAASFFSPLAKMLVMNPFVPSLFAWQAGHRGAVE
+RLIGNTGSTIDPAGIKLYGKLVSSPNHVAAALRMMANWDLEPLLKALPNLKPLLVLVAAE
+GDRAIPPSVAVKVREILPKAVIERIPALGHLAHEERPALIAALIERYAEKLENIE"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,Subtilisin Savinase,Lederbergia lenta (Bacillus lentus),N/A,P29600,EC 3.4.,PF00082,N/A,"GO:0008236
+GO:0004252
+GO:0006508
+GO:0008233
+GO:0016787
+GO:0005576
+GO:0030435
+GO:0046872",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://link.springer.com/article/10.1023/A:1010120128048,Degradation of Polylactide by Commercial Proteases,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Firmicutes > Bacilli > Bacillales > Bacillaceae > Lederbergia,">sp|P29600|SUBS_LEDLE Subtilisin Savinase OS=Lederbergia lenta OX=1467 PE=1 SV=1
+AQSVPWGISRVQAPAAHNRGLTGSGVKVAVLDTGISTHPDLNIRGGASFVPGEPSTQDGN
+GHGTHVAGTIAALNNSIGVLGVAPSAELYAVKVLGASGSGSVSSIAQGLEWAGNNGMHVA
+NLSLGSPSPSATLEQAVNSATSRGVLVVAASGNSGAGSISYPARYANAMAVGATDQNNNR
+ASFSQYGAGLDIVAPGVNVQSTYPGSTYASLNGTSMATPHVAGAAALVKQKNPSWSNVQI
+RNHLKNTATSLGSTNLYGSGLVNAEAATR"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,Subtilisin Carlsberg,Bacillus licheniformis,subC (apr),P00780,EC 3.4.,PF00082,N/A,"GO:0008236
+GO:0004252
+GO:0006508
+GO:0008233
+GO:0016787
+GO:0005576
+GO:0046872",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://link.springer.com/article/10.1023/A:1010120128048,Degradation of Polylactide by Commercial Proteases,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Firmicutes > Bacilli > Bacillales > Bacillaceae > Bacillus > Bacillus subtilis group,">sp|P00780|SUBC_BACLI Subtilisin Carlsberg OS=Bacillus licheniformis OX=1402 GN=subC PE=1 SV=2
+MMRKKSFWLGMLTAFMLVFTMAFSDSASAAQPAKNVEKDYIVGFKSGVKTASVKKDIIKE
+SGGKVDKQFRIINAAKAKLDKEALKEVKNDPDVAYVEEDHVAHALAQTVPYGIPLIKADK
+VQAQGFKGANVKVAVLDTGIQASHPDLNVVGGASFVAGEAYNTDGNGHGTHVAGTVAALD
+NTTGVLGVAPSVSLYAVKVLNSSGSGSYSGIVSGIEWATTNGMDVINMSLGGASGSTAMK
+QAVDNAYAKGVVVVAAAGNSGSSGNTNTIGYPAKYDSVIAVGAVDSNSNRASFSSVGAEL
+EVMAPGAGVYSTYPTNTYATLNGTSMASPHVAGAAALILSKHPNLSASQVRNRLSSTATY
+LGSSFYYGKGLINVEAAAQ"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,Cutinase est1,Thermobifida alba (Thermomonospora alba),est1,D4Q9N1,EC 3.1.1.74,PF12740,N/A,"GO:0050525
+GO:0016787
+GO:0005576
+GO:0042597",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://pubmed.ncbi.nlm.nih.gov/20393707/,Diversity of polyester-degrading bacteria in compost and molecular analysis of a thermoactive esterase from Thermobifida alba AHK119,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Streptosporangiales > Nocardiopsaceae > Thermobifida,">sp|D4Q9N1|PETH1_THEAE Cutinase est1 OS=Thermobifida alba OX=53522 GN=est1 PE=1 SV=2
+MSVTTPRREASLLSRAVAVAAAAAATVALAAPAQAANPYERGPNPTESMLEARSGPFSVS
+EERASRLGADGFGGGTIYYPRENNTYGAIAISPGYTGTQSSIAWLGERIASHGFVVIAID
+TNTTLDQPDSRARQLNAALDYMLTDASSSVRNRIDASRLAVMGHSMGGGGTLRLASQRPD
+LKAAIPLTPWHLNKSWRDITVPTLIIGADLDTIAPVSSHSEPFYNSIPSSTDKAYLELNN
+ATHFAPNITNKTIGMYSVAWLKRFVDEDTRYTQFLCPGPRTGLLSDVDEYRSTCPF"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,Cutinase est2,Thermobifida alba (Thermomonospora alba),est2 (est119),F7IX06,EC 3.1.1.74,PF12740,N/A,"GO:0046872
+GO:0050525
+GO:0016787
+GO:0005576
+GO:0042597",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,"https://pubmed.ncbi.nlm.nih.gov/20393707/
+https://pubmed.ncbi.nlm.nih.gov/30761732/","Diversity of polyester-degrading bacteria in compost and molecular analysis of a thermoactive esterase from Thermobifida alba AHK119
+Structural insights into the unique polylactate-degrading mechanism of Thermobifida alba cutinase",cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Streptosporangiales > Nocardiopsaceae > Thermobifida,">sp|F7IX06|PETH2_THEAE Cutinase est2 OS=Thermobifida alba OX=53522 GN=est2 PE=1 SV=1
+MSVTTPRRETSLLSRALRATAAAATAVVATVALAAPAQAANPYERGPNPTESMLEARSGP
+FSVSEERASRFGADGFGGGTIYYPRENNTYGAIAISPGYTGTQSSIAWLGERIASHGFVV
+IAIDTNTTLDQPDSRARQLNAALDYMLTDASSAVRNRIDASRLAVMGHSMGGGGTLRLAS
+QRPDLKAAIPLTPWHLNKSWRDITVPTLIIGAEYDTIASVTLHSKPFYNSIPSPTDKAYL
+ELDGASHFAPNITNKTIGMYSVAWLKRFVDEDTRYTQFLCPGPRTGLLSDVEEYRSTCPF"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,Poly(L-lactide)-degrading enzyme,Laceyella sacchari (Thermoactinomyces thalpophilus),N/A,A0A291HVH1,N/A,PF00082,N/A,"GO:0008236
+GO:0004252
+GO:0006508
+GO:0008233
+GO:0016787",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://pubmed.ncbi.nlm.nih.gov/24646757/,Characterization of poly(L-lactide)-degrading enzyme produced by thermophilic filamentous bacteria Laceyella sacchari LP175,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Firmicutes > Bacilli > Bacillales > Thermoactinomycetaceae > Laceyella,">tr|A0A291HVH1|A0A291HVH1_LACSH Poly(L-lactide)-degrading enzyme (Fragment) OS=Laceyella sacchari OX=37482 PE=3 SV=1
+MKLKLSTILFTACATLAAALPSPEEVDSQAGKLYAPGQVVVKYKDNASASAVKSARAKAN
+GTVMEKNNKLGFEVVKVKGSVEATIEKLKKDPNVEYAEPNYYLHATYTPNDPYFSSRQYG
+PQKIQAPQAWDIAEGSGVKIAIVDTGVQSNHPDLAGKVVGGWDFVDNDSTPQDGNGHGTH
+CAGIAAAVTNNSTGIAGTAPKASILAVRVLNNSGSGTWTAVANGITYAADQGAKVISLSL
+GGTVGNSGLQQAVDYAWSKGSVVVAAAGNAGNTAPNYPAYYSNAIAVASTDQNDNKSSFS
+TYGSWVDVAAPGSSIYSTYPTSTYASLSGTSMATPHVAGVAGLLASQGRSASNIRAAIEN
+TADKISGTGTYWAKGRVNAYKAVQY"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,Cutinase 1,Thermobifida cellulosilytica,cut1,E9LVH8,EC 3.1.1.101,PF12740,N/A,"GO:0050525
+GO:0016787
+GO:0005576
+GO:0042597",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://pubmed.ncbi.nlm.nih.gov/28671263/,"Small cause, large effect: Structural characterization of cutinases from Thermobifida cellulosilytica",cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Streptosporangiales > Nocardiopsaceae > Thermobifida,">sp|E9LVH8|PETH1_THECS Cutinase 1 (Fragment) OS=Thermobifida cellulosilytica OX=144786 GN=cut1 PE=1 SV=1
+MANPYERGPNPTDALLEASSGPFSVSEENVSRLSASGFGGGTIYYPRENNTYGAVAISPG
+YTGTEASIAWLGERIASHGFVVITIDTITTLDQPDSRAEQLNAALNHMINRASSTVRSRI
+DSSRLAVMGHSMGGGGTLRLASQRPDLKAAIPLTPWHLNKNWSSVTVPTLIIGADLDTIA
+PVATHAKPFYNSLPSSISKAYLELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQF
+LCPGPRDGLFGEVEEYRSTCPF"
+Polylactic acid,"lactic acid
+2-hydroxypropanoic acid
+DL-Lactic acid
+2-hydroxypropionic acid",C3H6O3,C(C(O)=O)(C)O,N/A,Cutinase 2,Thermobifida cellulosilytica,cut2,E9LVH9,EC 3.1.1.101,PF12740,N/A,"GO:0050525
+GO:0016787
+GO:0005576
+GO:0042597",N/A,https://pubchem.ncbi.nlm.nih.gov/compound/612,N/A,https://pubmed.ncbi.nlm.nih.gov/28671263/,"Small cause, large effect: Structural characterization of cutinases from Thermobifida cellulosilytica",cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Streptosporangiales > Nocardiopsaceae > Thermobifida,">sp|E9LVH9|PETH2_THECS Cutinase 2 (Fragment) OS=Thermobifida cellulosilytica OX=144786 GN=cut2 PE=1 SV=1
+MANPYERGPNPTDALLEARSGPFSVSEERASRFGADGFGGGTIYYPRENNTYGAVAISPG
+YTGTQASVAWLGERIASHGFVVITIDTNTTLDQPDSRARQLNAALDYMINDASSAVRSRI
+DSSRLAVMGHSMGGGGTLRLASQRPDLKAAIPLTPWHLNKNWSSVRVPTLIIGADLDTIA
+PVLTHARPFYNSLPTSISKAYLELDGATHFAPNIPNKIIGKYSVAWLKRFVDNDTRYTQF
+LCPGPRDGLFGEVEEYRSTCPF"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Intracellular poly(3-hydroxybutyrate) depolymerase,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) (Ralstonia eutropha),phaZ1,Q0KCI0,ec 3.1.1.75,PF06850,https://www.genome.jp/dbget-bin/www_bget?C06143,"GO:0016787
+GO:0050526",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC94854/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC94719/","Cloning of an Intracellular Poly[d(?)-3-Hydroxybutyrate] Depolymerase Gene from Ralstonia eutropha H16 and Characterization of the Gene Product
+Mobilization of Poly(3-Hydroxybutyrate) in Ralstonia eutropha",cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Cupriavidus > Cupriavidus necator (Alcaligenes eutrophus),">tr|Q0KCI0|Q0KCI0_CUPNH Intracellular poly(3-hydroxybutyrate) depolymerase OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=phaZ1 PE=4 SV=1
+MLYQLHEFQRSILHPLTAWAQATAKTFTNPLSPLSLVPGAPRLAAGYELLYRLGKEYEKP
+AFDIKSVRSNGRDIPIVEQTVLEKPFCKLVRFKRYADDPETIKLLKDEPVVLVAAPLSGH
+HATLLRDTVRTLLQDHKVYVTDWIDARMVPVEEGAFHLSDYIYYIQEFIRHIGAENLHVI
+SVCQPTVPVLAAISLMASAGEKTPRTMTMMGGPIDARKSPTAVNSLATNKSFEWFENNVI
+YTVPANYPGHGRRVYPGFLQHAGFVAMNPDRHLSSHYDFYLSLVEGDADDAEAHVRFYDE
+YNAVLDMAAEYYLDTIREVFQEFRLANGTWAIDGNPVRPQDIKSTALMTVEGELDDISGA
+GQTAAAHDLCAGIPKIRKQHLNAAHCGHYGIFSGRRWREEIYPQLRDFIRKYHQASATR"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Intracellular poly(3-hydroxybutyrate) depolymerase,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) (Ralstonia eutropha),phaZ2,Q0K7T2,ec 3.1.1.75,PF06850,https://www.genome.jp/dbget-bin/www_bget?C06144,"GO:0016787
+GO:0050526",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC161563/,Ralstonia eutropha H16 Encodes Two and Possibly Three Intracellular Poly[d-(?)-3-Hydroxybutyrate] Depolymerase Genes,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Cupriavidus > Cupriavidus necator (Alcaligenes eutrophus),">tr|Q0K7T2|Q0K7T2_CUPNH Intracellular poly(3-hydroxybutyrate) depolymerase OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=phaZ2 PE=4 SV=1
+MLYHAYQIYADMILPACTLAELAAATLAANPRSGGFDAVPRLRAACELIALVRLTHHRPA
+FGIDHATVGGQPVPVTEEVVARTPFCSLLHFRRHGIVGQPRVLLVAPMSGHFATLLRGTV
+QTMLADHDVYLTDWHNPRDIPLLAGRFGFDEFVQHLIGFLQTLGGGTHLVAICQPAVAAL
+AAAALMAEDGDPAQPPSLTLMAGPIDARVNPTKVNALAMSQPLEWFERTLIGMVPLRFAG
+AMRRVYPGHVQLLAFMSMNPERHEQALRELYALRERGEHDKADAIRDFYIEYFATMDLTA
+EFYLETVSLVFQRFLLAQGLLDVSGRRVRTRAIHRTALLTVEGERDDICAIGQTVAAQDL
+CSSLRPYMRMHHVQTGVGHYGVFNGRRWETQVYPLVRNTIYTSS"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Intracellular poly(3-hydroxybutyrate) depolymerase,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) (Ralstonia eutropha),phaZ3,Q0K4D5,ec 3.1.1.75,PF06850,https://www.genome.jp/dbget-bin/www_bget?C06145,"GO:0016787
+GO:0050526",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC161563/,Ralstonia eutropha H16 Encodes Two and Possibly Three Intracellular Poly[d-(?)-3-Hydroxybutyrate] Depolymerase Genes,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Cupriavidus > Cupriavidus necator (Alcaligenes eutrophus),">tr|Q0K4D5|Q0K4D5_CUPNH Intracellular poly(3-hydroxybutyrate) depolymerase OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=phaZ3 PE=4 SV=1
+MLYQLVEYQRALLAPFTAWAASAANAFIDPASPFAYVPGASCFAAGYEMLYRLGRTCEKP
+SFGIITAIRRDGHVIAVAEQVIVEGPFCRLLRFAPDMGALDPCTAPTPPVLVCAPLAGHH
+AVMLREVVQALLPEHVVYVTDWNDARRVPVAEGPFHLDDQVAHLQAFIRRIGAEPLHVLA
+ICQATVPALAAVSLLASAGEPTPRSLILVGGPVDARRSPTALGRLAARHSLAWFQRNLIY
+AVPQPYPGAGRKVCPSFLQLAGLAAAQPERLGEAYWDYCLDLVRCDPVRAKEHRRACDAY
+HAVLDMAAEFYLDTIQLVFQEFQLARGSWQVRGEAVRPQDIRTTALLTIEGEQDEISGRG
+QTQAAHDLCQGIAACDKRHLTARQCGHYDLFCGPRWCTDVYPRIRDLTGHDT"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Putative PHB depolymerase,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) (Ralstonia eutropha),phaZ,Q7WXF6,ec 3.1.1.75,PF06850,https://www.genome.jp/dbget-bin/www_bget?C06146,N/A,https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://amb-express.springeropen.com/articles/10.1186/2191-0855-2-26,Examination of PHB Depolymerases in Ralstonia eutropha: Further Elucidation of the Roles of Enzymes in PHB Homeostasis,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Cupriavidus > Cupriavidus necator (Alcaligenes eutrophus),">tr|Q7WXF6|Q7WXF6_CUPNH Putative PHB depolymerase OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=phaZ PE=4 SV=1
+MLRDVVQSLLQEHIVYVTDWSNGAIALLASRDEATPTSLTLIGGPIDARRSPTAIGRLAS
+SRSIQWFRRNLVYPVPHPYAGAGRQVCPSFVQLSGLAAAQSSPLWGLCEGYWANLARGDA
+ERANVHWQALLDYSAVLDMAAEFYLDTVRTVFQEFQIAFGTWRVRGQLVRPQDIRSTALL
+TIEGELDDISGRGQTHAAHDLCRGLSAHDRRLVTIAGCTHYDLFRGPVWHTEVFPWICDM
+TRDDM"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Intracellular poly(3-hydroxybutyrate) depolymerase,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) (Ralstonia eutropha),phaZ5,Q0K2G9,ec 3.1.1.75,PF06850,https://www.genome.jp/dbget-bin/www_bget?C06147,"GO:0016787
+GO:0050526",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://amb-express.springeropen.com/articles/10.1186/2191-0855-2-26,Examination of PHB Depolymerases in Ralstonia eutropha: Further Elucidation of the Roles of Enzymes in PHB Homeostasis,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Cupriavidus > Cupriavidus necator (Alcaligenes eutrophus),">tr|Q0K2G9|Q0K2G9_CUPNH Intracellular poly(3-hydroxybutyrate) depolymerase OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=phaZ5 PE=4 SV=1
+MALYALRELTLQSLGPLGAMIEAGYRAVNFWGESVAWLPGLREADAALELFTRLTKAYGK
+PSFEIDEVFVRGQRVAVTETALIEEPFCRLLHFRKDMSNPGPRVLLVAPLSGHYATLLRP
+TVEALLPGHDVYITDWADARLVPLDAGHFDLGCYVDYLKKFLRYLGAGTHIVAVCQPGVP
+VLCAVAQMAEDNEQVQPRSMTLIAAPIDTRVSPTAVDQFAQQYSLAWFEANVIERVPAGY
+PGNGRRVYPGFLQLAGFVSMNVAHHAGAHLDFYRHLVDGRQSEAARHRKFYDEYNAVLDV
+PAEYYLETIQKVFLEHHLCRGRMEVGQRRVYPEAIANVSLLTIEGSEDDITGRGQTEAAH
+ALCAGLAADRKEHLVVDGVGHYGTFAGQRFRESILPAMTQFIQRCAD"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Poly(3-hydroxybutyrate) depolymerase,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) (Ralstonia eutropha),phaZ6,Q0JZG9,ec 3.1.1.75,PF10503,https://www.genome.jp/dbget-bin/www_bget?C06148,"GO:0016787
+GO:0005576
+GO:0050526",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://pubmed.ncbi.nlm.nih.gov/24907326/,"To be or not to be a poly(3-hydroxybutyrate) (PHB) depolymerase: PhaZd1 (PhaZ6) and PhaZd2 (PhaZ7) of Ralstonia eutropha, highly active PHB depolymerases with no detectable role in mobilization of accumulated PHB",cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Cupriavidus > Cupriavidus necator (Alcaligenes eutrophus),">tr|Q0JZG9|Q0JZG9_CUPNH Poly(3-hydroxybutyrate) depolymerase OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=phaZ6 PE=4 SV=1
+MTKSFAADWHAQIRRLSRAQARTEAQVKSWLDRVDSLNPLTPARPDRPPGKVRPARPAPA
+PGSLPGTWQAHRLRLAPLPGELVPQLSYHLYIPSKAHRGPLPVVVVLHGCRQTPDDLSAG
+TRMNALAEREGFIVAYPQQPLRRQVQRCWQWFDLGAAEGGREAQAVAALIDALAARHDVR
+EREIYLAGMSAGAAMAAVVALRYPGKVAAAALHSGVVIGAADNPRAGLRAMQQGSAADPS
+WLLDAAGVTPGGPEMPALVIHGLADDAVHPVNGRLLARQFLAYNGLEDRLAGAPAQSGPE
+DEAPGRSHEYRFGRWRRDLVTLVEVEGLGHAWSGGDASYGYHSDIGPDASTMMWQFFSQH
+RR"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Poly(3-hydroxybutyrate) depolymerase,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) (Ralstonia eutropha),phaZ7,Q0JYJ1,ec 3.1.1.75,PF10503,https://www.genome.jp/dbget-bin/www_bget?C06149,"GO:0016787
+GO:0005576
+GO:0050526",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://pubmed.ncbi.nlm.nih.gov/24907326/,"To be or not to be a poly(3-hydroxybutyrate) (PHB) depolymerase: PhaZd1 (PhaZ6) and PhaZd2 (PhaZ7) of Ralstonia eutropha, highly active PHB depolymerases with no detectable role in mobilization of accumulated PHB",cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Cupriavidus > Cupriavidus necator (Alcaligenes eutrophus),">tr|Q0JYJ1|Q0JYJ1_CUPNH Poly(3-hydroxybutyrate) depolymerase OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=phaZ7 PE=4 SV=1
+MPRSSGAKLWSTLNKAAARNARRLQRAVNQNLTRPMTEAIVRNAVKQSAAVTAATQRALS
+GVVSPVQAPQNRGSGRWEEGAWGAPVAPRRYRIFVPAGVTASRRAPMLVLLHGCGQDAAS
+FAAVTRAAAVAREAGWVVLLPEQTSQANAQRCWNWFRPGAQGGVEAGLLMALIDQACRGH
+PVAADRISVLGLSAGGAMALMLGLRYPGRFAAVGSHSGAVPWSASNAAQAARAMRGGHGP
+DAKAMQALRFGLAGRRPPPLLLLHGDADHVVDFSNATAAAGMWMHLQPEDAHALSAAPAR
+RIQRGMRRAMDVFDWAEGKSPYVRLVRIEGLGHAWSGGAGGQAFSDPAGPDGLKLALRFF
+LEVGG"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,D-(-)-3-hydroxybutyrate oligomer hydrolase,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) (Ralstonia eutropha),phaZ2 (phaY1),Q0K9H3,ec 3.1.1.22,PF10605,https://www.genome.jp/dbget-bin/www_bget?C06150,"GO:0005615
+GO:0019605
+GO:0047989
+GO:0016787
+GO:0005737",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://amb-express.springeropen.com/articles/10.1186/2191-0855-2-26,Examination of PHB Depolymerases in Ralstonia eutropha: Further Elucidation of the Roles of Enzymes in PHB Homeostasis,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Cupriavidus > Cupriavidus necator (Alcaligenes eutrophus),">sp|Q0K9H3|HBOH_CUPNH D-(-)-3-hydroxybutyrate oligomer hydrolase OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=phaZ2 PE=1 SV=1
+MHSTQIPPQQKQKRRLRLTVLAAAASMLAAACVSGDDNNNGNGSNPNTKPANIGTVTINS
+YNGTTDDLLTAGLGKDGLASATAPLPANPTAPTAAELRRYAIHTNYRAIVDTTASGGYGS
+LYGPNVDAQGNVTGSDGKVAGVEYLAFSDDGSGQQNVTMLVQIPASFNTSKPCMITATSS
+GSRGVYGAIATGEWGLKRGCAVAYTDKGTGAAPHDLDTDTVPLIDGTRATRAAAGKNAQF
+AAPAGATSLADFTAANPHRLAFKHAHSQRNPEKDWGKFTLQAVEFAIWAINDRFGAVSAN
+GTRQRTLDKDRIVVIASSVSNGGGAAVAAAEQDAGGLIDGVAVGEPNLNMPPNTGIVVQR
+GATPVAASGRTLYDYTTTANLLQHCAARATALTQAPFYTNPATATFFANRCQTLAEKGLV
+SGANTDEQSASALQALHDAGWEAESDDLHPSLAVFDVAAAISVNYANAYAQASVTDRLCG
+YSFASTLTDLKPAAIAPAALASMFATGNGVPPQPPVQLINDLDPQHGPYLNLASVSPSTL
+REDLNYDGANCLRSLLAGSDAAARALQAGQALTLRNGNLRGKPAVIVHGRSDGLLPVNHT
+SRPYLGLNRQQEGVTSKLSYVEVENAQHFDAFIGLVPGYSNRYVPLHVYLNRALDAVYDN
+LTAGKALPPSQVLRTTPRGGTLNTPAPALLPSNVPPFAASPAAGNAITVNANAVQVPD"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,D-(-)-3-hydroxybutyrate oligomer hydrolase,Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) (Ralstonia eutropha),phaY2,Q0KBZ6,N/A,PF12697,https://www.genome.jp/dbget-bin/www_bget?C06151,"GO:0016787
+GO:0047989",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://amb-express.springeropen.com/articles/10.1186/2191-0855-2-26,Examination of PHB Depolymerases in Ralstonia eutropha: Further Elucidation of the Roles of Enzymes in PHB Homeostasis,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Cupriavidus > Cupriavidus necator (Alcaligenes eutrophus),">tr|Q0KBZ6|Q0KBZ6_CUPNH D-(-)-3-hydroxybutyrate oligomer hydrolase OS=Cupriavidus necator (strain ATCC 17699 / DSM 428 / KCTC 22496 / NCIMB 10442 / H16 / Stanier 337) OX=381666 GN=phaY2 PE=4 SV=1
+MSASPRLGFVQCISPAGLHRMAYHEWGDPANPRVLVCAHGLTRTGRDFDTVASALCGDYR
+VVCPDVAGRGRSEWLADANGYVVPQYVSDMVTLIARLNVEKVDWFGTSMGGLIGMGLAGL
+PKSPVRKLLLNDVGPKLAPSAVERIGAYLGLPVRFKTFEEGLAYLQTISASFGRHTPEQW
+RELNAAILKPVQGTDGLEWGLHYDPQLAVPFRKSTPEAIAAGEAALWRSFEAIEGPVLVV
+RGAQSDLLLRETVAEMVARGKHVSSVEVPDVGHAPTFVDPAQIAIAPQFFTGA"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,PhaZ,Pseudomonas alcaligenes,phaZ,Q6UFW4,ec 3.1.1.76,N/A,https://www.genome.jp/dbget-bin/www_bget?C06152,,https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://www.sciencedirect.com/science/article/abs/pii/S014181309900046X?via=ihub,Substrate and binding specificities of bacterial polyhydroxybutyrate depolymerases,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Gammaproteobacteria > Pseudomonadales > Pseudomonadaceae > Pseudomonas > Pseudomonas aeruginosa group,">tr|Q6UFW4|Q6UFW4_PSEAC PhaZ OS=Pseudomonas alcaligenes OX=43263 GN=phaZ PE=4 SV=1
+MLAPRSLLFCLLLFALPNAFADSRCSERAKTLLLPAKVSCSYKTTWIDSGLIGARQVIYQ
+APLGTPPAGGWPVVLIYQGSFFPLNNFTYYSNQPFGGYYEGKLVRALLDSGYAVIAPSAP
+ADLFWQTNIPGLAQAYELTTDYDFLGNVFDAIASGHFGPLNSQRKYATGISSGGYNTSRM
+AVSFPGQFKALAIQSGSYATCSGPLCVVPDQLPADHXPTYFLHGFVDLTVPWWSMDLYYD
+RLLQQGIETARYTEPLGGHEWFAASPGKVLAWFNAHP"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Lipase (Class 2),Paucimonas lemoignei (Pseudomonas lemoignei),phaZ7,Q939Q9,ec 3.1.1.75,PF01674,https://www.genome.jp/dbget-bin/www_bget?C06153,"GO:0016042
+GO:0016787",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://pubmed.ncbi.nlm.nih.gov/24007310/,Biochemical analysis and structure determination of Paucimonas lemoignei poly(3-hydroxybutyrate) (PHB) depolymerase PhaZ7 muteins reveal the PHB binding site and details of substrate-enzyme interactions,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Paucimonas,">tr|Q939Q9|Q939Q9_PAULE Lipase (Class 2) (Fragment) OS=Paucimonas lemoignei OX=29443 GN=phaZ7 PE=1 SV=1
+MISKLMGAQRFLPAVAATVTSLVWGLAGTLVAPGEAQALTCGTNSGFVCKGTQTQYAGGF
+APGVGYGGFGGGSCTATKTPVIFIHGNGDNAISFDMPPGNVSGYGTPARSVYAELKARGY
+NDCEIFGVTYLSSSEQGSAQYNYHSSTKYAIIKTFIDKVKAYTGKSQVDIVAHSMGVSMS
+LATLQYYNNWTSVRKFINLAGGIRGLYSCYYTGYANAAAPTCGSQNYYNSYTFGFFPEGW
+YYGVWVSNPWTGSGSTNSMRDMPAKRTAVSFYTLSAGFKDQVGCATASFWAGCDSAAKFA
+STTSNVKAQINVGAGSNATQADYDWADGMPYNAGGGDTTNGVGHFRTKTNTGAIIQRMLL
+TTCTGLDCAAEYTTGPKAAY"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Poly(3-hydroxybutyrate) depolymerase A,Paucimonas lemoignei (Pseudomonas lemoignei),phaZ5,Q51871,N/A,PF10503,https://www.genome.jp/dbget-bin/www_bget?C06154,"GO:0005576
+GO:0016787",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,https://pubmed.ncbi.nlm.nih.gov/12007811/,Production of PHA depolymerase A (PhaZ5) from Paucimonas lemoignei in Bacillus subtilis,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Betaproteobacteria > Burkholderiales > Burkholderiaceae > Paucimonas,">tr|Q51871|Q51871_PAULE Poly(3-hydroxybutyrate) depolymerase A OS=Paucimonas lemoignei OX=29443 GN=phaZ5 PE=4 SV=1
+MRNTLKAAFKLGVISAALLAPFATQAATAGPGAWSSQQTWAADSVNGGNLTGFYYWPATQ
+PVHANGKRALVLVLHGCAQTASGDVINNGDNGYNWKAAADQYGAVILAPNATGNVSSQHC
+WDYSRTSHSRSTGHEYVLLDLINRFKNDPQYEIDPNQVYVTGLSSGGGETIVLGCIAPDV
+FAGWASNAGPTPGTTTLQIGAVPSGYTATNAKNNCLSLAGSNSSYFSTQIAGVVWGTSDF
+TVAPGYNPLMMDAMRQIYGGTFTKQASTSVATGGTNTTYKDSSGRVRTHELSVSGMSHAW
+PAGTGGQNTNYVTSQYVNYPLFVMDYFFTNNSRAGSGGGTTTTTAGGTTTTTAAGTTTTA
+ATTTTTASSTTTTVAATCYTSSNYAHVTAGRAHNSSGYALANGSNQNMGLNNTFYTSTLK
+QTSPGYYVIGTCP"
+Polyhydroxybutyrate,,(C4H6O2)n,CC(CC=O)OC(=O)CC(C)OC(=O)CC(C)O,[(R)-3-hydroxybutanoate]n + H2O ? [(R)-3-hydroxybutanoate](n-1) + (R)-3-hydroxybutanoate,Polyhydroxybutyrate depolymerase,Pseudomonas stutzeri (Pseudomonas perfectomarina),phaZpst,O82950,N/A,"PF16403
+PF10503",https://www.genome.jp/dbget-bin/www_bget?C06155,"GO:0005576
+GO:0016787",https://www.genome.jp/pathway/map00650+C06143,https://pubchem.ncbi.nlm.nih.gov/compound/71311208,https://biocyc.org/META/NEW-IMAGE?type=REACTION&object=3.1.1.75-RXN,"https://www.sciencedirect.com/science/article/abs/pii/S014181309900046X?via=ihub
+https://pubmed.ncbi.nlm.nih.gov/9872779/","Substrate and binding specificities of bacterial polyhydroxybutyrate depolymerases
+Cloning and characterization of the polyhydroxybutyrate depolymerase gene of Pseudomonas stutzeri and analysis of the function of substrate-binding domains",cellular organisms > Bacteria (eubacteria) > Proteobacteria > Gammaproteobacteria > Pseudomonadales > Pseudomonadaceae > Pseudomonas > Pseudomonas stutzeri group > Pseudomonas stutzeri subgroup,">tr|O82950|O82950_PSEST Polyhydroxybutyrate depolymerase OS=Pseudomonas stutzeri OX=316 GN=phaZpst PE=4 SV=1
+MTKQSLPQGMADQRLCRFFTAALCSLLMLLLWPTTVTAGQTFSYTSPQQAYSGSRERSYK
+VYVPTGLSTPAPMVMALHGCRQTNDDVLNDWGLKAAADRYGFILVAPFITSYDGLRNENC
+WGFWFEQHIHQGGGEVADLHRIAQQVEANFVIDANRRFITGLSSGGAMALVAAVAYNEYW
+AAAAPAAGLPYRETASSVSLSGQCPGSATFRSVSQVAADMRSEVNDAYPIPLMILQNRND
+CTVLQTAANNMRDAHLQVFGSASRNTPATTKASDTGCSPYHQNDYGCRHIAYTQDGTTAT
+RSLVETVIYDGPLATPNPQDTNHGHYWIGGAQGNNGKWSLQVGPSYPDIIWDFFSRHSRD
+GSQPQGHPVIVLQGDNPLSVPLGSTFNDPGASASDAEDGSLPVSADCSAVNPSVVGSYSC
+LYSATDSDGNRSTLTRTVEVYDPNAPVETCQVVSASPSAHIGAGRAYAGGTSNLRAYAKD
+DGVDIGGSFDTWSNVPLYEGEPGRWYAQRPAACGGSGQAFTCQEWNASNLSHVMAGRAYY
+GYYTVGGNQYLGSLSGLSTWVRETAQGHFQAGRCSN"
+polyamide,"poly(amide)
+poly(amide)s
+polyamides
+amide
+Nylon 6",C18H34N3O4-,C(CCC(=O)NCCCCCC(=O)NCCCCCC(=O)[O-])CCN,nylon-6 polymer + n H2O ? n a nylon-6 linear oligomer,6-aminohexanoate-cyclic-dimer hydrolase,Pseudomonas sp. (strain NK87),nylA,P13397,EC:3.5.2.12,PF01425,https://www.genome.jp/entry/C00241,"GO:0019876
+GO:0019874",https://www.genome.jp/dbget-bin/www_bget?cpd:C00241,https://pubchem.ncbi.nlm.nih.gov/compound/9543384,https://www.biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=P621-PWY,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC210034/,Plasmid dependence of Pseudomonas sp. strain NK87 enzymes that degrade 6-aminohexanoate-cyclic dimer.,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Proteobacteria incertae sedis > unclassified pseudomonads,">sp|P13397|NYLA_PSES8 6-aminohexanoate-cyclic-dimer hydrolase OS=Pseudomonas sp. (strain NK87) OX=314 GN=nylA PE=3 SV=2
+MSKVDLWQDATAQAELVRSGEISRTELLEATIAHVQAVNPEINAVIIPLFEKARRESELA
+SGPFAGVPYLLKDLTVVSQGDINTSSIKGMKESGYRADHDAYFVQRMRAAGFVLLGKVNT
+PEMGTQVTTEPEAWGATRNPWNLGRSVGGSSGGSGAAVAAALSPVAHGNDAAGSVRIPAS
+VCGVVGLKPTRGRISPGPLVTDSDNVAGAAHEGLFARSVRDIAALLDVVSGHRPGDTFCA
+PTASRPYAQGISENPGSLRVGVLTHNPVGDFALDPECAAAARGAAAALAALGHDVNDAYP
+EALGDRSFLKDYLTICDVAIAREIERNGELIGRPLTEDDVEWTSWEMVKRADQVTGRAFA
+ACVDELRYYAGKVERWWEAGWDLLILPTVTRQTPEIGELMLAKGTDLEGRHTALISGSLR
+MLAFTVPFNVSGQPAISLPIGMSSDGMPIGVQIVAAYGREDLLLQVAAQLEGALPWVARR
+PQLLNPSRKIPAA"
+polyamide,"poly(amide)
+poly(amide)s
+polyamides
+amide
+Nylon 6",C18H34N3O4-,C(CCC(=O)NCCCCCC(=O)NCCCCCC(=O)[O-])CCN,nylon-6 polymer + n H2O ? n a nylon-6 linear oligomer,6-aminohexanoate-cyclic-dimer hydrolase,Flavobacterium sp. (strain K172),nylA,P13398,EC:3.5.2.12,PF01425,https://www.genome.jp/entry/C00241,"GO:0019876
+GO:0019874",https://www.genome.jp/dbget-bin/www_bget?cpd:C00241,https://pubchem.ncbi.nlm.nih.gov/compound/9543384,https://www.biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=P621-PWY,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2801252/,X-ray crystallographic analysis of the 6-aminohexanoate cyclic dimer hydrolase: catalytic mechanism and evolution of an enzyme responsible for nylon-6 byproduct degradation,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Micrococcales > Micrococcaceae > Paenarthrobacter,">sp|P13398|NYLA_FLASK 6-aminohexanoate-cyclic-dimer hydrolase OS=Flavobacterium sp. (strain K172) OX=37931 GN=nylA PE=1 SV=2
+MSKVDLWQDATAQAELVRSGEISRTELLEATIAHVQAVNPEINAVIIPLFEKARRESELA
+SGPFAGVPYLLKDLTVVSQGDINTSSIKGMKESGYRADHDAYFVQRMRAAGFVLLGKTNT
+PEMGNQVTTEPEAWGATRNPWNLGRSVGGSSGGSGAAVAAALSPVAHGNDAAGSVRIPAS
+VCGVVGLKPTRGRISPGPLVTDSDNVAGAAHEGLFARSVRDIAALLDVVSGHRPGDTFCA
+PTASRPYAQGISENPGSLRVGVLTHNPVGDFALDPECAAAARGAAAALAALGHDVNDAYP
+EALGDRSFLKDYSTICDVAIAREIERNGELIGRPLTEDDVEWTSWEMVKRADQVTGRAFA
+ACVDELRYYAGKVERWWEAGWDLLILPTVTRQTPEIGELMLAKGTDLEGRQSAFISGSLQ
+MLAFTVPFNVSGQPAISLPIGMSSDGMPIGVQIVAAYGREDLLLQVAAQLEGALPWVARR
+PQLLNPSRKIPAA"
+polyamide,"poly(amide)
+poly(amide)s
+polyamides
+amide
+Nylon 6",C18H34N3O4-,C(CCC(=O)NCCCCCC(=O)NCCCCCC(=O)[O-])CCN,nylon-6 polymer + n H2O ? n a nylon-6 linear oligomer,6-aminohexanoate-dimer hydrolase,Flavobacterium sp. (strain K172),nylB,P07061,EC:3.5.1.46,PF00144,https://www.genome.jp/entry/C00241,"GO:0019875
+GO:0019876",https://www.genome.jp/dbget-bin/www_bget?cpd:C00241,https://pubchem.ncbi.nlm.nih.gov/compound/9543384,https://www.biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=P621-PWY,"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC207530/
+https://www.jbc.org/article/S0021-9258(18)89791-5/pdf","A new nylon oligomer degradation gene (nylC) on plasmid pOAD2 from a Flavobacterium sp
+Construction of hybrid genes of 6-aminohexanoic acid-oligomer hydrolase and its analogous enzyme. Estimation of the intramolecular regions important for the enzyme evolution",cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Micrococcales > Micrococcaceae > Paenarthrobacter,">sp|P07061|NYLB_FLASK 6-aminohexanoate-dimer hydrolase OS=Flavobacterium sp. (strain K172) OX=37931 GN=nylB PE=1 SV=1
+MNARSTGQHPARYPGAAAGEPTLDSWQEAPHNRWAFARLGELLPTAAVSRRDPATPAEPV
+VRLDALATRLPDLEQRLEETCTDAFLVLRGSEVLAEYYRAGFAPDDRHLLMSVSKSLCGT
+VVGALIDEGRIDPAQPVTEYVPELAGSVYDGPSVLQVLDMQISIDYNEDYVDPASEVQTH
+DRSAGWRTRRDGDPADTYEFLTTLRGDGGTGEFQYCSANTDVLAWIVERVTGLRYVEALS
+TYLWAKLDADRDATITVDQTGFGFANGGVSCTARDLARVGRMMLDGGVAPGGRVVSQGWV
+ESVLAGGSREAMTDEGFTSAFPEGSYTRQWWCTGNERGNVSGIGIHGQNLWLDPRTDSVI
+VKLSSWPDPDTRHWHGLQSGILLDVSRALDAV"
+polyamide,"poly(amide)
+poly(amide)s
+polyamides
+amide
+Nylon 6",C18H34N3O4-,C(CCC(=O)NCCCCCC(=O)NCCCCCC(=O)[O-])CCN,nylon-6 polymer + n H2O ? n a nylon-6 linear oligomer,6-aminohexanoate-oligomer endohydrolase,Flavobacterium sp. (strain K172),nylC,Q79F77,EC:3.5.1.117,PF03576,https://www.genome.jp/entry/C00241,"GO:0016787
+GO:0019876",https://www.genome.jp/dbget-bin/www_bget?cpd:C00241,https://pubchem.ncbi.nlm.nih.gov/compound/9543384,https://www.biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=P621-PWY,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC182563/,"Nylon oligomer degradation gene, nylC, on plasmid pOAD2 from a Flavobacterium strain encodes endo-type 6-aminohexanoate oligomer hydrolase: purification and characterization of the nylC gene product",cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Micrococcales > Micrococcaceae > Paenarthrobacter,">sp|Q79F77|NYLC_FLASK 6-aminohexanoate-oligomer endohydrolase OS=Flavobacterium sp. (strain K172) OX=37931 GN=nylC PE=1 SV=1
+MNTTPVHALTDIDGGIAVDPAPRLAGPPVFGGPGNDAFDLAPVRSTGREMLRFDFPGVSI
+GAAHYEEGPTGATVIHIPAGARTAVDARGGAVGLSGGYDFNHAICLAGGAGYGLEAGAGV
+SDALLERLEHRTGFAELQLVSSAVIYDFSARSTAVYPDKALGRAALEFAVPGEFPQGRAG
+AGMSASAGKVDWDRTEITGQGAAFRRLGDVRILAVVVPNPVGVIVDRAGTVVRGNYDAQT
+GVRRHPVFDYQEAFAEQVPPVTEAGNTTISAIVTNVRMSPVELNQFAKQVHSSMHRGIQP
+FHTDMDGDTLFAVTTDEIDLPTTPGSSRGRLSVNATALGAIASEVMWDAVLEAGK"
+polyamide,"poly(amide)
+poly(amide)s
+polyamides
+amide
+Nylon 6",C18H34N3O4-,C(CCC(=O)NCCCCCC(=O)NCCCCCC(=O)[O-])CCN,nylon-6 polymer + n H2O ? n a nylon-6 linear oligomer,6-aminohexanoate-oligomer endohydrolase,Agromyces sp. (strain KY5R),nylC,Q1EPR5,EC:3.5.1.117,PF03576,https://www.genome.jp/entry/C00241,"GO:0016787
+GO:0019876",https://www.genome.jp/dbget-bin/www_bget?cpd:C00241,https://pubchem.ncbi.nlm.nih.gov/compound/9543384,https://www.biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=P621-PWY,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2074972/,6-Aminohexanoate oligomer hydrolases from the alkalophilic bacteria Agromyces sp. strain KY5R and Kocuria sp. strain KY2,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Micrococcales > Microbacteriaceae > Agromyces > unclassified Agromyces,">sp|Q1EPR5|NYLC_AGRS5 6-aminohexanoate-oligomer endohydrolase OS=Agromyces sp. (strain KY5R) OX=388924 GN=nylC PE=1 SV=2
+MNTTPVHALTDIDGGIAVDPAPRLAGPPVFGGPGNDAFDLAPVRSTGREMLRFDFPGVSI
+GAAHYEEGPTGATVIHIPAGARTAVDARGGAVGLSGGYDFNHAICLAGGASYGLEAGAGV
+SGALLERLEYRTGFAEAQLVSSAVIYDFSARSTAVYPDKALGRAALEFAVPGEFPQGRAG
+AGMSASAGKVDWDRTEITGQGAAFRRLGDVRILAVVVPNPVGVIMDRAGTVVRGNYDAQT
+GVRRHPVFDYQEAFAEQVPPVTEAGNTTISAIVTNVRMSPVELNQFAKQVHSSMHRGIQP
+FHTDMDGDTLFAVTTDEIDLPTTPGSSRGRLSVNATALGAIASEVMWDAVLEAGK"
+polyamide,"poly(amide)
+poly(amide)s
+polyamides
+amide
+Nylon 6",C18H34N3O4-,C(CCC(=O)NCCCCCC(=O)NCCCCCC(=O)[O-])CCN,nylon-6 polymer + n H2O ? n a nylon-6 linear oligomer,6-aminohexanoate-oligomer endohydrolase,Kocuria sp. (strain KY2),nylC,Q1EPR4,EC:3.5.1.117,PF03576,https://www.genome.jp/entry/C00241,"GO:0016787
+GO:0019876",https://www.genome.jp/dbget-bin/www_bget?cpd:C00241,https://pubchem.ncbi.nlm.nih.gov/compound/9543384,https://www.biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=P621-PWY,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2074972/,6-Aminohexanoate oligomer hydrolases from the alkalophilic bacteria Agromyces sp. strain KY5R and Kocuria sp. strain KY2,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Micrococcales > Micrococcaceae > Kocuria > unclassified Kocuria,">sp|Q1EPR4|NYLC_KOCS2 6-aminohexanoate-oligomer endohydrolase OS=Kocuria sp. (strain KY2) OX=388923 GN=nylC PE=1 SV=1
+MNTTPVHALTDIDGGIAVDPAPRLAGPPVFGGPGNAAFDLVPVRSTGRETLRFDFPGVSV
+GSAHYEEGPTGATVIHIPAGARTAVDARGGAVGLSGGYDFNHAICLAGGASYGLEAGAGV
+SGALLERLEYRTGFAEAQLVSSAVIYDFSARSTAVYPDKALGRAALEFAVPGEFPQGRAG
+AGMSASAGKVDWDRTEITGQGAAFRRLGDVRILAVVVPNPVGVIMDRAGGIVRGNYDAQT
+GVRRHPVFDYQEAFAEQLPPVTQAGNTTISAIVTNVRMSPVELNQFAKQVHSSMHRGIQP
+FHTDMDGDTLFAVTTDEIDLPTTPGSSRGRLSVNATALGAIASEVMWDAVLEAAK"
+polyamide,"poly(amide)
+poly(amide)s
+polyamides
+amide
+Nylon 6",C18H34N3O4-,C(CCC(=O)NCCCCCC(=O)NCCCCCC(=O)[O-])CCN,nylon-6 polymer + n H2O ? n a nylon-6 linear oligomer,amidase family protein,Nocardia farcinica,NFA_RS14165,WP_011209364 ,EC:3.5.1.4,PF01425,https://www.genome.jp/entry/C00241,GO:0003824,https://www.genome.jp/dbget-bin/www_bget?cpd:C00241,https://pubchem.ncbi.nlm.nih.gov/compound/9543384,https://www.biocyc.org/META/NEW-IMAGE?type=PATHWAY&object=P621-PWY,https://onlinelibrary.wiley.com/doi/abs/10.1002/bit.22139,A novel aryl acylamidase from Nocardia farcinica hydrolyses polyamide,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Corynebacteriales > Nocardiaceae > Nocardia > Nocardia farcinica,">WP_011209364.1 amidase family protein [Nocardia farcinica]
+MDVAEYAAHDATGLAELIREGQVSAAEVWTAAATALDAVEPELAAVAGERFDKPLDYDESGPFAGVPFAL
+KDLIAHAGGVPSRSGSRLFGAGVAHPEDTHLVARFRRAGLAIGAITRSPEFGFNATTEAIAYGGPSRNPW
+ATDRSPGGSSGASAALVASGALPMAHANDGGGSIRIPAAACGAVGLKPSRGRTTPGPDFADPLLGLGIEF
+AVTRTVRDCARLLDAVHGAEPGDRYLLPGPVRSYAEHAAAGSRPLRIAVTTTPMDAGRAVDPECVAAVNR
+VAERLAELGHVVEEAAPELDVAAFDKANLDAWCSFLADAVLGASAQLGVQPSREYLEATTLACVEYGKTL
+SAFDIFTADRVFNQTTRAVAGFLTRYDVLLTPTTSAPPIPLGHLDADDASLSAREWYDRIFDYGSFTALF
+NVTGMPAISLPLAESTAGLPIGIQFAGRYGDEATLLALAGDLERAMPWADRRPAVHVGR"
+Polybutylene adipate terephthalate,"1,4-benzenedicarboxylic acid polymer with 1,4-butanediol and hexanedioic acid
+1,4-benzenedicarboxylic acid-1,4-butanediol-hexanedioic acid copolymer
+1,4-butanediol-adipic acid-terephthalic acid copolymer
+1,4-butanediol-hexanedioic acid-terephthalic acid copolymer
+adipic acid-1,4-butanediol-terephthalic acid polymer
+poly(butylene adipate-co-butylene terephthalate)
+PBAT
+polybutylene adipate co-terephthalate",(C12H12O4)m.(C10H16O5)n,N/A,N/A,Arylesterase,Pseudomonas pseudoalcaligenes (strain CECT 5344),tesA,W6R2Y2,N/A,PF13472,N/A,GO:0016788,N/A,https://pubchem.ncbi.nlm.nih.gov/substance/85392915,N/A,https://link.springer.com/article/10.1007/s00253-016-7992-8,PpEst is a novel PBAT degrading polyesterase identified by proteomic screening of Pseudomonas pseudoalcaligenes,cellular organisms > Bacteria (eubacteria) > Proteobacteria > Gammaproteobacteria > Pseudomonadales > Pseudomonadaceae > Pseudomonas > Pseudomonas aeruginosa group > Pseudomonas oleovorans/pseudoalcaligenes group > Pseudomonas oleovorans,">tr|W6R2Y2|W6R2Y2_PSEP5 Arylesterase OS=Pseudomonas pseudoalcaligenes (strain CECT 5344) OX=1182590 GN=tesA PE=4 SV=1
+MRAWWLSGALALMFWAQGAVAGTLLVVGDSISAAFGLDSRQGWVALLEKRLSEEGFEHSV
+VNASISGDTSAGGAARLSALLAEHKPELVIIELGGNDGLRGQPPAQLQQNLASMVEQSQQ
+AGAKVLLLGMKLPPNYGVRYTTAFAQVFTDLAEQKQVSLVPFFLEGVGGVPGMMQADGIH
+PAEAAQEILLDNVWPTLKPML"
+Polybutylene adipate terephthalate,"1,4-benzenedicarboxylic acid polymer with 1,4-butanediol and hexanedioic acid
+1,4-benzenedicarboxylic acid-1,4-butanediol-hexanedioic acid copolymer
+1,4-butanediol-adipic acid-terephthalic acid copolymer
+1,4-butanediol-hexanedioic acid-terephthalic acid copolymer
+adipic acid-1,4-butanediol-terephthalic acid polymer
+poly(butylene adipate-co-butylene terephthalate)
+PBAT
+polybutylene adipate co-terephthalate",(C12H12O4)m.(C10H16O5)n,N/A,N/A,PBAT hydrolase,Rhodococcus sp,pbath,A0A7I8E2Z4,N/A,PF01083,N/A,GO:0016787,N/A,https://pubchem.ncbi.nlm.nih.gov/substance/85392915,N/A,https://www.sciencedirect.com/science/article/abs/pii/S014139102100001X,Characterization of a poly(butylene adipate-co-terephthalate) hydrolase from the mesophilic actinobacteria Rhodococcus fascians,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Corynebacteriales > Nocardiaceae > Rhodococcus > unclassified Rhodococcus,">tr|A0A7I8E2Z4|A0A7I8E2Z4_RHOSO PBAT hydrolase OS=Rhodococcus sp OX=1831 GN=pbath PE=4 SV=1
+MKRRLIAYSIAALAISATAVALPTGVASAAPCSDVDVSFARGTGELPGLGITGTPFVNSV
+KSQLSDRSVSTYAVNYAADFTQASAGPGSRDLVAHLNSVAASCPSTKFVIGGYSQGATVV
+TNAVGLRTPSSFTGAVIPAAIADRIEAVVVFGNPFGLTGRKIETASSTYGSRTNSFCNFG
+DPVCQIGGFNTFAHLTYGTNGSTTQGASFAAAQVRS"
+Polybutylene adipate terephthalate,"1,4-benzenedicarboxylic acid polymer with 1,4-butanediol and hexanedioic acid
+1,4-benzenedicarboxylic acid-1,4-butanediol-hexanedioic acid copolymer
+1,4-butanediol-adipic acid-terephthalic acid copolymer
+1,4-butanediol-hexanedioic acid-terephthalic acid copolymer
+adipic acid-1,4-butanediol-terephthalic acid polymer
+poly(butylene adipate-co-butylene terephthalate)
+PBAT
+polybutylene adipate co-terephthalate",(C12H12O4)m.(C10H16O5)n,N/A,N/A,esterase [synthetic construct],Hungatella hathewayi,estA,ALS54749,N/A,PF00135,N/A,N/A,N/A,https://pubchem.ncbi.nlm.nih.gov/substance/85392915,N/A,https://pubs.acs.org/doi/pdf/10.1021/acs.est.5b04346,An Esterase from Anaerobic Clostridium hathewayi Can Hydrolyze Aliphatic–Aromatic Polyesters,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Firmicutes > Clostridia > Eubacteriales > Clostridiaceae > Hungatella,">ALS54749.1 esterase [synthetic construct]
+MAKQFLYDNLPVVETKAGKLRGYQWEGTYIFKGIRYARANRFQLPEEVEPWEGVKEAASYGFVCPMLTRD
+HPQGELLVPHRYWPQDEDCLSLNIWSQSLDRSAKKPVMFWIHGGAFSMGSSIEQKAYNGENMSRYGDVVV
+VTVNHRLNILGYLDLSPYGERYAGSANAGQADLVAALKWVRDNIEAFGGDPDNVTIFGQSGGGMKVSGLM
+QTPEADGLFHRAMIMSGVAGDVLPYSTGDSRPLIQAMLKELGLAEQEAGRLETVPYYDLAAAYNRVSPAI
+ARAGGYIGCTPRPDDFYKGEGPAVGFTDHAKTIPVMVGTVFGEFAMMPLPFNKETISEAELDEILDKRFQ
+GHGKELKTVFAEAYPGKSPVDLLTLDTIFRGPTKEFVRSLAAAGGSVYSYLFALEFPYQNQKTAWHCSDI
+PFIFHNTELVPVTNIPEISDKLEKQMFDAVIHFVETGDPNHLGIPQWPVSTEDREATMIFDRVCTVRFNF
+DDYLLELYKKALPNLTLANITQEDNQIQHALEHHHHHH"
+Polybutylene adipate terephthalate,"1,4-benzenedicarboxylic acid polymer with 1,4-butanediol and hexanedioic acid
+1,4-benzenedicarboxylic acid-1,4-butanediol-hexanedioic acid copolymer
+1,4-butanediol-adipic acid-terephthalic acid copolymer
+1,4-butanediol-hexanedioic acid-terephthalic acid copolymer
+adipic acid-1,4-butanediol-terephthalic acid polymer
+poly(butylene adipate-co-butylene terephthalate)
+PBAT
+polybutylene adipate co-terephthalate",(C12H12O4)m.(C10H16O5)n,N/A,N/A,"cutinase 1, partial",Thermobifida cellulosilytica,Thc_Cut1,ADV92526,EC:3.1.1.74,PF12740,N/A,GO:0050525,N/A,https://pubchem.ncbi.nlm.nih.gov/substance/85392915,N/A,https://www.sciencedirect.com/science/article/abs/pii/S1871678415002551?via=ihub,Substrate specificities of cutinases on aliphatic–aromatic polyesters and on their model substrates,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Actinobacteria > Actinomycetia (high G+C Gram-positive bacteria) > Streptosporangiales > Nocardiopsaceae > Thermobifida,">ADV92526.1 cutinase 1, partial [Thermobifida cellulosilytica]
+MANPYERGPNPTDALLEASSGPFSVSEENVSRLSASGFGGGTIYYPRENNTYGAVAISPGYTGTEASIAW
+LGERIASHGFVVITIDTITTLDQPDSRAEQLNAALNHMINRASSTVRSRIDSSRLAVMGHSMGGGGTLRL
+ASQRPDLKAAIPLTPWHLNKNWSSVTVPTLIIGADLDTIAPVATHAKPFYNSLPSSISKAYLELDGATHF
+APNIPNKIIGKYSVAWLKRFVDNDTRYTQFLCPGPRDGLFGEVEEYRSTCPF"
+Polybutylene adipate terephthalate,"1,4-benzenedicarboxylic acid polymer with 1,4-butanediol and hexanedioic acid
+1,4-benzenedicarboxylic acid-1,4-butanediol-hexanedioic acid copolymer
+1,4-butanediol-adipic acid-terephthalic acid copolymer
+1,4-butanediol-hexanedioic acid-terephthalic acid copolymer
+adipic acid-1,4-butanediol-terephthalic acid polymer
+poly(butylene adipate-co-butylene terephthalate)
+PBAT
+polybutylene adipate co-terephthalate",(C12H12O4)m.(C10H16O5)n,N/A,N/A,PBAT hydrolase,Bacillus pumilus,pbath,A0A1E1FNX8,N/A,PF01674,N/A,"GO:0016787
+GO:0016042",N/A,https://pubchem.ncbi.nlm.nih.gov/substance/85392915,N/A,https://www.sciencedirect.com/science/article/abs/pii/S014139101730006X?via=ihub,Characterization of a poly(butylene adipate-co-terephthalate) hydrolase from the aerobic mesophilic bacterium Bacillus pumilus,cellular organisms > Bacteria (eubacteria) > Terrabacteria group > Firmicutes > Bacilli > Bacillales > Bacillaceae > Bacillus,">tr|A0A1E1FNX8|A0A1E1FNX8_BACPU PBAT hydrolase OS=Bacillus pumilus OX=1408 GN=pbath PE=4 SV=1
+MKVILFKKRSLQILVALALVIGSMAFIQPKEVKAAEHNPVVMVHGIGGASYNFASIKSYL
+VGQGWDRNQLYAIDFIDKTGNNRNNGPRLSKFVQDVLDKTGAKKVDIVAHSMGGANTLYY
+IKNLDGGDKIENVVTIGGANGLVSSRALPGTDPNQKILYTSVYSSADLIVVNSLSRLIGA
+KNVLIHGVGHIGLLTSSQVKGYIKEGLNGGGQNTN"
+Polybutylene adipate terephthalate,"1,4-benzenedicarboxylic acid polymer with 1,4-butanediol and hexanedioic acid
+1,4-benzenedicarboxylic acid-1,4-butanediol-hexanedioic acid copolymer
+1,4-butanediol-adipic acid-terephthalic acid copolymer
+1,4-butanediol-hexanedioic acid-terephthalic acid copolymer
+adipic acid-1,4-butanediol-terephthalic acid polymer
+poly(butylene adipate-co-butylene terephthalate)
+PBAT
+polybutylene adipate co-terephthalate",(C12H12O4)m.(C10H16O5)n,N/A,N/A,hypothetical protein,Marinobacter sp.,OK558824,UUT36763,N/A,PF01738,N/A,N/A,N/A,https://pubchem.ncbi.nlm.nih.gov/substance/85392915,N/A,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7666164/,Synergistic biodegradation of aromatic-aliphatic copolyester plastic by a marine microbial consortium,Bacteria; Pseudomonadota; Gammaproteobacteria; Pseudomonadales; Marinobacteraceae; Marinobacter.,">UUT36763.1 hypothetical protein [Marinobacter sp.]
+MFNQIGKKSALSLMAAGSLMFSATALAIGGGGSGGGNNGGGGGCEADCGYERGPDPSVSLLEASTGPFSV
+RTSNVSSSVRGFGGGTIHYPTNTTGTMAAIVVIPGFVSPESSIAWWGPKLASHGFVVMTIGTNSGFDQPA
+SRASQLNNALDYLIEQNGSSRSPINGMIDTDRLGVMGWSMGGGGTLRVATEGRVSAAIPLAPWDSSSSQF
+RSIDTPTLIFACENDSTAPVRSHADPFYDAIPDSTAKAFVELDGGGHTCANGSSGFGGSYNDVLSRLGVS
+WMKLHLDKDQRYNQFVCGPNHESDRSISEYRGTCPY"
+Polybutylene adipate terephthalate,"1,4-benzenedicarboxylic acid polymer with 1,4-butanediol and hexanedioic acid
+1,4-benzenedicarboxylic acid-1,4-butanediol-hexanedioic acid copolymer
+1,4-butanediol-adipic acid-terephthalic acid copolymer
+1,4-butanediol-hexanedioic acid-terephthalic acid copolymer
+adipic acid-1,4-butanediol-terephthalic acid polymer
+poly(butylene adipate-co-butylene terephthalate)
+PBAT
+polybutylene adipate co-terephthalate",(C12H12O4)m.(C10H16O5)n,N/A,N/A,hypothetical protein,Marinobacter sp.,OK558825,UUT36764,N/A,PF01738,N/A,N/A,N/A,https://pubchem.ncbi.nlm.nih.gov/substance/85392915,N/A,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7666164/,Synergistic biodegradation of aromatic-aliphatic copolyester plastic by a marine microbial consortium,Bacteria; Pseudomonadota; Gammaproteobacteria; Pseudomonadales; Marinobacteraceae; Marinobacter.,">UUT36764.1 hypothetical protein [Marinobacter sp.]
+MFRTIAKNPVRSLIAAGSLLLSASAFAAGGGGDGGDGGCTSDCGFQRGPDPTVSFLEASSGPYSVRTDNV
+SSLVGGFGGGTVHYPTGTTGTMAAVVVIPGFVSAESSIEWWGPKLASYGFVVMTIDTNSGFDQPPSRATQ
+INNALDYLLEENDSSSSPYSGMIDPNRLGVIGWSMGGGGTLRVAAEGRIQAAIPLAPWDTSSLRFRNIET
+PTLIFACESDVIAPVGSHADPFYEAIPDSTDKAFFELNNGSHYCGNGGNSYNNELGRLGVSWMKLHLDQD
+QRYNQFLCGPDHEDEYRISEYRGTCPY"

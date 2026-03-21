@@ -1,0 +1,72 @@
+! Interacciones entre vecinos más cercanos para bases perfectamente apareadas
+! Dimer,DH, DS,	DG37
+! Sequence, (kcal/mol), (e.u), (kcal/mol)
+> AA	TT	-7.90	-22.20	-1.00
+> AT	TA	-7.20	-20.40	-0.88
+> TA	AT	-7.20	-21.30	-0.58
+> CA	GT	-8.50	-22.70	-1.45
+> GT	CA	-8.40	-22.40	-1.44
+> CT	GA	-7.80	-21.00	-1.28
+> GA	CT	-8.20	-22.20	-1.30
+> CG	GC	-10.60	-27.20	-2.17
+> GC	CG	-9.80	-24.40	-2.24
+> GG	CC	-8.00	-19.90	-1.84
+! Interacciones entre vecinos más cercanos para bases no apareadas
+! Dimer,DH, DS,	DG37
+! Sequence, (kcal/mol), (e.u), (kcal/mol)
+! CT
+> AC	TT	0.7	0.2	0.6
+> AT	TC	-1.2	-6.2	0.7
+> CC	GT	-0.8	-4.5	0.6
+> CT	GC	-1.5	-6.1	0.4
+> GC	CT	2.3	5.4	0.6
+> GT	CC	5.2	13.5	1.0
+> TC	AT	1.2	0.7	1.0
+> TT	AC	1.0	0.7	0.8
+! AC
+> AA	TC	2.3	4.6	0.9
+> AC	TA	5.3	14.6	0.8
+> CA	GC	1.9	3.7	0.8
+> CC	GA	0.6	-0.6	0.8
+> GA	CC	5.2	14.2	0.8
+> GC	CA	-0.7	-3.8	0.5
+> TA	AC	3.4	8.0	0.9
+> TC	AA	7.6	20.2	1.3
+! GT
+> AG	TT	1.0	0.9	0.7
+> AT	TG	-2.5	-8.3	0.1
+> CG	GT	-4.1	-11.7	-0.5
+> CT	GG	-2.8	-8.0	-0.3
+> GG	CT	3.3	10.4	0.1
+> GT	CG	-4.4	-12.3	-0.6
+> TG	AT	-0.1	-1.7	0.4
+> TT	AG	-1.3	-5.3	0.3
+! GA
+> AA	TG	-0.6	-2.3	0.1
+> AG	TA	-0.7	-2.3	0.0
+> CA	GG	-0.7	-2.3	0.0
+> CG	GA	-4.0	-13.2	0.1
+> GA	CG	-0.6	-1.0	-0.3
+> GG	CA	0.5	3.2	-0.5
+> TA	AG	0.7	0.7	0.4
+> TG	AA	3.0	7.4	0.7
+! AA
+> AA	TA	1.2	1.7	0.6
+> CA	GA	-0.9	-4.2	0.4
+> GA	CA	-2.9	-9.8	0.2
+> TA	AA	4.7	12.9	0.7
+! CC
+> AC	TC	0.0	-4.4	1.3
+> CC	GC	-1.5	-7.2	0.7
+> GC	CC	3.6	8.9	0.8
+> TC	AC	6.1	16.4	1.1
+! GG
+> AG	TG	-3.1	-9.5	-0.1
+> CG	GG	-4.9	-15.3	-0.1
+> GG	CG	-6.0	-15.8	-1.1
+> TG	AG	1.6	3.6	0.4
+! TT
+> AT	TT	-2.7	-10.8	0.7
+> CT	GT	-5.0	-15.8	-0.1
+> GT	CT	-2.2	-8.4	0.5
+> TT	AT	0.2	-1.5	0.7

@@ -1,0 +1,636 @@
+---
+title: 'BioRemmer: pipeline for the identification of a functional profile for plastic microbial biodegradation'
+author: |
+  José Cano-Sánchez, Alfonso Méndez-Tenorio, Rogelio Maldonado-Rodríguez,
+  Enrique Díaz-Ocampo, Violeta Larios-Serrato^*^
+date: '`r format(Sys.Date(), "%d.%m.%Y")`'
+params:
+  work_dir: "."
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+    toc_depth: 2
+    theme: "journal"
+    code_folding: none
+    self_contained: true
+---
+
+<style>
+/* ── TOC: anchored left, never centered ────────────────── */
+body { padding-top: 0; }
+
+/* Push main content to the right of the TOC */
+.main-container {
+  max-width: 820px !important;
+  margin-left: 250px !important;
+  margin-right: 20px !important;
+  padding: 20px 28px 40px 28px;
+}
+
+/* TOC wrapper: fixed left panel */
+#TOC,
+div.tocify,
+.tocify-wrapper {
+  position: fixed !important;
+  top: 10px !important;
+  left: 5px !important;
+  width: 220px !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  font-size: 12px !important;
+  z-index: 100 !important;
+}
+
+/* ── TOC colors: override Journal red ──────────────────── */
+/* All links */
+div.tocify a,
+.tocify-wrapper a,
+#TOC a {
+  color: #2c7bb6 !important;
+  text-decoration: none !important;
+}
+
+/* Hover */
+div.tocify a:hover,
+.tocify-wrapper a:hover {
+  color: #1a3a5c !important;
+  background-color: #e8f1fb !important;
+}
+
+/* Active / selected */
+div.tocify .active,
+div.tocify .active > a,
+.tocify-wrapper .active > a {
+  color: #1a3a5c !important;
+  background-color: #d4e8f8 !important;
+  font-weight: bold !important;
+}
+
+/* Border */
+div.tocify,
+.tocify-wrapper .tocify {
+  border: 1px solid #c8d8e8 !important;
+  border-radius: 4px !important;
+  background: #fafcff !important;
+}
+
+body {
+  font-family: "Georgia", serif;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: #1a1a1a;
+}
+
+h1.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1a3a5c;
+  border-bottom: 3px solid #2c7bb6;
+  padding-bottom: 8px;
+}
+h4.author { font-size: 0.95em; color: #444; }
+h4.date   { font-size: 0.88em; color: #777; }
+h1 {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #1a3a5c;
+  border-bottom: 2px solid #2c7bb6;
+  padding-bottom: 4px;
+  margin-top: 2.2em;
+}
+h2 { font-size: 1.08em; color: #2c7bb6; margin-top: 1.6em; font-weight: bold; }
+
+.author-note {
+  font-size: 0.82em;
+  color: #555;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+hr { border: none; border-top: 1px solid #d0d8e0; margin: 2em 0; }
+
+table {
+  font-size: 12.5px;
+  font-family: "Arial", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.2em;
+}
+th { background-color: #2c7bb6; color: white; padding: 6px 10px; text-align: left; }
+td { padding: 5px 10px; }
+tr:nth-child(even) { background-color: #f2f6fb; }
+
+.no-hits {
+  background: #eef4fb;
+  border-left: 4px solid #2c7bb6;
+  padding: 9px 14px;
+  border-radius: 3px;
+  color: #444;
+  font-style: italic;
+  font-family: "Arial", sans-serif;
+  font-size: 12.5px;
+}
+
+.figure .caption, p.caption {
+  font-size: 11.5px;
+  color: #555;
+  font-family: "Arial", sans-serif;
+  text-align: justify;
+}
+
+.code-folding-btn { display: none !important; }
+pre.r, pre.python { display: none !important; }
+
+/* ── Figure captions — uniform font ─────────────────────── */
+.figure p, .caption, figcaption,
+.figure .caption, p.caption {
+  font-family: "Arial", "Helvetica", sans-serif !important;
+  font-size: 11px !important;
+  color: #444 !important;
+  line-height: 1.5 !important;
+  text-align: justify !important;
+  margin-top: 6px !important;
+}
+
+/* ── Figures — consistent sizing ────────────────────────── */
+img { max-width: 100% !important; height: auto !important; }
+</style>
+
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+work_dir  <- params$work_dir
+res_dir   <- file.path(work_dir, "Results")
+plots_dir <- file.path(work_dir, "Results", "Plots")
+dir.create(plots_dir, showWarnings = FALSE, recursive = TRUE)
+rp <- function(...) file.path(res_dir, ...)
+
+plastics  <- c("PS","PET","PE","PUR","IP","PA","PBAT","PHB","PLA")
+hmmer_dir <- rp("HMMER")
+
+parse_hmmer <- function(plastic) {
+  f <- file.path(hmmer_dir, paste0(plastic, "_search.txt"))
+  if (!file.exists(f)) return(NULL)
+  lines      <- readLines(f, warn = FALSE)
+  data_lines <- lines[!grepl("^#", lines) & nchar(trimws(lines)) > 0]
+  if (length(data_lines) == 0) return(data.frame())
+  rows <- lapply(data_lines, function(l) {
+    parts <- strsplit(trimws(l), "[[:space:]]+")[[1]]
+    if (length(parts) < 19) return(NULL)
+    data.frame(
+      Target.name = parts[1],
+      Query.name  = parts[3],
+      E.value     = parts[5],
+      Description = paste(parts[-(1:18)], collapse = " "),
+      stringsAsFactors = FALSE
+    )
+  })
+  rows <- Filter(Negate(is.null), rows)
+  if (length(rows) == 0) return(data.frame())
+  do.call(rbind, rows)
+}
+```
+
+```{r libs, echo=FALSE, message=FALSE, warning=FALSE}
+suppressPackageStartupMessages({
+  library(ggplot2)
+  library(viridis)
+  library(dplyr)
+  library(tidyr)
+  library(huxtable)
+  library(ape)
+  library(ggtree)
+  library(knitr)
+  library(kableExtra)
+  library(RColorBrewer)
+  library(jsonlite)
+})
+```
+
+```{r logo, echo=FALSE, out.width="55%", fig.align='center'}
+logo_path <- file.path(work_dir, "assets", "Biorem_logo.png")
+if (file.exists(logo_path)) knitr::include_graphics(logo_path)
+```
+
+<p class="author-note">
+^*^ Corresponding author: <a href="mailto:viosdatafactory@gmail.com">viosdatafactory@gmail.com</a>
+</p>
+
+```{r workflow, echo=FALSE, out.width="100%", fig.align='center', fig.cap='**Figure 1. BioRemmer pipeline.** The workflow displays the stages by which data is analyzed through BioRemmer.'}
+workflow_path <- file.path(work_dir, "assets", "workflow_2023.svg")
+if (file.exists(workflow_path)) knitr::include_graphics(workflow_path)
+```
+
+---
+
+# 1. Read trimming — fastp
+
+```{r fastp, echo=FALSE, message=FALSE, warning=FALSE}
+library(jsonlite)
+fastp_json <- rp("Trimmomatic", "fastp_summary.json")
+if (file.exists(fastp_json)) {
+  js <- fromJSON(fastp_json)
+  sm <- js$summary
+  df <- data.frame(
+    Parameter = c(
+      "Total reads (before)", "Total bases (before)",
+      "Q20 rate (before)",    "Q30 rate (before)",
+      "Total reads (after)",  "Total bases (after)",
+      "Q20 rate (after)",     "Q30 rate (after)",
+      "Adapter trimmed reads","Low quality reads removed",
+      "Too short reads removed"
+    ),
+    Value = c(
+      format(sm$before_filtering$total_reads,  big.mark = ","),
+      format(sm$before_filtering$total_bases,  big.mark = ","),
+      paste0(round(sm$before_filtering$q20_rate  * 100, 2), "%"),
+      paste0(round(sm$before_filtering$q30_rate  * 100, 2), "%"),
+      format(sm$after_filtering$total_reads,   big.mark = ","),
+      format(sm$after_filtering$total_bases,   big.mark = ","),
+      paste0(round(sm$after_filtering$q20_rate   * 100, 2), "%"),
+      paste0(round(sm$after_filtering$q30_rate   * 100, 2), "%"),
+      format(js$filtering_result$adapter_trimmed, big.mark = ","),
+      format(js$filtering_result$low_quality_reads, big.mark = ","),
+      format(js$filtering_result$too_short_reads,   big.mark = ",")
+    ),
+    stringsAsFactors = FALSE
+  )
+  kable(df, caption = "**Table 1.** fastp quality control summary report.",
+        col.names = c("Parameter", "Value")) %>%
+    kable_styling(bootstrap_options = c("striped","hover","condensed"),
+                  full_width = FALSE, position = "left", font_size = 12) %>%
+    column_spec(1, bold = TRUE, color = "#1a3a5c") %>%
+    column_spec(2, width = "12em") %>%
+    row_spec(0, background = "#2c7bb6", color = "white", bold = TRUE)
+} else {
+  cat('<div class="no-hits">fastp summary JSON not found.</div>')
+}
+```
+
+---
+
+# 2. Quality report — fastp
+
+```{r fastp_link, echo=FALSE, results='asis'}
+fastp_html <- rp("QC", "fastp_report.html")
+if (file.exists(fastp_html)) {
+  cat(sprintf('- [fastp QC report (interactive HTML)](%s)\n', fastp_html))
+} else {
+  cat('<div class="no-hits">fastp HTML report not found.</div>')
+}
+```
+
+---
+
+# 3. Functional annotation — Prokka
+
+```{r prokka, echo=FALSE, message=FALSE, warning=FALSE}
+prokka_file <- rp("Prokka_results", "prokka_results.txt")
+if (file.exists(prokka_file)) {
+  lines <- readLines(prokka_file, warn = FALSE)
+  lines <- lines[nchar(trimws(lines)) > 0]
+  pairs <- strsplit(lines, ":")
+  pairs <- pairs[sapply(pairs, length) >= 2]
+  df <- data.frame(
+    Feature = trimws(sapply(pairs, "[", 1)),
+    Value   = trimws(sapply(pairs, function(x) paste(x[-1], collapse = ":"))),
+    stringsAsFactors = FALSE
+  )
+  kable(df, caption = "**Table 2.** Prokka annotation summary report.",
+        col.names = c("Feature", "Value")) %>%
+    kable_styling(bootstrap_options = c("striped","hover","condensed"),
+                  full_width = FALSE, position = "left", font_size = 12) %>%
+    column_spec(1, bold = TRUE, color = "#1a3a5c") %>%
+    row_spec(0, background = "#2c7bb6", color = "white", bold = TRUE)
+} else {
+  cat('<div class="no-hits">Prokka summary not found.</div>')
+}
+```
+
+---
+
+# 4. Phylogenomic classification — VAMPhyRE
+
+```{r phylo, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=9, fig.cap='**Figure 2. Phylogenomic tree of plastic-degrading bacteria.** Neighbor-joining tree containing the reference bacteria in BioRemmer and the metagenome-associated genomes (MAGs) extracted from the test dataset, identifiable by the prefix NODE.'}
+tree_file <- rp("VAMPhyRE", "VGF_tree.nwk")
+if (file.exists(tree_file)) {
+  tree  <- read.tree(tree_file)
+  tree2 <- ggtree(tree) + theme_tree() + xlim(NA, 3.5) +
+    geom_tiplab(size = 2.8, align = TRUE, linetype = "dotted",
+                linesize = 0.3, offset = 0.05)
+  print(tree2)
+  ggsave(filename = file.path(plots_dir, "Phylogenomic_classification.png"),
+         plot = tree2, width = 7, height = 9, dpi = 300)
+} else {
+  print(
+    ggplot() +
+      annotate("text", x = 0.5, y = 0.5, size = 4, color = "#888",
+               label = "Phylogenomic tree not available.\nRun VAMPhyRE first.") +
+      theme_void() +
+      labs(title = "Phylogenomic Classification") +
+      theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+  )
+}
+```
+
+---
+
+# 5. Taxonomic assignment — Metaxa2
+
+```{r metaxa2_table, echo=FALSE, message=FALSE, warning=FALSE}
+metaxa_dir <- rp("Metaxa2_results")
+
+parse_level_stats <- function(level_num, level_name) {
+  f <- file.path(metaxa_dir, paste0("rarefaction_out.level_", level_num, ".txt"))
+  if (!file.exists(f)) {
+    return(data.frame(Level = level_name,
+                      Ntaxa = 0L, Nunclassified = 0L, MeanGroupSize = 0,
+                      stringsAsFactors = FALSE))
+  }
+  d <- tryCatch(read.table(f, sep = ";", fill = TRUE, header = FALSE,
+                            quote = "", comment.char = ""),
+                error = function(e) NULL)
+  if (is.null(d) || nrow(d) == 0) {
+    return(data.frame(Level = level_name,
+                      Ntaxa = 0L, Nunclassified = 0L, MeanGroupSize = 0,
+                      stringsAsFactors = FALSE))
+  }
+  n_taxa <- nrow(d)
+  uncl   <- sum(apply(d, 1, function(r)
+    any(grepl("unclassified|unknown", r, ignore.case = TRUE))))
+  data.frame(Level = level_name,
+             Ntaxa = n_taxa,
+             Nunclassified = uncl,
+             MeanGroupSize = round(n_taxa / max(1, n_taxa - uncl), 2),
+             stringsAsFactors = FALSE)
+}
+
+stats_df <- rbind(
+  parse_level_stats(5, "Level 5: Family"),
+  parse_level_stats(6, "Level 6: Genus"),
+  parse_level_stats(7, "Level 7: Species")
+)
+
+kable(stats_df,
+      caption = "**Table 3.** Summary of taxonomic abundance at family, genus, and species level.",
+      col.names = c("Level", "Number of taxa", "Number of unclassified", "Mean group size"),
+      align = c("l","c","c","c")) %>%
+  kable_styling(bootstrap_options = c("striped","hover","condensed"),
+                full_width = FALSE, position = "left", font_size = 12) %>%
+  column_spec(1, bold = TRUE, color = "#1a3a5c") %>%
+  row_spec(0, background = "#2c7bb6", color = "white", bold = TRUE)
+```
+
+```{r metaxa2_plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='**Figure 3. Taxonomic assignment of the 16S rRNA gene.** Taxonomic diversity of bacteria identified in the metagenome. Each bar section represents a bacterial class grouped by phylum.', fig.width=8, fig.height=5}
+rare_file <- rp("Metaxa2_results", "rarefaction_out.level_6.txt")
+
+make_empty_plot <- function(msg) {
+  print(ggplot() +
+    annotate("text", x = 0.5, y = 0.5, size = 4, color = "#888", label = msg) +
+    theme_void() +
+    labs(title = "Taxonomic Composition") +
+    theme(plot.title = element_text(hjust = 0.5, face = "bold")))
+}
+
+if (!file.exists(rare_file)) {
+  make_empty_plot("Metaxa2 rarefaction file not found.")
+} else {
+  metaxa2 <- tryCatch({
+    # Format: Kingdom;Phylum;Class;Order;Family;Genus\tCount
+    raw <- readLines(rare_file, warn = FALSE)
+    raw <- raw[nchar(trimws(raw)) > 0]
+    taxa_part <- sub("\t[0-9]+$", "", raw)   # remove trailing tab+count
+    d <- do.call(rbind, strsplit(taxa_part, ";", fixed = TRUE))
+    as.data.frame(d, stringsAsFactors = FALSE)
+  }, error = function(e) NULL)
+  if (is.null(metaxa2) || nrow(metaxa2) == 0 || ncol(metaxa2) < 3) {
+    make_empty_plot("No taxonomic data available.")
+  } else {
+    nc <- min(6, ncol(metaxa2))
+    colnames(metaxa2)[1:nc] <- c("Kingdom","Phylum","Class","Order","Family","Genus")[1:nc]
+    pl2 <- ggplot(metaxa2, aes(x = Phylum, fill = Class)) +
+      geom_bar(stat = "count", color = "black", linewidth = 0.3) +
+      theme_classic(base_size = 12) +
+      labs(x = "Phylum", y = "Relative Frequency", title = "Taxonomic Composition") +
+      theme(plot.title      = element_text(hjust = 0.5, size = 12, face = "bold"),
+            axis.text.x     = element_text(angle = 45, hjust = 1, size = 9),
+            legend.title    = element_text(size = 9, face = "bold"),
+            legend.text     = element_text(size = 8),
+            legend.key.size = unit(0.45, "cm")) +
+      scale_fill_manual(values = RColorBrewer::brewer.pal(12, "Paired"))
+    print(pl2)
+    ggsave(filename = file.path(plots_dir, "taxonomic_abundance.png"),
+           plot = pl2, width = 8, height = 5, dpi = 300)
+  }
+}
+```
+
+---
+
+# 6. COG functional classification
+
+```{r cogs, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='**Figure 4. COG functional profiling in the context of plastic degradation.** Blue bars: COG categories linked to plastic degradation (I, Q, C, E, G, P). Red bars with ★: categories with detected enzyme homologs in this sample. Grey bars: other categories.', fig.width=12, fig.height=5}
+# Use pre-generated highlighted COG figure from plastic_heatmap.py
+cog_png <- file.path(plots_dir, "cog_plastic_highlighted.png")
+if (file.exists(cog_png)) {
+  knitr::include_graphics(cog_png)
+} else {
+  # Fallback: generate basic COG plot from frequencies
+  cog_file   <- rp("COG", "cog_frequencies.csv")
+  cog_levels <- c("J","A","K","L","B","D","Y","V","T","M","N","Z",
+                  "W","U","O","X","C","G","E","F","H","I","P","Q","R","S")
+  legend_labels <- c(
+    "J: Translation, ribosomal structure and biogenesis",
+    "A: RNA processing and modification",
+    "K: Transcription",
+    "L: Replication, recombination and repair",
+    "B: Chromatin structure and dynamics",
+    "D: Cell cycle control, cell division, chromosome partitioning",
+    "Y: Nuclear structure",
+    "V: Defense mechanisms",
+    "T: Signal transduction mechanisms",
+    "M: Cell wall/membrane/envelope biogenesis",
+    "N: Cell motility",
+    "Z: Cytoskeleton",
+    "W: Extracellular structures",
+    "U: Intracellular trafficking, secretion, and vesicular transport",
+    "O: Posttranslational modification, protein turnover, chaperones",
+    "X: Mobilome: prophages, transposons",
+    "C: Energy production and conversion",
+    "G: Carbohydrate transport and metabolism",
+    "E: Amino acid transport and metabolism",
+    "F: Nucleotide transport and metabolism",
+    "H: Coenzyme transport and metabolism",
+    "I: Lipid transport and metabolism",
+    "P: Inorganic ion transport and metabolism",
+    "Q: Secondary metabolites biosynthesis, transport and catabolism",
+    "R: General function prediction only",
+    "S: Function unknown"
+  )
+  freqs <- if (file.exists(cog_file)) {
+    data_cog <- tryCatch(read.csv(cog_file, header = TRUE, stringsAsFactors = FALSE),
+                         error = function(e) NULL)
+    if (!is.null(data_cog) && nrow(data_cog) > 0)
+      replace(as.numeric(unlist(data_cog[1,])), is.na(as.numeric(unlist(data_cog[1,]))), 0)
+    else rep(0, 26)
+  } else rep(0, 26)
+
+  data1 <- data.frame(
+    Categories = factor(cog_levels, levels = cog_levels),
+    Frequency  = freqs,
+    Label      = legend_labels,
+    stringsAsFactors = FALSE
+  )
+  cogs <- ggplot(data1, aes(x = Categories, y = Frequency, fill = Label)) +
+    geom_col() +
+    labs(x = "COG Category", y = "Frequency", title = "Functional Profiling", fill = NULL) +
+    theme_classic(base_size = 12) +
+    theme(legend.position  = "top",
+          legend.text      = element_text(size = 6.2),
+          legend.key.size  = unit(0.28, "cm"),
+          plot.title       = element_text(size = 12, face = "bold", hjust = 0.5),
+          axis.text.x      = element_text(size = 9)) +
+    scale_fill_manual(values = colorRampPalette(RColorBrewer::brewer.pal(9,"Set1"))(26)) +
+    guides(fill = guide_legend(ncol = 2))
+  print(cogs)
+  ggsave(filename = file.path(plots_dir, "Orthologous_groups.png"),
+         plot = cogs, width = 9, height = 6, dpi = 300)
+}
+```
+
+---
+
+# 7. Potential plastic-degrading enzymes — HMMER3 {.tabset}
+
+```{r hmmer_plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='**Figure 5. Plastic-degrading enzyme homologs identified by plastic type.** Each bar represents the number of significant hits against the BioRemmer HMM profiles for each plastic type. Results represent putative homologs and not functionally verified enzymes. Abbreviations: IP, Isoprene; PA, Polyamide; PBAT, Polybutylene adipate terephthalate; PE, Polyethylene; PET, Polyethylene terephthalate; PHB, Polyhydroxybutyrate; PLA, Polylactic acid; PS, Polystyrene; PUR, Polyurethane.', fig.width=7, fig.height=4.5}
+counts <- sapply(plastics, function(p) {
+  df <- parse_hmmer(p)
+  if (is.null(df) || nrow(df) == 0) 0L else nrow(df)
+})
+
+plastic_df <- data.frame(
+  Plastic = factor(plastics, levels = plastics),
+  Counts  = as.integer(counts)
+)
+
+biorem <- ggplot(plastic_df, aes(x = Plastic, y = Counts, fill = Plastic)) +
+  geom_col() +
+  geom_text(aes(label = Counts), vjust = -0.5, size = 3.5, fontface = "bold") +
+  scale_fill_manual(values = RColorBrewer::brewer.pal(9,"Set2")[1:length(plastics)]) +
+  labs(x = "Type of Plastic", y = "Number of hits",
+       title = "Potential Plastic-Degrading Enzymes") +
+  theme_classic(base_size = 12) +
+  theme(legend.position = "none",
+        plot.title = element_text(size = 12, face = "bold", hjust = 0.5))
+print(biorem)
+ggsave(filename = file.path(plots_dir, "plastic_degrading_enzymes.png"),
+       plot = biorem, width = 7, height = 4.5, dpi = 300)
+```
+
+```{r hmmer_helper, echo=FALSE}
+show_hmmer_table <- function(plastic) {
+  df <- parse_hmmer(plastic)
+  if (is.null(df)) {
+    cat(sprintf('<div class="no-hits">Results file not found for <strong>%s</strong>.</div>\n', plastic))
+    return(invisible(NULL))
+  }
+  if (nrow(df) == 0) {
+    cat(sprintf('<div class="no-hits">No significant hits found for <strong>%s</strong> (E-value threshold not met).</div>\n', plastic))
+    return(invisible(NULL))
+  }
+  colnames(df) <- c("Target name", "Query name", "E-value", "Description")
+  print(
+    kable(df, format = "html", escape = FALSE,
+          caption = sprintf("**Table 4. %s** — HMM significant hits (E-value &le; 1&times;10<sup>-12</sup>).", plastic),
+          col.names = c("Protein ID", "HMM Profile", "E-value", "Predicted function"),
+          align = c("l","l","r","l")) %>%
+      kable_styling(bootstrap_options = c("striped","hover","condensed"),
+                    full_width = TRUE, font_size = 11) %>%
+      column_spec(1, bold = TRUE, color = "#1a3a5c") %>%
+      column_spec(3, color = "#c0392b", bold = TRUE) %>%
+      row_spec(0, background = "#2c7bb6", color = "white", bold = TRUE) %>%
+      scroll_box(height = "300px")
+  )
+}
+```
+
+## PET
+```{r pet, echo=FALSE, results='asis'}
+show_hmmer_table("PET")
+```
+## PE
+```{r pe, echo=FALSE, results='asis'}
+show_hmmer_table("PE")
+```
+## PUR
+```{r pur, echo=FALSE, results='asis'}
+show_hmmer_table("PUR")
+```
+## PS
+```{r ps, echo=FALSE, results='asis'}
+show_hmmer_table("PS")
+```
+## IP
+```{r ip, echo=FALSE, results='asis'}
+show_hmmer_table("IP")
+```
+## PA
+```{r pa, echo=FALSE, results='asis'}
+show_hmmer_table("PA")
+```
+## PBAT
+```{r pbat, echo=FALSE, results='asis'}
+show_hmmer_table("PBAT")
+```
+## PHB
+```{r phb, echo=FALSE, results='asis'}
+show_hmmer_table("PHB")
+```
+## PLA
+```{r pla, echo=FALSE, results='asis'}
+show_hmmer_table("PLA")
+```
+
+---
+
+# 8. Plastic-degrading enzyme heatmap
+
+```{r heatmap, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='**Figure 6. Heatmap of plastic-degrading enzyme homologs.** Each row represents a protein with significant HMMER hits (E-value ≤ 1×10⁻¹²). Columns represent plastic types. Cell color intensity reflects statistical significance (-log₁₀ E-value); grey cells indicate no hit. The colored strip on the left shows the taxonomic phylum of each protein (Metaxa2). Protein labels include COG ID in brackets where available. Proteins hitting multiple plastic types represent candidates for broad-spectrum plastic degradation.', fig.width=13, fig.height=8}
+heatmap_png <- file.path(plots_dir, "plastic_degrading_heatmap.png")
+if (file.exists(heatmap_png)) {
+  knitr::include_graphics(heatmap_png)
+} else {
+  cat('<div class="no-hits">Heatmap not found. Run: python3 scripts/plastic_heatmap.py --results Results --output Results/Plots</div>')
+}
+```
+
+```{r heatmap_table, echo=FALSE, message=FALSE, warning=FALSE}
+summary_csv <- rp("HMMER", "plastic_heatmap_summary.csv")
+if (file.exists(summary_csv)) {
+  hm <- read.csv(summary_csv, stringsAsFactors = FALSE)
+  kable(hm,
+        caption = "**Table 5.** Summary of plastic-degrading enzyme homologs. Target name: protein identifier from Prokka annotation. Plastic type: type of plastic for which homology was detected. HMM profile: Pfam seed used for the search. E-value: statistical significance of the hit. Annotation: functional annotation from Prokka. COG ID and COG function: Clusters of Orthologous Genes assignment from RPS-BLAST. Phylum: taxonomic classification from Metaxa2.",
+        col.names = c("Protein ID", "Plastic type", "HMM profile",
+                      "E-value", "Predicted function", "COG ID",
+                      "COG category", "Phylum"),
+        align = c("l","c","l","r","l","c","l","l")) %>%
+    kable_styling(bootstrap_options = c("striped","hover","condensed"),
+                  full_width = TRUE, font_size = 10) %>%
+    column_spec(1, bold = TRUE, color = "#1a3a5c") %>%
+    column_spec(4, color = "#c0392b", bold = TRUE) %>%
+    column_spec(6, bold = TRUE, color = "#2c7bb6") %>%
+    row_spec(0, background = "#2c7bb6", color = "white", bold = TRUE) %>%
+    scroll_box(height = "400px")
+} else {
+  cat('<div class="no-hits">Summary table not found. Run plastic_heatmap.py first.</div>')
+}
+```
+
+---
+
+<p style="font-size:0.78em; color:#999; text-align:center; margin-top:3em; font-family:Arial,sans-serif;">
+BioRemmer v1.0 &nbsp;&middot;&nbsp; Report generated on `r format(Sys.time(), "%Y-%m-%d %H:%M")`
+&nbsp;&middot;&nbsp; ^*^ <a href="mailto:viosdatafactory@gmail.com">viosdatafactory@gmail.com</a>
+</p>

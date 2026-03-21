@@ -1,0 +1,34 @@
+name: bioremmer_core
+channels:
+  - bioconda
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # ── Quality control ───────────────────────────────────────────────
+  - fastp                        # replaces Trimmomatic (v3)
+
+  # ── Assembly ──────────────────────────────────────────────────────
+  - spades
+
+  # ── Annotation ────────────────────────────────────────────────────
+  - prokka
+
+  # ── Binning ───────────────────────────────────────────────────────
+  - metabat2
+
+  # ── Phylogenomics ─────────────────────────────────────────────────
+  - hmmer                        # used by VAMPhyRE and enzyme search
+
+  # ── Taxonomy ──────────────────────────────────────────────────────
+  - metaxa2
+
+  # ── Functional annotation ─────────────────────────────────────────
+  - blast                        # rpsblast for COG
+
+  # ── Python analysis ───────────────────────────────────────────────
+  - python>=3.9
+  - pandas                       # heatmap data manipulation
+  - matplotlib                   # heatmap figures
+  - numpy                        # matrix operations
+  - biopython                    # sequence utilities
