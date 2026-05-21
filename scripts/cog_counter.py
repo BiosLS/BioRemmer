@@ -92,17 +92,21 @@ def best_hit_from_blast(blast_file: str) -> dict:
     best_cog     = None
 
     def _parse_evalue(evalue_str: str):
-        """Parse e-value like '1e-12' or '2.5e-34' into (exp, coef) tuple."""
+        """Parse e-value like '1e-12' or '2.5e-34' into (exp, coef) tuple.
+        Returns (0, 1000) for any string that cannot be parsed as a number.
+        """
         evalue_str = evalue_str.strip()
-        if "e" in evalue_str.lower():
-            parts = re.split(r"[eE]", evalue_str)
-            coef = float(parts[0]) if parts[0] not in ("-", "") else 1.0
-            exp  = int(parts[1])
-            return (abs(exp), coef)   # higher abs(exp) = smaller e-value
+        # Must look like a number: digits, dot, +/-, e/E allowed
+        if not re.match(r"^[0-9eE.+\-]+$", evalue_str):
+            return (0, 1000)
         try:
-            val = float(evalue_str)
-            return (0, val)
-        except ValueError:
+            if "e" in evalue_str.lower():
+                parts = re.split(r"[eE]", evalue_str)
+                coef = float(parts[0]) if parts[0] not in ("-", "") else 1.0
+                exp  = int(parts[1])
+                return (abs(exp), coef)
+            return (0, float(evalue_str))
+        except (ValueError, IndexError):
             return (0, 1000)
 
     def _save_hit(query, cog, evalue_tuple):
@@ -132,12 +136,18 @@ def best_hit_from_blast(blast_file: str) -> dict:
                 best_cog    = None
 
             # Hit line with CDD accession and e-value
-            elif "CDD" in line and not line.startswith(">"):
+            # Format: "CDD:XXXXXX COGxxxx, name, desc...  score  evalue"
+            # Only match summary lines (not alignment lines or descriptions)
+            elif re.match(r"^CDD:\d+\s+COG\d+", line):
                 parts = line.split()
-                if len(parts) >= 2:
+                if len(parts) >= 4:
                     cog_id    = parts[1].rstrip(",")
                     evalue_s  = parts[-1]
                     ev_tuple  = _parse_evalue(evalue_s)
+                    if ev_tuple == (0, 1000):
+                        # evalue not in last field, try second-to-last
+                        evalue_s = parts[-2]
+                        ev_tuple = _parse_evalue(evalue_s)
                     if best_cog is None or (
                         ev_tuple[0] > best_evalue[0] or
                         (ev_tuple[0] == best_evalue[0] and

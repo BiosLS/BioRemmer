@@ -1,0 +1,97 @@
+
+# 8. Plastic-degrading enzyme heatmap
+
+```{r plastic_heatmap_curated_section, echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+
+find_existing_file <- function(candidates) {
+  candidates <- unique(candidates)
+  found <- candidates[file.exists(candidates)]
+  if (length(found) > 0) {
+    return(found[1])
+  }
+  return(NA_character_)
+}
+
+if (!exists("res_dir")) {
+  res_dir <- "Results"
+}
+
+plots_dir <- file.path(res_dir, "Plots")
+hmmer_dir <- file.path(res_dir, "HMMER")
+
+heatmap_file <- find_existing_file(c(
+  file.path(plots_dir, "plastic_degrading_heatmap.png"),
+  file.path("Results", "Plots", "plastic_degrading_heatmap.png"),
+  file.path("Results_short", "Plots", "plastic_degrading_heatmap.png")
+))
+
+curated_file <- find_existing_file(c(
+  file.path(hmmer_dir, "plastic_heatmap_summary_curated.csv"),
+  file.path(hmmer_dir, "plastic_heatmap_summary.csv"),
+  file.path("Results", "HMMER", "plastic_heatmap_summary_curated.csv"),
+  file.path("Results", "HMMER", "plastic_heatmap_summary.csv"),
+  file.path("Results_short", "HMMER", "plastic_heatmap_summary_curated.csv"),
+  file.path("Results_short", "HMMER", "plastic_heatmap_summary.csv")
+))
+
+excluded_file <- find_existing_file(c(
+  file.path(hmmer_dir, "plastic_heatmap_summary_excluded.csv"),
+  file.path("Results", "HMMER", "plastic_heatmap_summary_excluded.csv"),
+  file.path("Results_short", "HMMER", "plastic_heatmap_summary_excluded.csv")
+))
+
+cat("The main table and heatmap show curated candidates only. Broad PFAM domains and non-specific annotations were excluded from the main report and retained in supplementary files. ")
+
+if (!is.na(heatmap_file)) {
+  cat(sprintf(
+    '<div style="text-align:center;"><img src="%s" style="max-width:100%%; height:auto;"></div>',
+    heatmap_file
+  ))
+} else {
+  cat('<div class="no-hits">Heatmap not found. Run: python3 scripts/plastic_heatmap_curated.py --results Results --output Results/Plots</div>')
+}
+
+if (!is.na(curated_file)) {
+
+  curated_tbl <- read.csv(curated_file, check.names = FALSE)
+
+  cat("\n\n## Confidence classification\n\n")
+
+  if ("Confidence" %in% colnames(curated_tbl)) {
+    conf_counts <- as.data.frame(table(curated_tbl$Confidence))
+    colnames(conf_counts) <- c("Confidence level", "Number of hits")
+    print(kable(conf_counts, caption = "Number of curated HMMER hits by confidence level."))
+  }
+
+  cat("\n\n## Curated candidate table\n\n")
+
+  preferred_cols <- c(
+    "Protein ID", "Plastic type", "HMM profile", "PFAM",
+    "E-value", "Score", "Annotation", "Phylum",
+    "Confidence", "Classification reason"
+  )
+  available_cols <- preferred_cols[preferred_cols %in% colnames(curated_tbl)]
+
+  print(kable(
+    curated_tbl[, available_cols, drop = FALSE],
+    caption = "Curated plastic-associated candidates classified by confidence level."
+  ))
+
+} else {
+  cat('<div class="no-hits">Curated summary table not found. Run plastic_heatmap_curated.py first.</div>')
+}
+
+if (!is.na(excluded_file)) {
+  excluded_tbl <- read.csv(excluded_file, check.names = FALSE)
+
+  cat("\n\n## Excluded low-specificity hits\n\n")
+  cat("The following hits were removed from the main table because they matched promiscuous PFAMs or non-specific annotations such as penicillin-binding proteins, beta-lactamases, amidotransferases, aminopeptidases, D-alanyl-D-alanine-related proteins, housekeeping/ribosomal/tRNA terms or hypothetical proteins.\n\n")
+
+  if (nrow(excluded_tbl) > 0) {
+    excluded_counts <- as.data.frame(table(excluded_tbl$`Plastic type`))
+    colnames(excluded_counts) <- c("Plastic type", "Excluded hits")
+    print(kable(excluded_counts, caption = "Excluded low-specificity hits by plastic type."))
+  }
+}
+```

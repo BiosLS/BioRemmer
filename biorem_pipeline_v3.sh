@@ -119,7 +119,9 @@ if ! skip_if_done "metaSPAdes" "${RESULTS}/SPAdes_results/contigs.fasta"; then
         -o "${RESULTS}/SPAdes_results"
 fi
 
+
 # ── Step 4: Functional annotation — Prokka ────────────────────────────────────
+
 printf "\nStep 4: Functional annotation — Prokka\n"
 if ! skip_if_done "Prokka" "${RESULTS}/Prokka_results/prokka_results.faa"; then
     run_in "$CORE_ENV" prokka \
@@ -128,8 +130,11 @@ if ! skip_if_done "Prokka" "${RESULTS}/Prokka_results/prokka_results.faa"; then
         --kingdom Bacteria \
         --cpus "$threads" \
         --metagenome \
+	--centre X \
+	--compliant \
         --prefix "prokka_results" \
-        --fast
+        --fast \
+	--force
 fi
 
 # ── Step 5: MAG binning — MetaBat2 ───────────────────────────────────────────
@@ -174,7 +179,7 @@ if ! skip_if_done "VAMPhyRE + NJ tree" "${RESULTS}/VAMPhyRE/VGF_tree.nwk"; then
                 -PROBEFILE  "$probe" \
                 -TARGETLIST "${RESULTS}/MetaBat2/genome_list.txt" \
                 -OUTFILE    "${RESULTS}/VAMPhyRE/VGF_13mer.txt" \
-                -MISMATCHES 1 -STRAND both
+                -MISMATCHES 1 -STRAND direct
         fi
 
         # 6b: MergeVGF — combina MAGs + DB de referencia
@@ -253,9 +258,13 @@ for plastic in PET PUR PE PS IP PA PBAT PHB PLA; do
         continue
     fi
     printf "  Searching %s...\n" "$plastic"
+    # More conservative search: keeps the regular tblout used by BioRemmer,
+    # and also writes domtblout for future coverage/domain filtering.
     run_in "$CORE_ENV" hmmsearch \
-        --cpu "$threads" -E 1e-12 \
+        --cpu "$threads" \
+        -E 1e-20 --domE 1e-20 \
         --tblout "$out" \
+        --domtblout "${RESULTS}/HMMER/${plastic}_domains.txt" \
         "$hmm_file" \
         "${RESULTS}/Prokka_results/"*.faa
 done

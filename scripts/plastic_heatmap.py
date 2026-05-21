@@ -1,15 +1,32 @@
 #!/usr/bin/env python3
 """
-BioRemmer v3.0 — plastic_heatmap.py
-Generates:
-  1. Heatmap: plastic-degrading enzymes × plastic types (annotated with taxonomy)
-  2. COG figure: all COG categories with plastic-related ones highlighted
-  3. Summary CSVs for the R report
+BioRemmer — plastic_heatmap_curated.py
+
+Curated version for BioRemmer reports.
+
+Main idea:
+  - HMMER still detects all significant hits.
+  - The main report/heatmap only shows curated candidates.
+  - Promiscuous PFAMs and biologically non-specific annotations are excluded
+    from the main report and saved as supplementary tables.
+
+Outputs:
+  Results/HMMER/plastic_heatmap_summary_curated.csv
+  Results/HMMER/plastic_heatmap_summary_all.csv
+  Results/HMMER/plastic_heatmap_summary_excluded.csv
+  Results/HMMER/plastic_heatmap_summary.csv   # legacy name, same as curated
+  Results/Plots/plastic_degrading_heatmap.png
+  Results/Plots/plastic_degrading_heatmap_all_hits.png
 
 Usage:
-    python3 plastic_heatmap.py --results <Results/> --output <Results/Plots/>
+  python3 scripts/plastic_heatmap_curated.py --results Results --output Results/Plots
 """
-import argparse, os, re, math, sys, csv, textwrap
+
+import argparse
+import csv
+import math
+import re
+import sys
 from pathlib import Path
 
 try:
@@ -17,44 +34,44 @@ try:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    import matplotlib.colors as mcolors
     import numpy as np
     from matplotlib.patches import Patch
-    # Global font settings — uniform across all figures
+
     matplotlib.rcParams.update({
-        "font.family":          "sans-serif",
-        "font.sans-serif":      ["Arial", "Helvetica", "DejaVu Sans"],
-        "font.size":            10,
-        "axes.titlesize":       12,
-        "axes.titleweight":     "bold",
-        "axes.labelsize":       11,
-        "axes.labelweight":     "normal",
-        "xtick.labelsize":      9,
-        "ytick.labelsize":      9,
-        "legend.fontsize":      8.5,
-        "legend.title_fontsize":9,
-        "figure.dpi":           150,
-        "savefig.dpi":          300,
-        "savefig.bbox":         "tight",
-        "savefig.facecolor":    "white",
+        "font.family": "sans-serif",
+        "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans"],
+        "font.size": 10,
+        "axes.titlesize": 12,
+        "axes.titleweight": "bold",
+        "axes.labelsize": 11,
+        "xtick.labelsize": 9,
+        "ytick.labelsize": 9,
+        "legend.fontsize": 8.5,
+        "legend.title_fontsize": 9,
+        "figure.dpi": 150,
+        "savefig.dpi": 300,
+        "savefig.bbox": "tight",
+        "savefig.facecolor": "white",
     })
 except ImportError as e:
-    sys.exit(f"ERROR: Missing dependency — {e}\n"
-             f"Install: conda run -n bioremmer_core pip install pandas matplotlib numpy")
+    sys.exit(
+        f"ERROR: Missing dependency — {e}\n"
+        "Install: conda run -n bioremmer_core pip install pandas matplotlib numpy"
+    )
 
-# ── Constants ─────────────────────────────────────────────────────────────────
+
 PLASTICS = ["PS", "PET", "PE", "PUR", "IP", "PA", "PBAT", "PHB", "PLA"]
 
 PLASTIC_FULL = {
-    "PS":   "Polystyrene",
-    "PET":  "Polyethylene\nterephthalate",
-    "PE":   "Polyethylene",
-    "PUR":  "Polyurethane",
-    "IP":   "Isoprene",
-    "PA":   "Polyamide",
-    "PBAT": "Polybutylene adipate\nterephthalate",
-    "PHB":  "Polyhydroxybutyrate",
-    "PLA":  "Polylactic acid",
+    "PS": "Polystyrene",
+    "PET": "Polyethylene terephthalate",
+    "PE": "Polyethylene",
+    "PUR": "Polyurethane",
+    "IP": "Isoprene",
+    "PA": "Polyamide",
+    "PBAT": "Polybutylene adipate terephthalate",
+    "PHB": "Polyhydroxybutyrate",
+    "PLA": "Polylactic acid",
 }
 
 COG_LEVELS = ["J","A","K","L","B","D","Y","V","T","M","N","Z",
@@ -89,11 +106,72 @@ COG_DESCRIPTIONS = {
     "S": "Function unknown",
 }
 
-# COG categories functionally linked to plastic degradation
 PLASTIC_COGS = {"I", "Q", "C", "E", "G", "P"}
 
-# ── Parsers ───────────────────────────────────────────────────────────────────
-def parse_hmmer(hmmer_dir: Path) -> pd.DataFrame:
+# Always excluded from the main report because they are too broad/promiscuous.
+# They are still preserved in plastic_heatmap_summary_all.csv and excluded.csv.
+PROMISCUOUS_PFAMS = {
+    "PF00135",
+    "PF00144",
+    "PF01425",
+    "PF03576",
+    "PF13472",
+    "PF00561",
+    "PF12146",
+    "PF12697",
+}
+
+# Always excluded from the main report when present in annotation/description.
+EXCLUDE_KEYWORDS = [
+    "penicillin-binding",
+    "beta-lactamase",
+    "lactamase",
+    "amidotransferase",
+    "aminopeptidase",
+    "d-alanyl-d-alanine",
+    "housekeeping",
+    "ribosomal",
+    "trna",
+    "glutamyl-trna",
+    "hypothetical protein",
+]
+
+# Positive-support terms. These do not rescue excluded PFAMs for the main table,
+# but help assign confidence among retained candidates.
+SUPPORTIVE_KEYWORDS = [
+    "cutinase",
+    "petase",
+    "mhetase",
+    "polyesterase",
+    "depolymerase",
+    "carboxylesterase",
+    "esterase",
+    "lipase",
+    "alkane hydroxylase",
+    "alkb",
+    "monooxygenase",
+    "dioxygenase",
+    "laccase",
+    "multicopper oxidase",
+    "peroxidase",
+    "haloalkane dehalogenase",
+    "epoxide hydrolase",
+    "polyhydroxybutyrate depolymerase",
+    "phb depolymerase",
+]
+
+
+def pfam_id(hmm_name: str) -> str:
+    m = re.search(r"(PF\d+)", str(hmm_name))
+    return m.group(1) if m else str(hmm_name)
+
+
+def contains_any(text: str, terms) -> bool:
+    text = str(text).lower()
+    return any(term.lower() in text for term in terms)
+
+
+def parse_hmmer(hmmer_dir: Path) -> "pd.DataFrame":
     rows = []
     for plastic in PLASTICS:
         f = hmmer_dir / f"{plastic}_search.txt"
@@ -104,14 +182,28 @@ def parse_hmmer(hmmer_dir: Path) -> pd.DataFrame:
                 if line.startswith("#") or not line.strip():
                     continue
                 parts = line.split()
-                if len(parts) < 6:
+                if len(parts) < 9:
                     continue
+
+                desc = " ".join(parts[18:]) if len(parts) > 18 else ""
+                try:
+                    evalue = float(parts[4])
+                    score = float(parts[5])
+                    dom_evalue = float(parts[7])
+                    dom_score = float(parts[8])
+                except ValueError:
+                    continue
+
                 rows.append({
                     "protein": parts[0],
                     "plastic": plastic,
-                    "evalue":  float(parts[4]),
-                    "hmm":     parts[2],
-                    "desc":    " ".join(parts[18:]) if len(parts) > 18 else "",
+                    "evalue": evalue,
+                    "score": score,
+                    "dom_evalue": dom_evalue,
+                    "dom_score": dom_score,
+                    "hmm": parts[2],
+                    "pfam": pfam_id(parts[2]),
+                    "desc": desc,
                 })
     return pd.DataFrame(rows)
 
@@ -122,6 +214,8 @@ def parse_taxonomy(tax_file: Path, protein_ids: set) -> dict:
     with open(tax_file) as fh:
         for line in fh:
             parts = line.rstrip("\n").split("\t")
+            if not parts:
+                continue
             m = id_pat.match(parts[0])
             if not m:
                 continue
@@ -130,7 +224,7 @@ def parse_taxonomy(tax_file: Path, protein_ids: set) -> dict:
                 continue
             taxonomy = parts[1].strip() if len(parts) > 1 else ""
             if not taxonomy:
-                tax_map[pid] = "Unclassified (no assignment)"
+                tax_map[pid] = "Unclassified"
                 continue
             levels = [t.strip() for t in taxonomy.rstrip(";").split(";") if t.strip()]
             phylum = levels[1] if len(levels) >= 2 else (levels[0] if levels else "Unclassified")
@@ -143,27 +237,27 @@ def parse_prokka_tsv(prokka_tsv: Path, protein_ids: set) -> dict:
     if not prokka_tsv.exists():
         return annot
     with open(prokka_tsv) as fh:
-        fh.readline()  # skip header
+        fh.readline()
         for line in fh:
             parts = line.rstrip("\n").split("\t")
             if len(parts) < 7:
                 continue
             locus, ftype = parts[0], parts[1]
-            product = parts[6] if len(parts) > 6 else ""
-            cog_col = parts[5] if len(parts) > 5 else ""
             if ftype == "CDS" and locus in protein_ids:
                 annot[locus] = {
-                    "product": product.strip() or "hypothetical protein",
-                    "cog":     cog_col.strip(),
+                    "product": (parts[6] or "hypothetical protein").strip(),
+                    "cog": (parts[5] if len(parts) > 5 else "").strip(),
                 }
     return annot
 
 
 def parse_cog_blast(blast_file: Path, protein_ids: set) -> dict:
-    """Extract best COG hit per protein from rpsblast output."""
     cog_hits = {}
     current_query = None
     cdd_re = re.compile(r'CDD:\d+\s+(COG\d+),\s*([^,]+),\s*(.+?)\s+([\d.e+-]+)\s+([\d.e+-]+)\s*$')
+
+    if not blast_file.exists():
+        return cog_hits
 
     with open(blast_file) as fh:
         for line in fh:
@@ -180,31 +274,88 @@ def parse_cog_blast(blast_file: Path, protein_ids: set) -> dict:
                 except ValueError:
                     evalue = 1.0
                 cog_hits[current_query] = {
-                    "cog_id":   m_c.group(1),
+                    "cog_id": m_c.group(1),
                     "cog_name": m_c.group(2).strip(),
                     "cog_desc": m_c.group(3).strip(),
-                    "evalue":   evalue,
+                    "evalue": evalue,
                 }
     return cog_hits
 
 
 def parse_cog_frequencies(cog_csv: Path) -> dict:
-    """Load cog_frequencies.csv → dict category_letter -> count."""
     if not cog_csv.exists():
         return {cat: 0 for cat in COG_LEVELS}
-    import csv as csvmod
     with open(cog_csv) as fh:
-        reader = csvmod.DictReader(fh)
+        reader = csv.DictReader(fh)
         row = next(reader, None)
         if row is None:
             return {cat: 0 for cat in COG_LEVELS}
         return {cat: int(float(row.get(cat, 0) or 0)) for cat in COG_LEVELS}
 
 
-# ── Figure 1: Heatmap ─────────────────────────────────────────────────────────
-def build_heatmap(df, tax_map, annot_map, cog_blast, output_path):
-    df["-log10_evalue"] = df["evalue"].apply(
-        lambda e: min(-math.log10(e), 60) if e > 0 else 60)
+def classify_hits(df: "pd.DataFrame", annot_map: dict) -> "pd.DataFrame":
+    rows = []
+
+    for _, r in df.iterrows():
+        pid = r["protein"]
+        annotation = annot_map.get(pid, {}).get("product", r.get("desc", "hypothetical protein"))
+        text_blob = f"{annotation} {r.get('desc', '')} {r.get('hmm', '')}".lower()
+
+        pfam = r["pfam"]
+        is_promiscuous = pfam in PROMISCUOUS_PFAMS
+        has_exclusion = contains_any(text_blob, EXCLUDE_KEYWORDS)
+        has_supportive = contains_any(text_blob, SUPPORTIVE_KEYWORDS)
+
+        strong_hmmer = (r["evalue"] <= 1e-20 and r["dom_evalue"] <= 1e-12 and r["score"] >= 70)
+        very_strong_hmmer = (r["evalue"] <= 1e-50 and r["dom_evalue"] <= 1e-20 and r["score"] >= 100)
+
+        exclusion_reasons = []
+        if is_promiscuous:
+            exclusion_reasons.append("promiscuous PFAM excluded from main report")
+        if has_exclusion:
+            exclusion_reasons.append("excluded annotation keyword")
+
+        keep_curated = len(exclusion_reasons) == 0
+
+        if keep_curated:
+            if very_strong_hmmer and has_supportive:
+                confidence = "High confidence"
+                reason = "Very strong HMMER support and compatible functional annotation."
+            elif strong_hmmer and has_supportive:
+                confidence = "Medium confidence"
+                reason = "Strong HMMER support and compatible functional annotation."
+            elif strong_hmmer:
+                confidence = "Medium confidence"
+                reason = "Strong HMMER support; functional annotation requires manual validation."
+            else:
+                confidence = "Low confidence"
+                reason = "Weak HMMER support; retained only if not excluded, but should be interpreted cautiously."
+        else:
+            confidence = "Excluded from main report"
+            reason = "; ".join(exclusion_reasons)
+
+        rr = r.to_dict()
+        rr.update({
+            "annotation_for_filter": annotation,
+            "Promiscuous PFAM": bool(is_promiscuous),
+            "Excluded keyword": bool(has_exclusion),
+            "Supportive annotation": bool(has_supportive),
+            "Keep curated": bool(keep_curated),
+            "Confidence": confidence,
+            "Classification reason": reason,
+        })
+        rows.append(rr)
+
+    return pd.DataFrame(rows)
+
+
+def build_heatmap(df, tax_map, annot_map, cog_blast, output_path, title_suffix=""):
+    if df.empty:
+        print(f"[plastic_heatmap_curated.py] No rows available for heatmap: {output_path}")
+        return False
+
+    df = df.copy()
+    df["-log10_evalue"] = df["evalue"].apply(lambda e: min(-math.log10(e), 60) if e > 0 else 60)
     pivot = df.pivot_table(
         index="protein", columns="plastic",
         values="-log10_evalue", aggfunc="max"
@@ -225,22 +376,14 @@ def build_heatmap(df, tax_map, annot_map, cog_blast, output_path):
 
     ylabels = []
     for p in proteins:
-        ann  = annot_map.get(p, {})
+        ann = annot_map.get(p, {})
         prod = ann.get("product", "hypothetical protein")
-        cb   = cog_blast.get(p, {})
-        cog_id   = cb.get("cog_id", "")
+        cb = cog_blast.get(p, {})
+        cog_id = cb.get("cog_id", "")
         cog_name = cb.get("cog_name", "")
-        if cog_id and cog_name:
-            cog_str = f" [{cog_id}: {cog_name[:28]}]"
-        elif cog_id:
-            cog_str = f" [{cog_id}]"
-        else:
-            cog_str = ""
-        short = prod[:28] + ("…" if len(prod) > 28 else "")
-        if short == "hypothetical protein":
-            ylabels.append(f"{p}{cog_str}")
-        else:
-            ylabels.append(f"{p}  {short}{cog_str}")
+        cog_str = f" [{cog_id}: {cog_name[:28]}]" if cog_id and cog_name else (f" [{cog_id}]" if cog_id else "")
+        short = prod[:32] + ("…" if len(prod) > 32 else "")
+        ylabels.append(f"{p}  {short}{cog_str}" if short else f"{p}{cog_str}")
 
     fig_h = max(6, n_prot * 0.45 + 4.5)
     fig, ax = plt.subplots(figsize=(14.5, fig_h))
@@ -249,26 +392,21 @@ def build_heatmap(df, tax_map, annot_map, cog_blast, output_path):
     masked = np.ma.masked_invalid(mat)
     cmap_heat = plt.cm.YlOrRd.copy()
     cmap_heat.set_bad(color="#f0f4f8")
-    im = ax.imshow(masked, aspect="auto", cmap=cmap_heat,
-                   vmin=0, vmax=60, interpolation="nearest")
+    im = ax.imshow(masked, aspect="auto", cmap=cmap_heat, vmin=0, vmax=60, interpolation="nearest")
 
     for i in range(n_prot):
         for j, pl in enumerate(PLASTICS):
             val = mat[i, j]
             if not np.isnan(val):
-                orig_e = df[(df["protein"] == proteins[i]) &
-                            (df["plastic"] == pl)]["evalue"].min()
+                orig_e = df[(df["protein"] == proteins[i]) & (df["plastic"] == pl)]["evalue"].min()
                 txt = f"{orig_e:.0e}".replace("e-0", "e-").replace("e+0", "e+")
                 ax.text(j, i, txt, ha="center", va="center",
                         fontsize=6.5, color="black" if val < 40 else "white",
                         fontweight="bold")
 
     ax.set_xticks(range(len(PLASTICS)))
-    ax.set_xticklabels(
-        [PLASTIC_FULL[p].replace("\n", " ") for p in PLASTICS],
-        fontsize=8.5, fontweight="bold",
-        rotation=45, ha="right", va="top"
-    )
+    ax.set_xticklabels([PLASTIC_FULL[p] for p in PLASTICS],
+                       fontsize=8.5, fontweight="bold", rotation=45, ha="right", va="top")
     ax.tick_params(axis="x", pad=4)
     ax.xaxis.set_ticks_position("bottom")
     ax.xaxis.set_label_position("bottom")
@@ -281,18 +419,12 @@ def build_heatmap(df, tax_map, annot_map, cog_blast, output_path):
     cbar.set_label("-log10(E-value)\n(higher = more significant)", fontsize=8)
     cbar.ax.tick_params(labelsize=7)
 
-    # Taxonomy strip — narrow band between y-tick labels and the axis line
-    # get_yaxis_transform: x in axes coords (0=axis line), y in data coords
-    strip_x     = -0.04   # just left of the axis line
-    strip_width =  0.025  # narrow strip
+    strip_x = -0.04
+    strip_width = 0.025
     for i, col in enumerate(tax_colors):
-        ax.add_patch(plt.Rectangle(
-            (strip_x, i - 0.48), strip_width, 0.96,
-            color=col,
-            transform=ax.get_yaxis_transform(),
-            clip_on=False,
-            zorder=3
-        ))
+        ax.add_patch(plt.Rectangle((strip_x, i - 0.48), strip_width, 0.96,
+                                   color=col, transform=ax.get_yaxis_transform(),
+                                   clip_on=False, zorder=3))
 
     legend_handles = [Patch(facecolor=phylum_color[ph], label=ph) for ph in unique_phyla]
     ax.legend(handles=legend_handles, title="Phylum (Metaxa2)",
@@ -305,23 +437,16 @@ def build_heatmap(df, tax_map, annot_map, cog_blast, output_path):
     ax.grid(which="minor", color="white", linewidth=1.2)
     ax.tick_params(which="minor", bottom=False, left=False)
 
-    plt.title("Potential Plastic-Degrading Enzymes — Taxonomic Origin",
+    plt.title(f"Potential Plastic-Degrading Enzymes — Taxonomic Origin{title_suffix}",
               fontsize=12, fontweight="bold", pad=10)
     fig.subplots_adjust(left=0.38, right=0.96, top=0.94, bottom=0.22)
-    fig.savefig(output_path, dpi=300, bbox_inches="tight",
-                facecolor="white", edgecolor="none")
+    fig.savefig(output_path, dpi=300, bbox_inches="tight", facecolor="white", edgecolor="none")
     plt.close(fig)
-    print(f"[plastic_heatmap.py] Heatmap saved: {output_path}")
+    print(f"[plastic_heatmap_curated.py] Heatmap saved: {output_path}")
+    return True
 
 
-# ── Figure 2: COG highlighted ─────────────────────────────────────────────────
 def build_cog_highlighted(cog_freq, hmmer_cogs, output_path):
-    """
-    Bar chart of all COG categories.
-    Bottom axis: wrapped COG descriptions
-    Top axis: single-letter COG categories
-    Bars with HMMER hits get a star annotation.
-    """
     cats = COG_LEVELS
     counts = [cog_freq.get(c, 0) for c in cats]
     colors = []
@@ -333,7 +458,7 @@ def build_cog_highlighted(cog_freq, hmmer_cogs, output_path):
         else:
             colors.append("#b0b8c1")
 
-    ymax = max(counts) if counts else 0
+    ymax = max(counts) if counts else 1
     ymax = ymax if ymax > 0 else 1
 
     fig, ax = plt.subplots(figsize=(13.5, 7.8))
@@ -356,11 +481,9 @@ def build_cog_highlighted(cog_freq, hmmer_cogs, output_path):
         Patch(facecolor="#2c7bb6", label="Plastic-related COG (no hits in this sample)"),
         Patch(facecolor="#b0b8c1", label="Other COG categories"),
     ]
-    ax.legend(handles=legend_elements, fontsize=8.5,
-              loc="upper center",
-              bbox_to_anchor=(0.5, -0.62),
-              ncol=1, framealpha=0.9, edgecolor="#cccccc",
-              title="Legend", title_fontsize=9,
+    ax.legend(handles=legend_elements, fontsize=8.5, loc="upper center",
+              bbox_to_anchor=(0.5, -0.62), ncol=1, framealpha=0.9,
+              edgecolor="#cccccc", title="Legend", title_fontsize=9,
               bbox_transform=ax.transAxes)
 
     desc_labels = [COG_DESCRIPTIONS.get(c, "") for c in cats]
@@ -377,99 +500,143 @@ def build_cog_highlighted(cog_freq, hmmer_cogs, output_path):
     ax_top.set_xlabel("COG category", fontsize=10, fontweight="bold", labelpad=6)
 
     fig.subplots_adjust(left=0.07, right=0.97, top=0.88, bottom=0.44)
-    fig.savefig(output_path, dpi=300, bbox_inches="tight",
-                facecolor="white", edgecolor="none")
+    fig.savefig(output_path, dpi=400, bbox_inches="tight", facecolor="white", edgecolor="none")
     plt.close(fig)
-    print(f"[plastic_heatmap.py] COG figure saved: {output_path}")
+    print(f"[plastic_heatmap_curated.py] COG figure saved: {output_path}")
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+def write_summary_csv(df, tax_map, annot_map, cog_blast_map, out_csv):
+    rows = []
+    for _, row in df.iterrows():
+        pid = row["protein"]
+        ann = annot_map.get(pid, {})
+        cb = cog_blast_map.get(pid, {})
+        tax = tax_map.get(pid, "Unclassified")
+        rows.append({
+            "Protein ID": pid,
+            "Plastic type": row["plastic"],
+            "HMM profile": row["hmm"],
+            "PFAM": row["pfam"],
+            "E-value": row["evalue"],
+            "Score": row["score"],
+            "Domain E-value": row["dom_evalue"],
+            "Domain score": row["dom_score"],
+            "Annotation": ann.get("product", "hypothetical protein"),
+            "COG ID": cb.get("cog_id", "—"),
+            "COG function": cb.get("cog_name", "—"),
+            "Phylum": tax,
+            "Confidence": row.get("Confidence", "Not classified"),
+            "Classification reason": row.get("Classification reason", ""),
+            "Keep curated": row.get("Keep curated", False),
+            "Promiscuous PFAM": row.get("Promiscuous PFAM", False),
+            "Excluded keyword": row.get("Excluded keyword", False),
+            "Supportive annotation": row.get("Supportive annotation", False),
+        })
+
+    with open(out_csv, "w", newline="") as fh:
+        if rows:
+            writer = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+            writer.writeheader()
+            writer.writerows(rows)
+        else:
+            writer = csv.writer(fh)
+            writer.writerow([
+                "Protein ID", "Plastic type", "HMM profile", "PFAM", "E-value",
+                "Annotation", "Confidence", "Classification reason"
+            ])
+    print(f"[plastic_heatmap_curated.py] Summary CSV: {out_csv}")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--results", required=True)
     parser.add_argument("--output", default=None,
-                        help="Output directory for plots (default: <results>/Plots)")
+                        help="Output directory for plots. Default: <results>/Plots")
+    parser.add_argument("--use-all-heatmap", action="store_true",
+                        help="Use all hits in heatmap. Default uses curated hits only.")
     args = parser.parse_args()
 
     results = Path(args.results)
-    outdir  = Path(args.output) if args.output else (results / "Plots")
+    outdir = Path(args.output) if args.output else (results / "Plots")
     outdir.mkdir(parents=True, exist_ok=True)
 
-    hmmer_dir  = results / "HMMER"
-    tax_file   = results / "Metaxa2_results" / "metaxa2.taxonomy.txt"
-    prokka_tsv = results / "Prokka_results"  / "prokka_results.tsv"
-    cog_blast  = results / "COG"             / "COGs_results.faa"
-    cog_csv    = results / "COG"             / "cog_frequencies.csv"
+    hmmer_dir = results / "HMMER"
+    tax_file = results / "Metaxa2_results" / "metaxa2.taxonomy.txt"
+    prokka_tsv = results / "Prokka_results" / "prokka_results.tsv"
+    cog_blast = results / "COG" / "COGs_results.faa"
+    cog_csv = results / "COG" / "cog_frequencies.csv"
 
-    print("[plastic_heatmap.py] Parsing HMMER results...")
+    print("[plastic_heatmap_curated.py] Parsing HMMER results...")
     df = parse_hmmer(hmmer_dir)
     if df.empty:
         sys.exit("ERROR: No HMMER hits found.")
-    protein_ids = set(df["protein"].unique())
-    print(f"  {len(df)} hits | {len(protein_ids)} proteins | "
-          f"{df['plastic'].nunique()} plastic types")
 
-    print("[plastic_heatmap.py] Parsing Metaxa2 taxonomy...")
+    protein_ids = set(df["protein"].unique())
+    print(f"  Raw HMMER: {len(df)} hits | {len(protein_ids)} proteins | {df['plastic'].nunique()} plastic types")
+
+    print("[plastic_heatmap_curated.py] Parsing Metaxa2 taxonomy...")
     tax_map = parse_taxonomy(tax_file, protein_ids) if tax_file.exists() else {}
 
-    print("[plastic_heatmap.py] Parsing Prokka annotations...")
+    print("[plastic_heatmap_curated.py] Parsing Prokka annotations...")
     annot_map = parse_prokka_tsv(prokka_tsv, protein_ids)
 
-    print("[plastic_heatmap.py] Parsing COG blast results...")
+    print("[plastic_heatmap_curated.py] Parsing COG blast results...")
     cog_blast_map = parse_cog_blast(cog_blast, protein_ids) if cog_blast.exists() else {}
 
-    # ── Figure 1: Heatmap ─────────────────────────────────────────────────────
-    build_heatmap(df, tax_map, annot_map, cog_blast_map,
-                  outdir / "plastic_degrading_heatmap.png")
+    print("[plastic_heatmap_curated.py] Classifying and filtering hits...")
+    classified = classify_hits(df, annot_map)
+    curated = classified[classified["Keep curated"] == True].copy()
+    excluded = classified[classified["Keep curated"] == False].copy()
 
-    # ── Figure 2: COG highlighted ─────────────────────────────────────────────
+    print(f"  All classified hits: {len(classified)}")
+    print(f"  Curated main-report hits: {len(curated)}")
+    print(f"  Excluded supplementary hits: {len(excluded)}")
+
+    all_csv = hmmer_dir / "plastic_heatmap_summary_all.csv"
+    curated_csv = hmmer_dir / "plastic_heatmap_summary_curated.csv"
+    excluded_csv = hmmer_dir / "plastic_heatmap_summary_excluded.csv"
+    legacy_csv = hmmer_dir / "plastic_heatmap_summary.csv"
+
+    write_summary_csv(classified, tax_map, annot_map, cog_blast_map, all_csv)
+    write_summary_csv(curated, tax_map, annot_map, cog_blast_map, curated_csv)
+    write_summary_csv(excluded, tax_map, annot_map, cog_blast_map, excluded_csv)
+    write_summary_csv(curated, tax_map, annot_map, cog_blast_map, legacy_csv)
+
+    heatmap_df = classified if args.use_all_heatmap else curated
+
+    if heatmap_df.empty:
+        print("[plastic_heatmap_curated.py] WARNING: no curated hits. Main heatmap will not be generated.")
+    else:
+        build_heatmap(
+            heatmap_df,
+            tax_map,
+            annot_map,
+            cog_blast_map,
+            outdir / "plastic_degrading_heatmap.png",
+            title_suffix=" (curated candidates)" if not args.use_all_heatmap else " (all hits)",
+        )
+
+    build_heatmap(
+        classified,
+        tax_map,
+        annot_map,
+        cog_blast_map,
+        outdir / "plastic_degrading_heatmap_all_hits.png",
+        title_suffix=" (all HMMER hits)",
+    )
+
     cog_freq = parse_cog_frequencies(cog_csv)
-    # Which plastic-related COG categories have HMMER hits?
     hmmer_cogs = set()
-    for pid in protein_ids:
-        ann = annot_map.get(pid, {})
-        cog_tsv = ann.get("cog", "")
-        if cog_tsv:
-            # Extract single-letter category from COG description
-            # Prokka TSV col 6 has e.g. "COG0749"
-            pass
-        cb = cog_blast_map.get(pid, {})
-        cat = cb.get("cog_cat", "")
-        if cat:
-            hmmer_cogs.add(cat)
-    # Also flag I, Q, C if they have any count (known plastic-related)
     for cat in PLASTIC_COGS:
         if cog_freq.get(cat, 0) > 0:
             hmmer_cogs.add(cat)
 
-    build_cog_highlighted(cog_freq, hmmer_cogs,
-                          outdir / "cog_plastic_highlighted.png")
+    build_cog_highlighted(cog_freq, hmmer_cogs, outdir / "cog_plastic_highlighted.png")
 
-    # ── CSV summary for R report ───────────────────────────────────────────────
-    rows = []
-    for _, row in df.iterrows():
-        pid  = row["protein"]
-        ann  = annot_map.get(pid, {})
-        cb   = cog_blast_map.get(pid, {})
-        tax  = tax_map.get(pid, "Unclassified")
-        rows.append({
-            "Protein ID":   pid,
-            "Plastic type": row["plastic"],
-            "HMM profile":  row["hmm"],
-            "E-value":      row["evalue"],
-            "Annotation":   ann.get("product", "hypothetical protein"),
-            "COG ID":       cb.get("cog_id", "—"),
-            "COG function": cb.get("cog_name", "—"),
-            "Phylum":       tax,
-        })
-
-    summary_csv = results / "HMMER" / "plastic_heatmap_summary.csv"
-    with open(summary_csv, "w", newline="") as fh:
-        writer = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
-        writer.writeheader()
-        writer.writerows(rows)
-    print(f"[plastic_heatmap.py] Summary CSV: {summary_csv}")
-    print(f"[plastic_heatmap.py] Done — {len(rows)} records")
+    print("[plastic_heatmap_curated.py] Done.")
+    print("Main-report table: Results/HMMER/plastic_heatmap_summary_curated.csv")
+    print("Supplementary all-hits table: Results/HMMER/plastic_heatmap_summary_all.csv")
+    print("Supplementary excluded table: Results/HMMER/plastic_heatmap_summary_excluded.csv")
 
 
 if __name__ == "__main__":

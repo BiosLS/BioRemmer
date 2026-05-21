@@ -322,7 +322,7 @@ if (file.exists(tree_file)) {
                 linesize = 0.3, offset = 0.05)
   print(tree2)
   ggsave(filename = file.path(plots_dir, "Phylogenomic_classification.png"),
-         plot = tree2, width = 7, height = 9, dpi = 300)
+         plot = tree2, width = 7, height = 9, dpi = 500)
 } else {
   print(
     ggplot() +
@@ -419,10 +419,13 @@ if (!file.exists(rare_file)) {
             legend.title    = element_text(size = 9, face = "bold"),
             legend.text     = element_text(size = 8),
             legend.key.size = unit(0.45, "cm")) +
-      scale_fill_manual(values = RColorBrewer::brewer.pal(12, "Paired"))
+      scale_fill_manual(
+	   values = colorRampPalette(RColorBrewer::brewer.pal(12, "Paired"))(
+      length(unique(metaxa2$Class))
+	))
     print(pl2)
     ggsave(filename = file.path(plots_dir, "taxonomic_abundance.png"),
-           plot = pl2, width = 8, height = 5, dpi = 300)
+           plot = pl2, width = 8, height = 5, dpi = 500)
   }
 }
 ```
@@ -496,7 +499,7 @@ if (file.exists(cog_png)) {
     guides(fill = guide_legend(ncol = 2))
   print(cogs)
   ggsave(filename = file.path(plots_dir, "Orthologous_groups.png"),
-         plot = cogs, width = 9, height = 6, dpi = 300)
+         plot = cogs, width = 9, height = 6, dpi = 500)
 }
 ```
 
@@ -504,7 +507,7 @@ if (file.exists(cog_png)) {
 
 # 7. Potential plastic-degrading enzymes — HMMER3 {.tabset}
 
-```{r hmmer_plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='**Figure 5. Plastic-degrading enzyme homologs identified by plastic type.** Each bar represents the number of significant hits against the BioRemmer HMM profiles for each plastic type. Results represent putative homologs and not functionally verified enzymes. Abbreviations: IP, Isoprene; PA, Polyamide; PBAT, Polybutylene adipate terephthalate; PE, Polyethylene; PET, Polyethylene terephthalate; PHB, Polyhydroxybutyrate; PLA, Polylactic acid; PS, Polystyrene; PUR, Polyurethane.', fig.width=7, fig.height=4.5}
+```{r hmmer_plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='**Figure 5A. Plastic-degrading enzyme homologs identified by plastic type before curation.** Each bar represents the number of significant hits against the BioRemmer HMM profiles for each plastic type. Results represent putative homologs and not functionally verified enzymes. Abbreviations: IP, Isoprene; PA, Polyamide; PBAT, Polybutylene adipate terephthalate; PE, Polyethylene; PET, Polyethylene terephthalate; PHB, Polyhydroxybutyrate; PLA, Polylactic acid; PS, Polystyrene; PUR, Polyurethane.', fig.width=7, fig.height=4.5}
 counts <- sapply(plastics, function(p) {
   df <- parse_hmmer(p)
   if (is.null(df) || nrow(df) == 0) 0L else nrow(df)
@@ -520,13 +523,47 @@ biorem <- ggplot(plastic_df, aes(x = Plastic, y = Counts, fill = Plastic)) +
   geom_text(aes(label = Counts), vjust = -0.5, size = 3.5, fontface = "bold") +
   scale_fill_manual(values = RColorBrewer::brewer.pal(9,"Set2")[1:length(plastics)]) +
   labs(x = "Type of Plastic", y = "Number of hits",
-       title = "Potential Plastic-Degrading Enzymes") +
+       title = "Potential Plastic-Degrading Enzymes — All HMMER Hits") +
   theme_classic(base_size = 12) +
   theme(legend.position = "none",
         plot.title = element_text(size = 12, face = "bold", hjust = 0.5))
 print(biorem)
-ggsave(filename = file.path(plots_dir, "plastic_degrading_enzymes.png"),
-       plot = biorem, width = 7, height = 4.5, dpi = 300)
+ggsave(filename = file.path(plots_dir, "plastic_degrading_enzymes_all_hits.png"),
+       plot = biorem, width = 7, height = 4.5, dpi = 500)
+```
+
+```{r hmmer_plot_curated, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='**Figure 5B. Curated plastic-associated enzyme candidates by plastic type.** Each bar represents the number of candidates retained after excluding promiscuous PFAM profiles and non-specific annotations. These candidates correspond to the filtered set summarized in Table 5B and should still be interpreted as computational predictions, not experimentally verified enzymes.', fig.width=7, fig.height=4.5}
+curated_csv <- rp("HMMER", "plastic_heatmap_summary_curated.csv")
+legacy_csv  <- rp("HMMER", "plastic_heatmap_summary.csv")
+summary_csv <- if (file.exists(curated_csv)) curated_csv else legacy_csv
+
+curated_counts <- setNames(rep(0L, length(plastics)), plastics)
+
+if (file.exists(summary_csv)) {
+  curated_tbl <- read.csv(summary_csv, stringsAsFactors = FALSE, check.names = FALSE)
+  if ("Plastic type" %in% colnames(curated_tbl) && nrow(curated_tbl) > 0) {
+    tmp <- table(curated_tbl$`Plastic type`)
+    curated_counts[names(tmp)] <- as.integer(tmp)
+  }
+}
+
+plastic_curated_df <- data.frame(
+  Plastic = factor(plastics, levels = plastics),
+  Counts  = as.integer(curated_counts[plastics])
+)
+
+biorem_curated <- ggplot(plastic_curated_df, aes(x = Plastic, y = Counts, fill = Plastic)) +
+  geom_col() +
+  geom_text(aes(label = Counts), vjust = -0.5, size = 3.5, fontface = "bold") +
+  scale_fill_manual(values = RColorBrewer::brewer.pal(9,"Set2")[1:length(plastics)]) +
+  labs(x = "Type of Plastic", y = "Number of curated candidates",
+       title = "Curated Plastic-Associated Enzyme Candidates") +
+  theme_classic(base_size = 12) +
+  theme(legend.position = "none",
+        plot.title = element_text(size = 12, face = "bold", hjust = 0.5))
+print(biorem_curated)
+ggsave(filename = file.path(plots_dir, "plastic_degrading_enzymes_curated.png"),
+       plot = biorem_curated, width = 7, height = 4.5, dpi = 500)
 ```
 
 ```{r hmmer_helper, echo=FALSE}
@@ -595,38 +632,153 @@ show_hmmer_table("PLA")
 
 ---
 
+
 # 8. Plastic-degrading enzyme heatmap
 
-```{r heatmap, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='**Figure 6. Heatmap of plastic-degrading enzyme homologs.** Each row represents a protein with significant HMMER hits (E-value ≤ 1×10⁻¹²). Columns represent plastic types. Cell color intensity reflects statistical significance (-log₁₀ E-value); grey cells indicate no hit. The colored strip on the left shows the taxonomic phylum of each protein (Metaxa2). Protein labels include COG ID in brackets where available. Proteins hitting multiple plastic types represent candidates for broad-spectrum plastic degradation.', fig.width=13, fig.height=8}
+```{r heatmap, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.cap='**Figure 6. Curated heatmap of plastic-associated enzyme candidates.** The main heatmap shows only curated candidates after excluding promiscuous PFAM profiles and non-specific annotations. Cell color intensity reflects statistical significance (-log10 E-value); grey cells indicate no hit. The colored strip on the left shows the taxonomic phylum of each protein when Metaxa2 taxonomy is available.', fig.width=13, fig.height=8}
 heatmap_png <- file.path(plots_dir, "plastic_degrading_heatmap.png")
+
 if (file.exists(heatmap_png)) {
-  knitr::include_graphics(heatmap_png)
+  cat(sprintf('<div style="text-align:center;"><img src="%s" style="max-width:100%%; height:auto;"></div>', heatmap_png))
 } else {
-  cat('<div class="no-hits">Heatmap not found. Run: python3 scripts/plastic_heatmap.py --results Results --output Results/Plots</div>')
+  all_heatmap_png <- file.path(plots_dir, "plastic_degrading_heatmap_all_hits.png")
+  if (file.exists(all_heatmap_png)) {
+    cat('<div class="no-hits">No curated hits were retained for the main heatmap. Showing the all-HMMER-hits supplementary heatmap instead.</div>')
+    cat(sprintf('<div style="text-align:center;"><img src="%s" style="max-width:100%%; height:auto;"></div>', all_heatmap_png))
+  } else {
+    cat('<div class="no-hits">Heatmap not found. Run: python3 scripts/plastic_heatmap.py --results Results --output Results/Plots</div>')
+  }
 }
 ```
 
-```{r heatmap_table, echo=FALSE, message=FALSE, warning=FALSE}
-summary_csv <- rp("HMMER", "plastic_heatmap_summary.csv")
+```{r heatmap_table_curated, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+curated_csv <- rp("HMMER", "plastic_heatmap_summary_curated.csv")
+legacy_csv  <- rp("HMMER", "plastic_heatmap_summary.csv")
+
+summary_csv <- if (file.exists(curated_csv)) curated_csv else legacy_csv
+
 if (file.exists(summary_csv)) {
-  hm <- read.csv(summary_csv, stringsAsFactors = FALSE)
-  kable(hm,
-        caption = "**Table 5.** Summary of plastic-degrading enzyme homologs. Target name: protein identifier from Prokka annotation. Plastic type: type of plastic for which homology was detected. HMM profile: Pfam seed used for the search. E-value: statistical significance of the hit. Annotation: functional annotation from Prokka. COG ID and COG function: Clusters of Orthologous Genes assignment from RPS-BLAST. Phylum: taxonomic classification from Metaxa2.",
-        col.names = c("Protein ID", "Plastic type", "HMM profile",
-                      "E-value", "Predicted function", "COG ID",
-                      "COG category", "Phylum"),
-        align = c("l","c","l","r","l","c","l","l")) %>%
-    kable_styling(bootstrap_options = c("striped","hover","condensed"),
-                  full_width = TRUE, font_size = 10) %>%
-    column_spec(1, bold = TRUE, color = "#1a3a5c") %>%
-    column_spec(4, color = "#c0392b", bold = TRUE) %>%
-    column_spec(6, bold = TRUE, color = "#2c7bb6") %>%
-    row_spec(0, background = "#2c7bb6", color = "white", bold = TRUE) %>%
-    scroll_box(height = "400px")
+
+  hm <- read.csv(summary_csv, stringsAsFactors = FALSE, check.names = FALSE)
+
+  cat("## Confidence classification
+
+")
+
+  if ("Confidence" %in% colnames(hm)) {
+    conf_counts <- as.data.frame(table(hm$Confidence))
+    colnames(conf_counts) <- c("Confidence level", "Number of hits")
+
+    print(
+      kable(conf_counts,
+            caption = "**Table 5A.** Number of curated candidates by confidence level.",
+            align = c("l", "r")) %>%
+        kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                      full_width = FALSE, font_size = 11) %>%
+        row_spec(0, background = "#2c7bb6", color = "white", bold = TRUE)
+    )
+  }
+
+  cat("
+
+## Curated candidate table
+
+")
+
+  preferred_cols <- c(
+    "Protein ID", "Plastic type", "HMM profile", "PFAM",
+    "E-value", "Score", "Annotation", "Phylum",
+    "Confidence", "Classification reason"
+  )
+
+  available_cols <- preferred_cols[preferred_cols %in% colnames(hm)]
+
+  print(
+    kable(hm[, available_cols, drop = FALSE],
+          caption = "**Table 5B.** Curated plastic-associated enzyme candidates. Promiscuous PFAM profiles and non-specific annotations were excluded from this main table.",
+          align = rep("l", length(available_cols))) %>%
+      kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                    full_width = TRUE, font_size = 10) %>%
+      row_spec(0, background = "#2c7bb6", color = "white", bold = TRUE) %>%
+      scroll_box(height = "400px")
+  )
+
 } else {
-  cat('<div class="no-hits">Summary table not found. Run plastic_heatmap.py first.</div>')
+  cat('<div class="no-hits">Curated summary table not found. Run plastic_heatmap.py first.</div>')
 }
 ```
+
+```{r excluded_hits_summary, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+excluded_csv <- rp("HMMER", "plastic_heatmap_summary_excluded.csv")
+
+if (file.exists(excluded_csv)) {
+
+  ex <- read.csv(excluded_csv, stringsAsFactors = FALSE, check.names = FALSE)
+
+  cat("## Excluded low-specificity hits
+
+")
+  cat("The following hits were removed from the main report because they matched promiscuous PFAM profiles or non-specific annotations such as penicillin-binding proteins, beta-lactamases, amidotransferases, aminopeptidases, D-alanyl-D-alanine-related proteins, housekeeping/ribosomal/tRNA terms or hypothetical proteins.
+
+")
+
+  if (nrow(ex) > 0 && "Plastic type" %in% colnames(ex)) {
+
+    initial_counts <- setNames(rep(0L, length(plastics)), plastics)
+    low_counts     <- setNames(rep(0L, length(plastics)), plastics)
+    final_counts   <- setNames(rep(0L, length(plastics)), plastics)
+
+    all_csv <- rp("HMMER", "plastic_heatmap_summary_all.csv")
+    curated_csv <- rp("HMMER", "plastic_heatmap_summary_curated.csv")
+    legacy_csv  <- rp("HMMER", "plastic_heatmap_summary.csv")
+    final_csv <- if (file.exists(curated_csv)) curated_csv else legacy_csv
+
+    if (file.exists(all_csv)) {
+      all_tbl <- read.csv(all_csv, stringsAsFactors = FALSE, check.names = FALSE)
+      if ("Plastic type" %in% colnames(all_tbl) && nrow(all_tbl) > 0) {
+        tmp <- table(all_tbl$`Plastic type`)
+        initial_counts[names(tmp)] <- as.integer(tmp)
+      }
+    }
+
+    tmp_ex <- table(ex$`Plastic type`)
+    low_counts[names(tmp_ex)] <- as.integer(tmp_ex)
+
+    if (file.exists(final_csv)) {
+      final_tbl <- read.csv(final_csv, stringsAsFactors = FALSE, check.names = FALSE)
+      if ("Plastic type" %in% colnames(final_tbl) && nrow(final_tbl) > 0) {
+        tmp_final <- table(final_tbl$`Plastic type`)
+        final_counts[names(tmp_final)] <- as.integer(tmp_final)
+      }
+    }
+
+    filter_summary <- data.frame(
+      `Plastic type` = plastics,
+      `Initial HMM hits` = as.integer(initial_counts[plastics]),
+      `Low-confidence / excluded hits` = as.integer(low_counts[plastics]),
+      `Final curated candidates` = as.integer(final_counts[plastics]),
+      check.names = FALSE
+    )
+
+    print(
+      kable(filter_summary,
+            caption = "**Table 5C.** Initial HMM hits, excluded low-confidence hits and final curated candidates by plastic type.",
+            align = c("l", "r", "r", "r")) %>%
+        kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                      full_width = TRUE, font_size = 11) %>%
+        column_spec(1, bold = TRUE, color = "#1a3a5c") %>%
+        column_spec(2, color = "#2c7bb6", bold = TRUE) %>%
+        column_spec(3, color = "#777777", bold = TRUE) %>%
+        column_spec(4, color = "#1b7837", bold = TRUE) %>%
+        row_spec(0, background = "#2c7bb6", color = "white", bold = TRUE)
+    )
+  }
+
+} else {
+  cat('<div class="no-hits">Excluded-hits table not found. This is expected if no excluded hits were written.</div>')
+}
+```
+
 
 ---
 
