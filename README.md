@@ -31,7 +31,7 @@
 ---
 
 ## Pipeline overview
-
+![BioRemmer Pipeline](assets/BioRemmer_pipeline.png)
 ```
 Raw FASTQ reads
      │
